@@ -1,0 +1,2761 @@
+{
+  "version": "4.0.0",
+  "reviewDate": "24 Ekim 2026",
+  "blueprints": [
+    {
+      "id": "b01",
+      "disease": "İnme",
+      "title": "İnme sonrası destekli ayağa geçiş",
+      "age": 63,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "İnmeden altı hafta sonra kişi oturmadan ayağa geçişte etkilenen bacağa yük aktarmakta ve gövdesini hizalamakta zorlanıyor. Tıbben stabil; yalnız eğitimli kişinin gözetiminde kalkabiliyor. Yürüme testi için uygunluğu henüz gösterilmedi.",
+      "modules": [
+        "rh-goals",
+        "ne-motor",
+        "ne-trunk",
+        "ne-balance",
+        "ne-transfer"
+      ],
+      "focusGroup": "neuro",
+      "contextGroup": "seat",
+      "sourceIds": [
+        "nc-stroke",
+        "nc-core",
+        "ex-stroke"
+      ]
+    },
+    {
+      "id": "b02",
+      "disease": "İnme",
+      "title": "İnme sonrası yön değiştirme",
+      "age": 58,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "İnmeden beş ay sonra kişi düz koridorda yardımcı cihazla yürüyebiliyor; dönme ve dar alanda adımları düzenleme sırasında ek gözetim gerekiyor. Hedef görev için güvenli yürüme uygunluğu ekipçe doğrulanmış.",
+      "modules": [
+        "rh-goals",
+        "ne-motor",
+        "ne-gait",
+        "ne-balance",
+        "ne-adl"
+      ],
+      "focusGroup": "neuro",
+      "contextGroup": "walk",
+      "sourceIds": [
+        "nc-stroke",
+        "nc-core",
+        "ex-stroke"
+      ]
+    },
+    {
+      "id": "b03",
+      "disease": "İnme",
+      "title": "İnme sonrası iki elin katkısı",
+      "age": 46,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "İnmeden dört ay sonra kişi etkilenen eliyle nesneyi tutabiliyor fakat bırakma ve diğer elle birlikte kullanma sırasında gövdesiyle telafi ediyor. Destekli oturma güvenli; öncelik üst ekstremite görevi.",
+      "modules": [
+        "rh-goals",
+        "ne-motor",
+        "ne-arm",
+        "ne-adl"
+      ],
+      "focusGroup": "neuro",
+      "contextGroup": "arm",
+      "sourceIds": [
+        "nc-stroke",
+        "nc-core",
+        "ex-stroke"
+      ]
+    },
+    {
+      "id": "b04",
+      "disease": "İnme",
+      "title": "İnmede sol alanı kaçırma",
+      "age": 71,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Sağ hemisfer inmesinden sonra kişi nesne görevinde sol taraftaki eşyaları atlıyor ve bunu her zaman fark etmiyor. Görme alanı ve göz hareketleri ekipçe ayrıca inceleniyor; günlük göreve ilişkin uzaysal dikkat gözlemi isteniyor.",
+      "modules": [
+        "rh-goals",
+        "ne-motor",
+        "ne-arm",
+        "ne-neglect",
+        "ne-adl"
+      ],
+      "focusGroup": "neuro",
+      "contextGroup": "arm",
+      "sourceIds": [
+        "nc-stroke",
+        "nc-core",
+        "ex-stroke"
+      ]
+    },
+    {
+      "id": "b05",
+      "disease": "İnme",
+      "title": "İnme sonrası toplum rotası",
+      "age": 54,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "İnmeden bir yıl sonra kişi kısa koridorda bağımsız, dışarıda yön değiştirme ve farklı zeminlerde gözetimle ilerliyor. Önceki izlemde yalnız tek bir düz yürüme süresi kaydedilmiş; gerçek görevin gereksinimi bilinmiyor.",
+      "modules": [
+        "rh-goals",
+        "ne-motor",
+        "ne-gait",
+        "ne-balance",
+        "ne-adl"
+      ],
+      "focusGroup": "neuro",
+      "contextGroup": "walk",
+      "sourceIds": [
+        "nc-stroke",
+        "nc-core",
+        "ex-stroke"
+      ]
+    },
+    {
+      "id": "b06",
+      "disease": "İnme",
+      "title": "İnmede oturma sırasında uzanma",
+      "age": 76,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "İnmeden iki ay sonra kişi destekli oturabiliyor; eşyaya uzandığında gövde kontrolünü kaybediyor ve bir kişinin yardımı gerekiyor. Bu görüşmede desteksiz ayağa kalkma veya yürüme zorlanmayacak.",
+      "modules": [
+        "rh-goals",
+        "ne-motor",
+        "ne-trunk",
+        "ne-arm",
+        "ne-adl"
+      ],
+      "focusGroup": "neuro",
+      "contextGroup": "seat",
+      "sourceIds": [
+        "nc-stroke",
+        "nc-core",
+        "ex-stroke"
+      ]
+    },
+    {
+      "id": "b07",
+      "disease": "Parkinson",
+      "title": "Parkinsonda dönüş ve donma",
+      "age": 69,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Parkinson tanılı kişi yürüyebiliyor ancak dar geçiş ve dönmede adımları kısa süre duruyor. İlaç saatine göre değişim bildiriliyor; değerlendirme koşulları kaydedilecek ve donma güvenli gözetimde incelenecek.",
+      "modules": [
+        "rh-goals",
+        "ne-freezing",
+        "ne-gait",
+        "ne-balance",
+        "ne-adl"
+      ],
+      "focusGroup": "neuro",
+      "contextGroup": "walk",
+      "sourceIds": [
+        "nc-pd",
+        "nc-updrs",
+        "nc-core",
+        "ex-parkinson"
+      ]
+    },
+    {
+      "id": "b08",
+      "disease": "Parkinson",
+      "title": "Parkinsonda düşük yüzeyden kalkış",
+      "age": 73,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Parkinson tanılı kişi alçak yüzeyden kalkarken birkaç girişimde bulunuyor ve geriye oturuyor. Başlatma, gövde hareketi ve yardım düzeyi henüz ayrı kaydedilmemiş; gözetimli değerlendirme planlı.",
+      "modules": [
+        "rh-goals",
+        "ne-transfer",
+        "ne-trunk",
+        "ne-balance",
+        "ne-adl"
+      ],
+      "focusGroup": "neuro",
+      "contextGroup": "walk",
+      "sourceIds": [
+        "nc-pd",
+        "nc-updrs",
+        "nc-core",
+        "ex-parkinson"
+      ]
+    },
+    {
+      "id": "b09",
+      "disease": "Parkinson",
+      "title": "Parkinsonda el görevi ve yavaşlık",
+      "age": 61,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Parkinson tanılı kişi nesne kullanırken hareketin gittikçe küçüldüğünü ve yavaşladığını anlatıyor. Masa başı kısa görev güvenli; ilaçla ilişkili zaman ve nesne koşulları belgelenecek.",
+      "modules": [
+        "rh-goals",
+        "ne-arm",
+        "ne-adl"
+      ],
+      "focusGroup": "neuro",
+      "contextGroup": "arm",
+      "sourceIds": [
+        "nc-pd",
+        "nc-updrs",
+        "nc-core",
+        "ex-parkinson"
+      ]
+    },
+    {
+      "id": "b10",
+      "disease": "Parkinson",
+      "title": "Parkinsonda kalabalıkta hareket",
+      "age": 66,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Parkinson tanılı kişi sakin koridorda yürüyebiliyor; eş zamanlı çevresel talepler ve dönüşler sırasında duraksama oluyor. Karmaşık görevler ancak basit görev güvenliği doğrulandıktan sonra ele alınacak.",
+      "modules": [
+        "rh-goals",
+        "ne-freezing",
+        "ne-gait",
+        "ne-balance",
+        "ne-adl"
+      ],
+      "focusGroup": "neuro",
+      "contextGroup": "walk",
+      "sourceIds": [
+        "nc-pd",
+        "nc-updrs",
+        "nc-core",
+        "ex-parkinson"
+      ]
+    },
+    {
+      "id": "b11",
+      "disease": "Omurilik yaralanması",
+      "title": "Torakal yaralanmada transfer hazırlığı",
+      "age": 32,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Torakal omurilik yaralanması olan kişi tekerlekli sandalye kullanıyor. Yatak geçişinde hazırlık ve fiziksel yardım gerekiyor; deri güvenliği ile basınçtan korunma rutin planda. Son nörolojik sınıflama raporuna erişiliyor.",
+      "modules": [
+        "rh-goals",
+        "ne-sci-neuro",
+        "ne-sci-independence",
+        "ne-trunk",
+        "rh-skin"
+      ],
+      "focusGroup": "neuro",
+      "contextGroup": "seat",
+      "sourceIds": [
+        "nc-isncsci",
+        "nc-scim",
+        "nc-core",
+        "ex-sci"
+      ]
+    },
+    {
+      "id": "b12",
+      "disease": "Omurilik yaralanması",
+      "title": "İnkomplet yaralanmada yardımcı cihazla yürüyüş",
+      "age": 47,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "İnkomplet omurilik yaralanması olan kişi uygun cihaz ve gözetimle kısa yürüyüş yapabiliyor. Günlük yardımla klinik yürüyüş kapasitesinin farkı bilinmiyor; mevcut nörolojik raporla birlikte değerlendirilecek.",
+      "modules": [
+        "rh-goals",
+        "ne-sci-neuro",
+        "ne-sci-independence",
+        "ne-gait",
+        "ne-balance",
+        "rh-skin"
+      ],
+      "focusGroup": "neuro",
+      "contextGroup": "walk",
+      "sourceIds": [
+        "nc-isncsci",
+        "nc-scim",
+        "nc-core",
+        "ex-sci"
+      ]
+    },
+    {
+      "id": "b13",
+      "disease": "Omurilik yaralanması",
+      "title": "Servikal yaralanmada nesne kullanımı",
+      "age": 29,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Stabil servikal omurilik yaralanması olan kişi üst ekstremite nesne görevi için yardım alıyor. Elin aktif katkısı, hazırlık desteği ve cihaz etkisi ayrı kaydedilmemiş; solunum ve otonom riskler mevcut ekip planında izleniyor.",
+      "modules": [
+        "rh-goals",
+        "ne-sci-neuro",
+        "ne-sci-independence",
+        "ne-arm",
+        "rh-skin",
+        "rh-respiratory"
+      ],
+      "focusGroup": "neuro",
+      "contextGroup": "arm",
+      "sourceIds": [
+        "nc-isncsci",
+        "nc-scim",
+        "nc-core",
+        "ex-sci"
+      ]
+    },
+    {
+      "id": "b14",
+      "disease": "Omurilik yaralanması",
+      "title": "Kronik yaralanmada oturma ve erişim",
+      "age": 55,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Kronik torakal omurilik yaralanması olan tekerlekli sandalye kullanıcısı destekli otururken günlük eşyaya erişmek istiyor. Oturma yüzeyi, deri ve basınçtan korunma planı birlikte incelenecek; transfer kapasitesi zorlanmayacak.",
+      "modules": [
+        "rh-goals",
+        "ne-sci-independence",
+        "ne-trunk",
+        "rh-seating",
+        "rh-skin"
+      ],
+      "focusGroup": "neuro",
+      "contextGroup": "seat",
+      "sourceIds": [
+        "nc-isncsci",
+        "nc-scim",
+        "nc-core",
+        "ex-sci"
+      ]
+    },
+    {
+      "id": "b15",
+      "disease": "Multipl skleroz",
+      "title": "MS’de değişen yürüyüş performansı",
+      "age": 38,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Multipl skleroz tanılı kişi relaps dışında stabil dönemde. Kısa yürüyüşü yapabiliyor; yön değiştirme ve gerçek ortamdaki hareket ihtiyacı için başlangıç kaydı isteniyor. Yeni nörolojik belirti ve enfeksiyon sorgusu ekip planında sürüyor.",
+      "modules": [
+        "rh-goals",
+        "ne-gait",
+        "ne-balance",
+        "ne-adl"
+      ],
+      "focusGroup": "neuro",
+      "contextGroup": "walk",
+      "sourceIds": [
+        "nc-ms",
+        "nc-core",
+        "ex-ms"
+      ]
+    },
+    {
+      "id": "b16",
+      "disease": "Multipl skleroz",
+      "title": "MS’de elin hedef görevde kullanımı",
+      "age": 44,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Multipl skleroz tanılı kişi stabil dönemde elini kullanarak nesne görevini tamamlamakta zorlanıyor. Nesneye uzanma ve yerleştirmede aktif katkı ile telafi henüz ayrıştırılmamış; yeni relaps bulgusu yok.",
+      "modules": [
+        "rh-goals",
+        "ne-arm",
+        "ne-adl"
+      ],
+      "focusGroup": "neuro",
+      "contextGroup": "arm",
+      "sourceIds": [
+        "nc-ms",
+        "nc-core",
+        "ex-ms"
+      ]
+    },
+    {
+      "id": "b17",
+      "disease": "Multipl skleroz",
+      "title": "MS’de günlük geçişler",
+      "age": 51,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Multipl skleroz tanılı kişi kalkış ve dönmede ek destek arıyor. Mevcut tıbbi durum stabil; güvenli görev sınırları içinde gövde ve geçiş katkısı ölçülmek isteniyor.",
+      "modules": [
+        "rh-goals",
+        "ne-transfer",
+        "ne-trunk",
+        "ne-balance",
+        "ne-adl"
+      ],
+      "focusGroup": "neuro",
+      "contextGroup": "walk",
+      "sourceIds": [
+        "nc-ms",
+        "nc-core",
+        "ex-ms"
+      ]
+    },
+    {
+      "id": "b18",
+      "disease": "Multipl skleroz",
+      "title": "MS’de oturma desteği ve katılım",
+      "age": 57,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Multipl skleroz tanılı kişi günlük mobilitede tekerlekli sandalye kullanıyor. Destekli oturma ve erişim sırasında yardım ihtiyacının açıklanması isteniyor; bugün yürüyüş kapasitesi testi hedeflenmiyor.",
+      "modules": [
+        "rh-goals",
+        "ne-trunk",
+        "rh-seating",
+        "ne-adl"
+      ],
+      "focusGroup": "neuro",
+      "contextGroup": "seat",
+      "sourceIds": [
+        "nc-ms",
+        "nc-core",
+        "ex-ms"
+      ]
+    },
+    {
+      "id": "b19",
+      "disease": "Pediatri",
+      "title": "Unilateral SP’de oyun ve adım",
+      "age": 7,
+      "setting": "Çocuk ve aile odaklı rehabilitasyon",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Unilateral spastik serebral palsili çocuk kısa mesafede yürüyor; ayak yerleşimi ve seçici hareket katkısı oyun sırasında değişiyor. Aile ve çocuk hedefi birlikte seçiyor; varsa ortez kullanımı kaydedilecek.",
+      "modules": [
+        "rh-goals",
+        "rh-grossmotor",
+        "rh-gait",
+        "rh-rom",
+        "rh-strength",
+        "rh-tone",
+        "rh-participation"
+      ],
+      "focusGroup": "peds-walk",
+      "contextGroup": "child",
+      "sourceIds": [
+        "rc-cp",
+        "rc-gmfminstr",
+        "rc-orthosis",
+        "ex-cp"
+      ]
+    },
+    {
+      "id": "b20",
+      "disease": "Pediatri",
+      "title": "Bilateral SP’de destekli yürüme",
+      "age": 9,
+      "setting": "Çocuk ve aile odaklı rehabilitasyon",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Bilateral spastik serebral palsili çocuk yardımcı cihazla sınırlı mesafe yürüyebiliyor. Yürüme düzeyi etiketinden tek başına performans çıkarılmayacak; destek ve yardım koşulları kaydedilecek.",
+      "modules": [
+        "rh-goals",
+        "rh-grossmotor",
+        "rh-gait",
+        "rh-rom",
+        "rh-strength",
+        "rh-tone",
+        "rh-participation"
+      ],
+      "focusGroup": "peds-walk",
+      "contextGroup": "child",
+      "sourceIds": [
+        "rc-cp",
+        "rc-gmfminstr",
+        "rc-orthosis",
+        "ex-cp"
+      ]
+    },
+    {
+      "id": "b21",
+      "disease": "Pediatri",
+      "title": "Ataksik SP’de kontrollü görev",
+      "age": 8,
+      "setting": "Çocuk ve aile odaklı rehabilitasyon",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Ataksik serebral palsili çocuk gözetimle hareket ediyor ve hedefe yönelirken hız ile dengeyi düzenlemekte zorlanıyor. Değerlendirme görevleri çocuğun güvenli kapasitesine uyarlanacak; tanıdan spastisite varsayılmayacak.",
+      "modules": [
+        "rh-goals",
+        "rh-grossmotor",
+        "rh-gait",
+        "rh-rom",
+        "rh-strength",
+        "rh-participation"
+      ],
+      "focusGroup": "peds-walk",
+      "contextGroup": "child",
+      "sourceIds": [
+        "rc-cp",
+        "rc-gmfminstr",
+        "ex-cp"
+      ]
+    },
+    {
+      "id": "b22",
+      "disease": "Pediatri",
+      "title": "Diskinetik SP’de destekli oturma",
+      "age": 11,
+      "setting": "Çocuk ve aile odaklı rehabilitasyon",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Diskinetik serebral palsili çocuk oturma donanımı kullanıyor; istemsiz hareketlere göre destek ihtiyacı değişiyor. Deri ve eklem sınırları incelenecek; istemsiz hareket tek başına spastisite olarak puanlanmayacak.",
+      "modules": [
+        "rh-goals",
+        "rh-seating",
+        "rh-rom",
+        "rh-skin",
+        "rh-participation"
+      ],
+      "focusGroup": "peds-seat",
+      "contextGroup": "child",
+      "sourceIds": [
+        "rc-cp",
+        "rc-posture",
+        "ex-cp"
+      ]
+    },
+    {
+      "id": "b23",
+      "disease": "Pediatri",
+      "title": "SP’de yüksek destek gereksinimi",
+      "age": 13,
+      "setting": "Çocuk ve aile odaklı rehabilitasyon",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Serebral palsili çocuk günlük etkinliklerde kapsamlı destek alıyor ve yardımcı oturma sistemi kullanıyor. Öncelik görev başlatma, konfor ve aile hedefi; bağımsız yürüme testi zorlanmayacak.",
+      "modules": [
+        "rh-goals",
+        "rh-seating",
+        "rh-rom",
+        "rh-skin",
+        "rh-participation"
+      ],
+      "focusGroup": "peds-seat",
+      "contextGroup": "child",
+      "sourceIds": [
+        "rc-cp",
+        "rc-posture",
+        "ex-cp"
+      ]
+    },
+    {
+      "id": "b24",
+      "disease": "Pediatri",
+      "title": "DMD’de ambulatuvar izlem",
+      "age": 8,
+      "setting": "Çocuk ve aile odaklı rehabilitasyon",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Duchenne musküler distrofili çocuk yürüyebiliyor; yerden kalkış ve basamak gibi günlük motor görevlerinde değişim bildiriliyor. Hastalığa özgü izlem ile eklem, kalp ve solunum takibi ekip planında; yorucu maksimum tekrar zorlanmayacak.",
+      "modules": [
+        "rh-goals",
+        "rh-dmd",
+        "rh-rom",
+        "rh-strength",
+        "rh-respiratory",
+        "rh-vitals",
+        "rh-participation"
+      ],
+      "focusGroup": "dmd",
+      "contextGroup": "child",
+      "sourceIds": [
+        "rc-dmd",
+        "rc-nsaainstr",
+        "ex-dmd"
+      ]
+    },
+    {
+      "id": "b25",
+      "disease": "Pediatri",
+      "title": "DMD’de azalan yürüme mesafesi",
+      "age": 11,
+      "setting": "Çocuk ve aile odaklı rehabilitasyon",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Duchenne musküler distrofili çocuk halen yürüyebiliyor fakat günlük motor görevler daha çok yardım gerektiriyor. NSAA yalnız mevcut ambulatuvar kapasiteye uygun uygulanacak; solunum ve kardiyak izlemlerle test yükü birlikte planlanacak.",
+      "modules": [
+        "rh-goals",
+        "rh-dmd",
+        "rh-rom",
+        "rh-strength",
+        "rh-respiratory",
+        "rh-vitals",
+        "rh-participation"
+      ],
+      "focusGroup": "dmd",
+      "contextGroup": "child",
+      "sourceIds": [
+        "rc-dmd",
+        "rc-nsaainstr",
+        "ex-dmd"
+      ]
+    },
+    {
+      "id": "b26",
+      "disease": "Pediatri",
+      "title": "Spina bifidada okul hareketliliği",
+      "age": 10,
+      "setting": "Çocuk ve aile odaklı rehabilitasyon",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Spina bifidalı çocuk yardımcı cihazla kısa mesafede ilerliyor, daha uzun mesafede sandalye kullanıyor. Deri ve koruyucu duyu riski, eklem ve kas katkısı ile çevre erişimi birlikte incelenecek.",
+      "modules": [
+        "rh-goals",
+        "rh-gait",
+        "rh-rom",
+        "rh-strength",
+        "rh-participation",
+        "rh-skin"
+      ],
+      "focusGroup": "peds-sb",
+      "contextGroup": "child",
+      "sourceIds": [
+        "rc-sb",
+        "rc-sbskin"
+      ]
+    },
+    {
+      "id": "b27",
+      "disease": "Pediatri",
+      "title": "Bebekte motor gelişim izlemi",
+      "age": "7 ay; prematürite varsa düzeltilmiş yaş ayrıca kaydedilir",
+      "setting": "Çocuk ve aile odaklı rehabilitasyon",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Motor gelişim kaygısıyla yönlendirilen bebeğin kesin tanısı yok. Doğum öyküsü, gelişim ve varsa prematüriteye göre düzeltilmiş yaş ele alınacak; tek tarama sonucuyla serebral palsi tanısı konmayacak.",
+      "modules": [
+        "rh-goals",
+        "rh-development",
+        "rh-infant-tone",
+        "rh-participation"
+      ],
+      "focusGroup": "infant",
+      "contextGroup": "baby",
+      "sourceIds": [
+        "rc-early",
+        "rc-aims"
+      ]
+    },
+    {
+      "id": "b28",
+      "disease": "Pediatri",
+      "title": "Prematüre doğum sonrası motor gözlem",
+      "age": "5 ay düzeltilmiş yaş; kronolojik yaş dosyadan doğrulanır",
+      "setting": "Çocuk ve aile odaklı rehabilitasyon",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Prematüre doğmuş bebek erken gelişim izleminde. Tıbbi ekip izlemi sürüyor; yaşa uygun hareket gözlemi ile aile öncelikleri birleştirilecek, yaş sınırı dışında bir araç veya tek bulgudan tanı kullanılmayacak.",
+      "modules": [
+        "rh-goals",
+        "rh-development",
+        "rh-infant-tone",
+        "rh-participation"
+      ],
+      "focusGroup": "infant",
+      "contextGroup": "baby",
+      "sourceIds": [
+        "rc-early",
+        "rc-aims"
+      ]
+    },
+    {
+      "id": "b29",
+      "disease": "Kas-iskelet",
+      "title": "Bel ağrısında günlük görev",
+      "age": 39,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Tıbbi taraması yapılmış kalıcı bel ağrısı olan kişi günlük hareketlerde zorlanıyor. Yeni ciddi patoloji veya ilerleyici nörolojik belirti bildirilmemiş; görüntüleme tek başına işlev kaybının ölçüsü sayılmayacak.",
+      "modules": [
+        "rh-goals",
+        "mk-pain",
+        "mk-back",
+        "mk-rom",
+        "mk-strength",
+        "mk-activity"
+      ],
+      "focusGroup": "msk",
+      "contextGroup": "back",
+      "sourceIds": [
+        "mc-odi",
+        "mc-rmdq",
+        "ex-lowback"
+      ]
+    },
+    {
+      "id": "b30",
+      "disease": "Kas-iskelet",
+      "title": "Bel ağrısında izlem ölçümü",
+      "age": 56,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Kalıcı bel ağrısı olan kişinin takipte yalnız ağrı puanı var, günlük görev yetersizliği kaydı yok. Güncel güvenlik taraması yeniden yapılacak ve kişi bildirimiyle hareket gözlemi ilişkilendirilecek.",
+      "modules": [
+        "rh-goals",
+        "mk-pain",
+        "mk-back",
+        "mk-rom",
+        "mk-strength",
+        "mk-activity"
+      ],
+      "focusGroup": "msk",
+      "contextGroup": "back",
+      "sourceIds": [
+        "mc-odi",
+        "mc-rmdq",
+        "ex-lowback"
+      ]
+    },
+    {
+      "id": "b31",
+      "disease": "Kas-iskelet",
+      "title": "Boyunda mekanik yakınma",
+      "age": 42,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Boyun yakınması tıbben değerlendirilmiş kişi başını çevirme ve uzun süreli görevlerde zorlanıyor. Yeni travma veya ilerleyici nörolojik bulgu yok; hareket, kuvvet ve kişi bildirimli yetersizlik birlikte ele alınacak.",
+      "modules": [
+        "rh-goals",
+        "mk-pain",
+        "mk-neck",
+        "mk-rom",
+        "mk-strength",
+        "mk-activity"
+      ],
+      "focusGroup": "msk",
+      "contextGroup": "back",
+      "sourceIds": [
+        "mc-ndi",
+        "mc-gonio",
+        "ex-neck"
+      ]
+    },
+    {
+      "id": "b32",
+      "disease": "Kas-iskelet",
+      "title": "Omuzda yükle ilişkili ağrı",
+      "age": 48,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Rotator manşetle ilişkili omuz yakınmasıyla yönlendirilen kişi hafif uzanma görevinde zorlanıyor. Akut ciddi travma bulgusu dışlanmış; tek özel testle kesin doku tanısı çıkarılmayacak.",
+      "modules": [
+        "rh-goals",
+        "mk-pain",
+        "mk-upper",
+        "mk-rom",
+        "mk-strength",
+        "mk-activity"
+      ],
+      "focusGroup": "msk",
+      "contextGroup": "msk-upper",
+      "sourceIds": [
+        "mc-shoulder",
+        "mc-dash",
+        "ex-shoulder"
+      ]
+    },
+    {
+      "id": "b33",
+      "disease": "Kas-iskelet",
+      "title": "Omuzda belirgin hareket kısıtı",
+      "age": 59,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Adeziv kapsülit tanısıyla yönlendirilen kişi aktif ve pasif omuz hareketinde kısıt tarifliyor. İrritabilite ve tıbbi öykü dikkate alınarak zorlayıcı son-sınır manevrası yapılmadan başlangıç kaydı oluşturulacak.",
+      "modules": [
+        "rh-goals",
+        "mk-pain",
+        "mk-upper",
+        "mk-rom",
+        "mk-strength",
+        "mk-activity"
+      ],
+      "focusGroup": "msk",
+      "contextGroup": "msk-upper",
+      "sourceIds": [
+        "mc-dash",
+        "mc-gonio"
+      ]
+    },
+    {
+      "id": "b34",
+      "disease": "Kas-iskelet",
+      "title": "El bileği kırığı sonrası işlev",
+      "age": 62,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Distal radius kırığı sonrası tıbbi kontrol ve yük izni verilmiş kişi el bileği ile hafif nesne görevlerinde zorlanıyor. Cerrahın güncel kısıtları doğrulanacak; kavrama testi izin verilen sınırda tutulacak.",
+      "modules": [
+        "rh-goals",
+        "mk-pain",
+        "mk-upper",
+        "mk-rom",
+        "mk-strength",
+        "mk-activity"
+      ],
+      "focusGroup": "msk",
+      "contextGroup": "msk-upper",
+      "sourceIds": [
+        "mc-dash",
+        "mc-mrcweb",
+        "ex-radius"
+      ]
+    },
+    {
+      "id": "b35",
+      "disease": "Kas-iskelet",
+      "title": "Diz osteoartritinde görev kaybı",
+      "age": 68,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Diz osteoartriti tanılı kişi günlük alt ekstremite görevlerinde zorlanıyor. Güncel tıbbi tarama tamamlanmış; görüntüleme derecesi yerine kişinin yakınması ve gerçek işlev kaydı önceliklendirilecek.",
+      "modules": [
+        "rh-goals",
+        "mk-pain",
+        "mk-lower",
+        "mk-rom",
+        "mk-strength",
+        "mk-activity"
+      ],
+      "focusGroup": "msk",
+      "contextGroup": "msk-lower",
+      "sourceIds": [
+        "mc-koos",
+        "mc-lefs",
+        "ex-oa"
+      ]
+    },
+    {
+      "id": "b36",
+      "disease": "Kas-iskelet",
+      "title": "Kalça osteoartritinde işlev",
+      "age": 65,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Kalça osteoartriti tanılı kişi günlük hareketlerinde kısıtlılık bildiriyor. Alt ekstremite işlevi ile hareket ve kas katkısı birlikte ölçülecek; diz özgü ölçek kalça hedefinin yerine kullanılmayacak.",
+      "modules": [
+        "rh-goals",
+        "mk-pain",
+        "ex-lower-general",
+        "mk-rom",
+        "mk-strength",
+        "mk-activity"
+      ],
+      "focusGroup": "msk",
+      "contextGroup": "msk-lower",
+      "sourceIds": [
+        "mc-lefs",
+        "mc-gonio",
+        "ex-oa"
+      ]
+    },
+    {
+      "id": "b37",
+      "disease": "Kas-iskelet",
+      "title": "ÖÇB rekonstrüksiyonu sonrası günlük görev",
+      "age": 25,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Ön çapraz bağ rekonstrüksiyonundan sonra kişi günlük işlev aşamasında izleniyor. Güncel cerrahi protokol ve izin verilen yük doğrulanmış; dönüş tarihi veya tek testle spora uygunluk kararı verilmeyecek.",
+      "modules": [
+        "rh-goals",
+        "mk-pain",
+        "mk-lower",
+        "mk-rom",
+        "mk-strength",
+        "mk-activity"
+      ],
+      "focusGroup": "msk",
+      "contextGroup": "msk-lower",
+      "sourceIds": [
+        "mc-acl",
+        "mc-koos"
+      ]
+    },
+    {
+      "id": "b38",
+      "disease": "Kas-iskelet",
+      "title": "Diz artroplastisi sonrası günlük işlev",
+      "age": 70,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Diz artroplastisi sonrası tıbben stabil kişi izin verilen yükle günlük görevlerine dönüyor. Cerrahi kısıtlar ve komplikasyon taraması kontrol edilecek; görevler güvenli mevcut kapasitede gözlenecek.",
+      "modules": [
+        "rh-goals",
+        "mk-pain",
+        "mk-lower",
+        "mk-rom",
+        "mk-strength",
+        "mk-activity"
+      ],
+      "focusGroup": "msk",
+      "contextGroup": "msk-lower",
+      "sourceIds": [
+        "mc-koos",
+        "mc-lefs"
+      ]
+    },
+    {
+      "id": "b39",
+      "disease": "Kas-iskelet",
+      "title": "Ayak bileği burkulması sonrası kontrol",
+      "age": 28,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Lateral ayak bileği burkulması sonrası kişi izin verilen yükle hareket ediyor. Kırık ve akut ciddi yaralanma taraması yapılmış; ilk hedef günlük yüklenme ve kontrol, yüksek düzey sıçrama değil.",
+      "modules": [
+        "rh-goals",
+        "mk-pain",
+        "ex-lower-general",
+        "mk-rom",
+        "mk-strength",
+        "mk-activity"
+      ],
+      "focusGroup": "msk",
+      "contextGroup": "msk-lower",
+      "sourceIds": [
+        "rc-ankle",
+        "mc-lefs",
+        "ex-ankle"
+      ]
+    },
+    {
+      "id": "b40",
+      "disease": "Kas-iskelet",
+      "title": "Kalça kırığı sonrası onaylı mobilizasyon",
+      "age": 79,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Kalça kırığı cerrahisi sonrası kişi rehabilitasyona yönlendirilmiş; stabilite ve güncel yük verme izni dosyada. Girişim kısıtları doğrulanacak; günlük hareket ve yardım ihtiyacı kontrollü görevlerle kaydedilecek.",
+      "modules": [
+        "rh-goals",
+        "mk-pain",
+        "ex-lower-general",
+        "mk-rom",
+        "mk-strength",
+        "mk-activity"
+      ],
+      "focusGroup": "msk",
+      "contextGroup": "msk-lower",
+      "sourceIds": [
+        "mc-lefs",
+        "mc-falls",
+        "ex-hipfracture"
+      ]
+    },
+    {
+      "id": "b41",
+      "disease": "Ağrı",
+      "title": "Yaygın ağrıda seçilen aktivite",
+      "age": 45,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Yaygın kalıcı ağrı nedeniyle izlenen kişi günlük etkinliklerinde zorlanıyor. Tıbbi değerlendirme tamamlanmış; yalnız ağrı şiddeti yerine ağrının işlev etkisi ve kişinin öncelikleri kaydedilecek.",
+      "modules": [
+        "rh-goals",
+        "mk-pain",
+        "mk-rom",
+        "mk-strength",
+        "mk-activity"
+      ],
+      "focusGroup": "msk",
+      "contextGroup": "back",
+      "sourceIds": [
+        "mc-iasppain",
+        "mc-bpi"
+      ]
+    },
+    {
+      "id": "b42",
+      "disease": "Ağrı",
+      "title": "Diyabetik nöropatide koruyucu güvenlik",
+      "age": 60,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Diyabetik periferik nöropatisi tıbben doğrulanmış kişi günlük ayak güvenliği ve hareketini değerlendirmek istiyor. Deri ve ayakkabı kontrolü yapılacak; yeni yara veya dolaşım sorunu varsa yüklemeye devam edilmeyecek. Ayak koruma ekibi izlemi mevcut; aktif Charcot şüphesi, enfeksiyon veya iskemi yönünden değerlendirilmiş, güncel durum stabil.",
+      "modules": [
+        "rh-goals",
+        "mk-pain",
+        "rh-skin",
+        "mk-balance",
+        "mk-activity",
+        "mk-sensation"
+      ],
+      "focusGroup": "foot",
+      "contextGroup": "msk-lower",
+      "sourceIds": [
+        "mc-iasppain",
+        "mc-mrcweb",
+        "ex-diabetic-foot"
+      ]
+    },
+    {
+      "id": "b43",
+      "disease": "Ağrı",
+      "title": "Kalıcı ağrıda aktiviteye katılım",
+      "age": 52,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Kalıcı kas-iskelet ağrısıyla izlenen kişi görev planını yeniden kurmak istiyor. Yeni ciddi patoloji işareti bildirilmemiş; değerlendirme kişinin deneyimini geçersiz saymadan işlev ve yük ilişkisini açıklayacak.",
+      "modules": [
+        "rh-goals",
+        "mk-pain",
+        "mk-rom",
+        "mk-strength",
+        "mk-activity"
+      ],
+      "focusGroup": "msk",
+      "contextGroup": "back",
+      "sourceIds": [
+        "mc-iasppain",
+        "mc-bpi"
+      ]
+    },
+    {
+      "id": "b44",
+      "disease": "Ağrı",
+      "title": "Üst ekstremitede süren ağrı",
+      "age": 36,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Tıbbi incelemesi tamamlanmış kalıcı üst ekstremite ağrısı olan kişi hafif nesne görevinde zorlanıyor. Tek bir puan veya doku etiketiyle günlük kapasite varsayılmayacak; güvenli görev koşulları kaydedilecek.",
+      "modules": [
+        "rh-goals",
+        "mk-pain",
+        "mk-upper",
+        "mk-rom",
+        "mk-strength",
+        "mk-activity"
+      ],
+      "focusGroup": "msk",
+      "contextGroup": "msk-upper",
+      "sourceIds": [
+        "mc-dash",
+        "mc-iasppain"
+      ]
+    },
+    {
+      "id": "b45",
+      "disease": "İş ve ergonomi",
+      "title": "Ekran başında boyun görevi",
+      "age": 34,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Masa başında çalışan kişi uzun görevlerde boyun yakınması bildiriyor. Tek bir ideal postür dayatılmadan süre, ekran düzeni ve gerçek görev talepleri incelenecek.",
+      "modules": [
+        "rh-goals",
+        "mk-pain",
+        "mk-neck",
+        "mk-rom",
+        "mk-strength",
+        "mk-ergo",
+        "mk-activity"
+      ],
+      "focusGroup": "msk",
+      "contextGroup": "work",
+      "sourceIds": [
+        "mc-ndi",
+        "mc-rula"
+      ]
+    },
+    {
+      "id": "b46",
+      "disease": "İş ve ergonomi",
+      "title": "İki elle kutu kaldırma",
+      "age": 41,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Depo çalışanının tanımlı işi stabil, iki elle kutu kaldırma içeriyor; iş örüntüsü NIOSH yaklaşımının kapsamı açısından kontrol edilecek. Tıbbi durum stabil; ağır maksimum kaldırma zorlanmayacak.",
+      "modules": [
+        "rh-goals",
+        "mk-pain",
+        "mk-back",
+        "mk-strength",
+        "mk-lift",
+        "mk-activity"
+      ],
+      "focusGroup": "msk",
+      "contextGroup": "work",
+      "sourceIds": [
+        "mc-niosh",
+        "mc-nioshmanual"
+      ]
+    },
+    {
+      "id": "b47",
+      "disease": "İş ve ergonomi",
+      "title": "Tekrarlı el işi ve görev yükü",
+      "age": 38,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Tekrarlı hafif el işi yapan kişi üst ekstremite yakınmasıyla yönlendirilmiş. İş döngüsü, süre ve kavrama gereksinimi gerçek görev üzerinden kaydedilecek; ergonomi puanı tek başına tanı sayılmayacak.",
+      "modules": [
+        "rh-goals",
+        "mk-pain",
+        "mk-upper",
+        "mk-rom",
+        "mk-strength",
+        "mk-ergo",
+        "mk-activity"
+      ],
+      "focusGroup": "msk",
+      "contextGroup": "work",
+      "sourceIds": [
+        "mc-rula",
+        "mc-reba",
+        "mc-dash"
+      ]
+    },
+    {
+      "id": "b48",
+      "disease": "İş ve ergonomi",
+      "title": "Ayakta işte alt ekstremite yükü",
+      "age": 49,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Ayakta hizmet işinde çalışan kişi günlük alt ekstremite görevlerinde zorlanıyor. İş süresi ve dinlenme olanağıyla kişinin hareket kapasitesi birlikte ele alınacak.",
+      "modules": [
+        "rh-goals",
+        "mk-pain",
+        "ex-lower-general",
+        "mk-rom",
+        "mk-strength",
+        "mk-ergo",
+        "mk-activity"
+      ],
+      "focusGroup": "msk",
+      "contextGroup": "work",
+      "sourceIds": [
+        "mc-reba",
+        "mc-lefs"
+      ]
+    },
+    {
+      "id": "b49",
+      "disease": "Vestibüler ve geriatri",
+      "title": "Tekrarlayan düşmede çok etkenli değerlendirme",
+      "age": 82,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Son aylarda tekrarlayan düşme yaşayan kişi tıbbi inceleme sonrasında rehabilitasyona yönlendirilmiş. İlaç, görme, ortostatik yakınma ve çevre gibi etkenler ekip kapsamında ele alınacak; tek puanla risk dışlanmayacak.",
+      "modules": [
+        "rh-goals",
+        "mk-falls",
+        "mk-balance",
+        "mk-chair",
+        "mk-strength",
+        "mk-activity"
+      ],
+      "focusGroup": "neuro",
+      "contextGroup": "walk",
+      "sourceIds": [
+        "mc-falls",
+        "mc-tug",
+        "ex-falls"
+      ]
+    },
+    {
+      "id": "b50",
+      "disease": "Vestibüler ve geriatri",
+      "title": "Hastane sonrası işlevsel toparlanma",
+      "age": 77,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Akut hastalık sonrası tıbben stabil kişi daha fazla yardım ihtiyacı ve yavaş kalkış bildiriyor. Önceki işlev, görev koşulları ve düşme öyküsü yeniden alınacak; yaş tek başına düşük kapasite nedeni sayılmayacak.",
+      "modules": [
+        "rh-goals",
+        "mk-falls",
+        "mk-balance",
+        "mk-chair",
+        "mk-strength",
+        "mk-activity"
+      ],
+      "focusGroup": "neuro",
+      "contextGroup": "walk",
+      "sourceIds": [
+        "mc-falls",
+        "mc-chair",
+        "ex-falls"
+      ]
+    },
+    {
+      "id": "b51",
+      "disease": "Vestibüler ve geriatri",
+      "title": "Vestibüler hipofonksiyonda hareket",
+      "age": 56,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Periferik vestibüler hipofonksiyon tanısıyla yönlendirilen kişi baş hareketinde görsel kararsızlık ve yürüyüşte dengesizlik bildiriyor. Yeni santral uyarı bulgusu yok; günlük etkiyle güvenli dinamik görev birlikte incelenecek.",
+      "modules": [
+        "rh-goals",
+        "mk-vest",
+        "mk-balance",
+        "mk-falls",
+        "mk-activity"
+      ],
+      "focusGroup": "neuro",
+      "contextGroup": "walk",
+      "sourceIds": [
+        "mc-vest",
+        "mc-dhi",
+        "ex-vestibular"
+      ]
+    },
+    {
+      "id": "b52",
+      "disease": "Vestibüler ve geriatri",
+      "title": "Düşme korkusuyla azalan hareket",
+      "age": 74,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Düşmeye yakın olaydan sonra kişi hareketini azaltmış. Güncel tıbbi durum stabil; gerçek denge performansı, yardım ve çevre öyküsüyle birlikte ele alınacak.",
+      "modules": [
+        "rh-goals",
+        "mk-falls",
+        "mk-balance",
+        "mk-chair",
+        "mk-strength",
+        "mk-activity"
+      ],
+      "focusGroup": "neuro",
+      "contextGroup": "walk",
+      "sourceIds": [
+        "mc-falls",
+        "mc-tug",
+        "ex-falls"
+      ]
+    },
+    {
+      "id": "b53",
+      "disease": "Protez ve ortez",
+      "title": "Transtibial protezle ilk günlük görev",
+      "age": 43,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Transtibial amputasyon sonrası kişi ilk protezle kısa görevleri gözetimde yapıyor. Rezidüel deri, eklem, kas ve cihaz koşulları birlikte incelenecek; protezli ve protezsiz ölçüm koşulları karıştırılmayacak.",
+      "modules": [
+        "rh-goals",
+        "rh-prosthesis",
+        "rh-skin",
+        "rh-rom",
+        "rh-strength"
+      ],
+      "focusGroup": "prosthetic",
+      "contextGroup": "walk",
+      "sourceIds": [
+        "rc-residual",
+        "rc-prosthetic",
+        "ex-amputation"
+      ]
+    },
+    {
+      "id": "b54",
+      "disease": "Protez ve ortez",
+      "title": "Transfemoral protezle kontrollü geçiş",
+      "age": 57,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Transfemoral amputasyon sonrası kişi uygun protezle kısa mobilite görevlerine başlamış. Diz ünitesi ve gerekli yardım koşulları kaydedilecek; gözetimsiz veya mevcut kapasiteyi aşan görev denenmeyecek.",
+      "modules": [
+        "rh-goals",
+        "rh-prosthesis",
+        "rh-skin",
+        "rh-rom",
+        "rh-strength"
+      ],
+      "focusGroup": "prosthetic",
+      "contextGroup": "walk",
+      "sourceIds": [
+        "rc-residual",
+        "rc-prosthetic",
+        "ex-amputation"
+      ]
+    },
+    {
+      "id": "b55",
+      "disease": "Protez ve ortez",
+      "title": "Uzun süredir protez kullanan kişide görev değişimi",
+      "age": 64,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Alt ekstremite protezini uzun süredir kullanan kişi günlük görevlerini yeniden değerlendirmek istiyor. Donanım, deri, hareket ve kas kapasitesiyle önceki işlev birlikte gözden geçirilecek.",
+      "modules": [
+        "rh-goals",
+        "rh-prosthesis",
+        "rh-skin",
+        "rh-rom",
+        "rh-strength"
+      ],
+      "focusGroup": "prosthetic",
+      "contextGroup": "walk",
+      "sourceIds": [
+        "rc-prosthetic",
+        "rc-icf",
+        "ex-amputation"
+      ]
+    },
+    {
+      "id": "b56",
+      "disease": "Protez ve ortez",
+      "title": "Çocukta AFO ile günlük hareket",
+      "age": 10,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Serebral palsili çocuk gündüz AFO kullanıyor ve günlük kısa hareketleri yardım koşullarıyla yapabiliyor. Ortez çıkarılmış ve takılı koşullar, cihaz amacı ve çocuğun görev hedefiyle birlikte kaydedilecek.",
+      "modules": [
+        "rh-goals",
+        "rh-gait",
+        "rh-rom",
+        "rh-strength",
+        "rh-tone",
+        "rh-participation"
+      ],
+      "focusGroup": "peds-walk",
+      "contextGroup": "child",
+      "sourceIds": [
+        "rc-orthosis",
+        "rc-cp",
+        "ex-orthosis",
+        "ex-cp"
+      ]
+    },
+    {
+      "id": "b57",
+      "disease": "Ödem",
+      "title": "Meme kanseri sonrası kol lenfödemi",
+      "age": 55,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Meme kanseri tedavisi sonrası üst ekstremite lenfödemiyle izlenen kişi stabil dönemde. Yeni kızarıklık, ateş veya ani şişlik artışı için güvenlik taraması yapılacak; hacim, deri ve işlev birlikte kaydedilecek.",
+      "modules": [
+        "rh-goals",
+        "rh-edema",
+        "rh-skin",
+        "rh-pain",
+        "rh-participation"
+      ],
+      "focusGroup": "edema",
+      "contextGroup": "msk-upper",
+      "sourceIds": [
+        "rc-lymph",
+        "rc-icf",
+        "ex-lymph"
+      ]
+    },
+    {
+      "id": "b58",
+      "disease": "Ödem",
+      "title": "Alt ekstremite lenfödeminde günlük görev",
+      "age": 61,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Tanısı ve damar değerlendirmesi yapılmış kronik alt ekstremite lenfödemi olan kişi stabil dönemde. Yeni damar veya enfeksiyon bulgusu bildirilmemiş; seri ölçüm ve deri güvenliği mevcut uzman planıyla yürütülecek.",
+      "modules": [
+        "rh-goals",
+        "rh-edema",
+        "rh-skin",
+        "rh-pain",
+        "rh-participation"
+      ],
+      "focusGroup": "edema",
+      "contextGroup": "msk-lower",
+      "sourceIds": [
+        "rc-lymph",
+        "rc-icf",
+        "ex-lymph"
+      ]
+    },
+    {
+      "id": "b59",
+      "disease": "Ödem",
+      "title": "Ayak bileğinde izlenen travma sonrası ödem",
+      "age": 31,
+      "setting": "Rehabilitasyon birimi",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Ayak bileği yaralanması sonrası takip edilen şişlik var; kırık ve akut damar sorunları tıbben dışlanmış, izin verilen yük bilgisi dosyada. Şişlik kaydı güvenli günlük görev ve deri bulgularıyla birlikte ele alınacak.",
+      "modules": [
+        "rh-goals",
+        "rh-edema",
+        "rh-skin",
+        "rh-pain",
+        "rh-participation"
+      ],
+      "focusGroup": "edema",
+      "contextGroup": "msk-lower",
+      "sourceIds": [
+        "rc-ankle",
+        "rc-figure",
+        "ex-lymph"
+      ]
+    },
+    {
+      "id": "b60",
+      "disease": "Kardiyopulmoner",
+      "title": "Stabil KOAH’ta kapasite",
+      "age": 67,
+      "setting": "Gözetimli, tıbben uygun rehabilitasyon",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "KOAH tanılı kişi stabil dönemde pulmoner rehabilitasyona yönlendirilmiş. Alevlenme veya yeni istirahat yakınması yok; ilaçlar ve mevcut solunum raporları gözden geçirilecek, alan testi uygun gözetimle yapılacak.",
+      "modules": [
+        "rh-goals",
+        "rh-vitals",
+        "rh-capacity",
+        "rh-symptoms",
+        "rh-participation"
+      ],
+      "focusGroup": "cardio",
+      "contextGroup": "cardio",
+      "sourceIds": [
+        "rc-atspr",
+        "rc-pulmonary",
+        "rc-walk",
+        "ex-pulmonary-ats"
+      ]
+    },
+    {
+      "id": "b61",
+      "disease": "Kardiyopulmoner",
+      "title": "İnterstisyel akciğer hastalığında efor",
+      "age": 63,
+      "setting": "Gözetimli, tıbben uygun rehabilitasyon",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "İnterstisyel akciğer hastalığıyla izlenen kişi stabil dönemde rehabilitasyona yönlendirilmiş. Güncel tıbbi uygunluk ve varsa oksijen reçetesi doğrulanacak; oksijen akımı bağımsız değiştirilmeden yanıt izlenecek.",
+      "modules": [
+        "rh-goals",
+        "rh-vitals",
+        "rh-capacity",
+        "rh-symptoms",
+        "rh-participation"
+      ],
+      "focusGroup": "cardio",
+      "contextGroup": "cardio",
+      "sourceIds": [
+        "rc-atspr",
+        "rc-walk",
+        "ex-pulmonary-ats"
+      ]
+    },
+    {
+      "id": "b62",
+      "disease": "Kardiyopulmoner",
+      "title": "Stabil koroner hastalıkta rehabilitasyon",
+      "age": 59,
+      "setting": "Gözetimli, tıbben uygun rehabilitasyon",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Koroner girişim sonrası kişi gözetimli kardiyak rehabilitasyona uygun bulunmuş. Güncel risk sınıflaması, ilaçlar ve belirtiler kontrol edilecek; eski onay yeni semptomları görmezden gelmek için kullanılmayacak.",
+      "modules": [
+        "rh-goals",
+        "rh-vitals",
+        "rh-capacity",
+        "rh-symptoms",
+        "rh-participation"
+      ],
+      "focusGroup": "cardio",
+      "contextGroup": "cardio",
+      "sourceIds": [
+        "rc-cardiac",
+        "rc-coronary",
+        "ex-cardiac"
+      ]
+    },
+    {
+      "id": "b63",
+      "disease": "Kardiyopulmoner",
+      "title": "Stabil kalp yetersizliğinde günlük efor",
+      "age": 72,
+      "setting": "Gözetimli, tıbben uygun rehabilitasyon",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Kalp yetersizliği olan kişi klinik olarak stabil ve kardiyoloji tarafından mevcut rehabilitasyon programına uygun bulunmuş. Yeni ödem, göğüs yakınması veya istirahat dispnesi tekrar sorgulanacak; bozulmada test ertelenecek.",
+      "modules": [
+        "rh-goals",
+        "rh-vitals",
+        "rh-capacity",
+        "rh-symptoms",
+        "rh-participation"
+      ],
+      "focusGroup": "cardio",
+      "contextGroup": "cardio",
+      "sourceIds": [
+        "rc-cardiac",
+        "rc-atspr",
+        "ex-heartfailure"
+      ]
+    },
+    {
+      "id": "b64",
+      "disease": "Kardiyopulmoner",
+      "title": "Uzun hastane yatışı sonrası efor",
+      "age": 54,
+      "setting": "Gözetimli, tıbben uygun rehabilitasyon",
+      "phase": "Stabil, planlı değerlendirme",
+      "story": "Uzun hastane yatışı sonrası tıbben stabil kişi uygun gözetimli rehabilitasyona yönlendirilmiş. Önceki işlev, güncel ilaçlar ve klinik kısıtlar doğrulanacak; görev yükü mevcut toleransa göre seçilecek.",
+      "modules": [
+        "rh-goals",
+        "rh-vitals",
+        "rh-capacity",
+        "rh-symptoms",
+        "rh-participation"
+      ],
+      "focusGroup": "cardio",
+      "contextGroup": "cardio",
+      "sourceIds": [
+        "rc-atspr",
+        "rc-cardiac",
+        "rc-icf",
+        "ex-pulmonary-ats"
+      ]
+    }
+  ],
+  "focusGroups": {
+    "neuro": [
+      {
+        "moduleId": "ne-fatigue",
+        "label": "Görevle artan yorgunluk",
+        "positive": "Kısa bir görevden sonra belirgin tükenme oluyor; dinlenme süresine ve günün saatine göre performans değişiyor.",
+        "negative": "Günlük görevlerde belirgin yorgunluk artışı veya gün içi dalgalanma bildirmiyor.",
+        "rationale": "Yorgunluğun zamanını, görev yükünü ve dinlenme yanıtını ayırmak",
+        "sourceIds": [
+          "nc-fss",
+          "nc-ms",
+          "nc-stroke"
+        ]
+      },
+      {
+        "moduleId": "ne-pain",
+        "label": "Görevi sınırlayan ağrı",
+        "positive": "Hedef hareket sırasında yeni olmayan, ekipçe değerlendirilmiş ağrı artıyor ve kişi hareket stratejisini değiştiriyor.",
+        "negative": "Hedef görev sırasında ağrı veya rahatsızlık bildirmiyor.",
+        "rationale": "Ağrının şiddetini, görev etkisini ve davranışsal yanıtı ölçmek",
+        "sourceIds": [
+          "nc-bpi",
+          "nc-stroke"
+        ]
+      },
+      {
+        "moduleId": "ne-sensation",
+        "label": "İşlevi etkileyen duyu değişikliği",
+        "positive": "Etkilenen bölgede dokunma ve eklem konumunu ayırt etmede kararsızlık var; gözüyle izlediğinde hareket daha güvenli oluyor. Bu bulgu yeni, hızla ilerleyen bir nörolojik kayıp değil.",
+        "negative": "Kişi duyu değişikliği bildirmiyor; ilk görev gözleminde duyuya bağlı ek bir güvenlik sorunu saptanmamış.",
+        "rationale": "Duyu bulgusunu görsel telafi ve görev güvenliğiyle birlikte kaydetmek",
+        "sourceIds": [
+          "nc-mrc",
+          "nc-isncsci"
+        ]
+      },
+      {
+        "moduleId": "ne-rom",
+        "label": "Hareket sınırı ve mekanik katkı",
+        "positive": "Hedef görevde belirli bir eklem son sınıra gelince hareket duruyor; aktif kontrol kaybıyla pasif hareket sınırı henüz ayrıştırılmamış.",
+        "negative": "Hedef görevde belirgin bir eklem son-sınır engeli gözlenmiyor; ayrıntılı seri açı ölçümü için ek hedef verilmemiş.",
+        "rationale": "Aktif hareketle pasif hareket sınırını ve telafiyi ayırmak",
+        "sourceIds": [
+          "nc-gonio",
+          "nc-mrc"
+        ]
+      }
+    ],
+    "msk": [
+      {
+        "moduleId": "mk-psych",
+        "label": "Hareket korkusu ve inançlar",
+        "positive": "Kişi güvenli olduğu açıklanan günlük hareketin kalıcı hasar vereceğini düşündüğü için görevden kaçınıyor; kendi açıklamasının dinlenmesini istiyor.",
+        "negative": "Hareketten kaçınma veya hasar korkusu bildirmiyor; rutin psikososyal tarama dışında ek bir yakınma verilmemiş.",
+        "rationale": "Hareket korkusunu yargılamadan işlev hedefiyle ilişkilendirmek",
+        "sourceIds": [
+          "mc-pcs",
+          "mc-fabq",
+          "mc-chronic"
+        ]
+      },
+      {
+        "moduleId": "rh-edema",
+        "label": "Göreve eşlik eden şişlik",
+        "positive": "Aynı bölgede gün sonunda artan, takip edilen şişlik var; akut damar sorunu, enfeksiyon veya yeni travma bulguları tıbbi ekipçe dışlanmış. Önceki standart çevre/hacim kaydı yok.",
+        "negative": "Hedef bölgede şişlik veya hacim değişikliği bildirmiyor; ilk gözlemde şişlik saptanmamış.",
+        "rationale": "Şişliğin yerini ve gün içi değişimini standart ölçümle izlemek",
+        "sourceIds": [
+          "rc-lymph",
+          "rc-figure"
+        ]
+      },
+      {
+        "moduleId": "mk-sensation",
+        "label": "Duyu örüntüsü ve güvenlik",
+        "positive": "Tıbbi değerlendirmesi yapılmış, stabil uyuşma veya dokunmayı ayırt etme güçlüğü de var; dağılımı ve görev güvenliğine etkisi henüz belgelenmemiş.",
+        "negative": "Uyuşma, his kaybı veya ilerleyici nörolojik yakınma bildirmiyor; rutin tarama olağan.",
+        "rationale": "Duyu değişikliğinin dağılımını ve işlevle ilişkisini kaydetmek",
+        "sourceIds": [
+          "mc-mrc",
+          "mc-foot26"
+        ]
+      },
+      {
+        "moduleId": "rh-participation",
+        "label": "Çevre, yardım ve katılım",
+        "positive": "Muayene odasındaki görevi yapabilmesine rağmen gerçek ortamda erişim engeli ve gerekli yardımın bulunmaması nedeniyle hedef etkinliği sürdüremiyor.",
+        "negative": "Belirtilen hedef için ek bir çevresel erişim veya sosyal yardım engeli bildirilmemiş; kişi mevcut ortamı kullanabiliyor.",
+        "rationale": "Klinik kapasite ile gerçek yaşam performansı arasındaki farkı açıklamak",
+        "sourceIds": [
+          "rc-participation",
+          "rc-icf"
+        ]
+      }
+    ],
+    "peds-walk": [
+      {
+        "moduleId": "rh-pain",
+        "label": "Çocukta ağrı ve rahatsızlık",
+        "positive": "Çocuk görev sonrasında rahatsızlığını bildiriyor; aile yüz ifadesi ve aktiviteden kaçınma değişikliğini de fark etmiş. Tıbbi değerlendirmede akut yaralanma saptanmamış.",
+        "negative": "Çocuk ve aile ağrı davranışı veya görevle ilişkili rahatsızlık bildirmiyor.",
+        "rationale": "Gelişim ve iletişime uygun ağrı ölçümünü aile gözlemiyle tamamlamak",
+        "sourceIds": [
+          "rc-painself",
+          "rc-painobs"
+        ]
+      },
+      {
+        "moduleId": "rh-skin",
+        "label": "Ortez arayüzü ve deri",
+        "positive": "Kullanılan ortezin temas ettiği yerde çıkarma sonrasında da devam eden kızarıklık gözleniyor; yara yok. Uyum kontrol edilene kadar cihazla zorlayıcı görev yapılmayacak.",
+        "negative": "Cihaz temasında kalıcı kızarıklık, açık deri sorunu veya koruyucu duyu yakınması bildirilmemiş.",
+        "rationale": "Deri güvenliğini, cihaz temasını ve giyme süresini birlikte değerlendirmek",
+        "sourceIds": [
+          "rc-orthosis",
+          "rc-sbskin",
+          "rc-residual"
+        ]
+      },
+      {
+        "moduleId": "rh-seating",
+        "label": "Sınıf oturması ve destek",
+        "positive": "Hareket etkinliği dışında masa başında gövde desteği yetersiz kalıyor; ayaklar destek yüzeyine ulaşmadığı için oyun ve ders katılımı azalıyor.",
+        "negative": "Masa ve oturma desteği çocuğa uyuyor; oturmada ek destek veya donanım yakınması yok.",
+        "rationale": "Oturma yüzeyi, ayak desteği ve görev performansını birlikte gözlemek",
+        "sourceIds": [
+          "rc-posture",
+          "rc-sb"
+        ]
+      },
+      {
+        "moduleId": "rh-respiratory",
+        "label": "Öksürük ve solunum yükü",
+        "positive": "Aile, uzun süredir takip edilen zayıf öksürük ve sekresyon temizleme güçlüğünü bildiriyor; akut solunum bozulması yok, ilgili ekip değerlendirmesi planlı.",
+        "negative": "Solunum yakınması, zayıf öksürük veya sekresyon güçlüğü bildirilmemiş; rutin risk taraması sürüyor.",
+        "rationale": "Öksürük ve solunum yükünü klinik ekiple birlikte değerlendirmek",
+        "sourceIds": [
+          "rc-cpresp",
+          "rc-spirometry",
+          "rc-dmd"
+        ]
+      }
+    ],
+    "peds-seat": [
+      {
+        "moduleId": "rh-pain",
+        "label": "İletişime uygun ağrı değerlendirmesi",
+        "positive": "Bakım ve destekli oturma sırasında yüz ifadesi değişiyor; aile bunun olağan davranıştan farklı olduğunu söylüyor. Yeni tıbbi nedenler için ekip görüşü alınmış.",
+        "negative": "Bakım veya oturma sırasında yeni rahatsızlık davranışı bildirilmemiş.",
+        "rationale": "Rahatsızlığı iletişim düzeyine uygun araç ve aile bilgisiyle kaydetmek",
+        "sourceIds": [
+          "rc-painself",
+          "rc-painobs"
+        ]
+      },
+      {
+        "moduleId": "rh-respiratory",
+        "label": "Solunum ve öksürük",
+        "positive": "Sekresyonu temizleme güçlüğü ve eforla solunum yükünde artış öyküsü var; çocuk bugün stabil ve solunum ekibiyle izleniyor.",
+        "negative": "Yeni solunum yakınması veya öksürük etkinliğinde değişiklik bildirilmemiş; mevcut rutin izlem devam ediyor.",
+        "rationale": "Solunum yükü ve hava yolu temizleme kapasitesini ekip içinde değerlendirmek",
+        "sourceIds": [
+          "rc-cpresp",
+          "rc-spirometry",
+          "rc-dmd"
+        ]
+      },
+      {
+        "moduleId": "rh-tone",
+        "label": "Pasif harekette hıza bağlı yanıt",
+        "positive": "Bakım sırasında pasif hareketin hızına göre direnç değişiyor; sabit eklem kısıtıyla dinamik tonus katkısı ayrıştırılmamış.",
+        "negative": "Bakımı etkileyen yeni, hıza bağlı pasif direnç değişikliği bildirilmemiş; bu görüşmede ayrıntılı yeni tonus ölçümü için ek hedef yok.",
+        "rationale": "Pasif direnç, hız ve eklem sınırı arasındaki ilişkiyi kaydetmek",
+        "sourceIds": [
+          "rc-tone",
+          "rc-early"
+        ]
+      },
+      {
+        "moduleId": "rh-strength",
+        "label": "Görev için aktif kas katkısı",
+        "positive": "Destek azaltıldığında çocuğun antigravite aktiviteyi ne kadar başlatabildiği bilinmiyor; gönüllü aktivite gözlemiyle destek gereksiniminin ayrılması isteniyor.",
+        "negative": "Bu görüşmenin hedefi mevcut destek sisteminin ayarı; ek nicel kas kuvveti testi için yeni bir görev sorusu verilmemiş.",
+        "rationale": "Yaş ve iş birliğine uygun aktif kas katkısını güvenli gözlemle belirlemek",
+        "sourceIds": [
+          "rc-strength",
+          "rc-dmd",
+          "rc-aims"
+        ]
+      }
+    ],
+    "infant": [
+      {
+        "moduleId": "rh-rom",
+        "label": "Pasif hareket ve asimetri",
+        "positive": "Aile giydirme sırasında bir tarafta hareketin daha sınırlı olduğunu bildiriyor; hareket sonlanması ile bebeğin aktif tercihi henüz ayrılmamış.",
+        "negative": "Giydirme ve oyun sırasında pasif hareket sınırı veya belirgin eklem asimetrisi bildirilmemiş.",
+        "rationale": "Yaşa uygun pasif hareket ve aktif tercih farkını gözlemek",
+        "sourceIds": [
+          "rc-rom"
+        ]
+      },
+      {
+        "moduleId": "rh-strength",
+        "label": "Antigravite aktivite",
+        "positive": "Bebek oyuncağa uzanırken bir tarafta antigravite hareketi daha az sürdürüyor; uyanıklık ve destek koşullarının etkisi bilinmiyor.",
+        "negative": "Genel gelişim gözlemi dışında bir bölgeye özgü ek antigravite aktivite sorusu verilmemiş.",
+        "rationale": "Antigravite aktiviteyi bebeğin uyanıklık ve destek koşullarıyla kaydetmek",
+        "sourceIds": [
+          "rc-strength",
+          "rc-dmd",
+          "rc-aims"
+        ]
+      },
+      {
+        "moduleId": "rh-pain",
+        "label": "Bebekte rahatsızlık davranışı",
+        "positive": "Belirli bakım pozisyonunda belirgin huzursuzluk oluyor; aile bunun açlık veya uyku davranışından farklı olduğunu söylüyor. Yeni tıbbi sorun için ekip değerlendirmesi yapılmış.",
+        "negative": "Bakım ve oyun sırasında özgül ağrı davranışı veya alışılmadık huzursuzluk bildirilmemiş.",
+        "rationale": "Rahatsızlığı gelişime uygun gözlemsel yaklaşım ve aile öyküsüyle değerlendirmek",
+        "sourceIds": [
+          "rc-painself",
+          "rc-painobs"
+        ]
+      },
+      {
+        "moduleId": "rh-skin",
+        "label": "Destek temasında deri güvenliği",
+        "positive": "Kullanılan destek materyalinin temas yerinde kalıcı kızarıklık fark edilmiş; destek kaldırılmış ve açık yara görülmüyor.",
+        "negative": "Destek temasında kalıcı kızarıklık veya deri bütünlüğü sorunu bildirilmemiş.",
+        "rationale": "Destek yüzeyi ve deri temasını bakım düzeniyle birlikte incelemek",
+        "sourceIds": [
+          "rc-orthosis",
+          "rc-sbskin",
+          "rc-residual"
+        ]
+      }
+    ],
+    "dmd": [
+      {
+        "moduleId": "rh-pain",
+        "label": "Ağrı ve aktiviteden kaçınma",
+        "positive": "Günlük görev sonrasında çocuk bacak rahatsızlığı bildiriyor; aile görevden kaçınmanın arttığını fark etmiş. Akut travma bulgusu yok ve tıbbi ekip bilgilendirilmiş.",
+        "negative": "Günlük göreve eşlik eden ağrı veya yeni rahatsızlık davranışı bildirilmemiş.",
+        "rationale": "Ağrıyı iletişime uygun araçla ve görev bağlamında kaydetmek",
+        "sourceIds": [
+          "rc-painself",
+          "rc-painobs"
+        ]
+      },
+      {
+        "moduleId": "rh-skin",
+        "label": "Cihaz temasında deri",
+        "positive": "Gece kullanılan ortezin temas yerinde geçmeyen kızarıklık var; cihaz kontrol edilene kadar yük ve kullanım zorlanmayacak.",
+        "negative": "Mevcut cihaz temasında kalıcı kızarıklık veya deri bütünlüğü sorunu bildirilmemiş.",
+        "rationale": "Cihaz uyumu ve deri güvenliğini değerlendirmek",
+        "sourceIds": [
+          "rc-orthosis",
+          "rc-sbskin",
+          "rc-residual"
+        ]
+      },
+      {
+        "moduleId": "rh-seating",
+        "label": "Dinlenme oturması ve donanım",
+        "positive": "Okulda ve evde dinlenme koltuğu boyuna uymuyor; ayaklar desteklenmeyince gövdesini uzun süre koruyamıyor.",
+        "negative": "Dinlenme oturmasında yeni destek veya donanım uyumsuzluğu bildirilmemiş.",
+        "rationale": "Dinlenme postürü, ayak desteği ve katılımı birlikte incelemek",
+        "sourceIds": [
+          "rc-posture",
+          "rc-sb"
+        ]
+      },
+      {
+        "moduleId": "ex-ped-fatigue",
+        "label": "Çocukta yorgunluk ve tempo",
+        "positive": "Çocuk ve aile gün sonuna doğru belirgin tükenme ve ertesi gün görevden çekilme bildiriyor; test yükünün yaşam etkinliklerine etkisi henüz kaydedilmemiş.",
+        "negative": "Rutin hastalık izlemi dışında bu görüşmede yeni, belirgin bir gün içi yorgunluk değişikliği bildirilmemiş.",
+        "rationale": "Yorgunluğu aile ve çocuk bildirimiyle, zorlamadan ve zaman bağlamında değerlendirmek",
+        "sourceIds": [
+          "rc-dmd",
+          "rc-family"
+        ]
+      }
+    ],
+    "prosthetic": [
+      {
+        "moduleId": "rh-pain",
+        "label": "Rezidüel ve fantom ağrı",
+        "positive": "Kişi rezidüel bölgede temasla rahatsızlık ve bazen uzvun olmayan bölümünde ağrı algısı tarifliyor; akut enfeksiyon veya damar sorunu için yeni bulgu yok.",
+        "negative": "Rezidüel uzuv, fantom bölge veya hedef görevde ağrı bildirmiyor.",
+        "rationale": "Ağrının yerini, niteliğini ve görevle ilişkisini birbirinden ayırmak",
+        "sourceIds": [
+          "rc-painself",
+          "rc-painobs"
+        ]
+      },
+      {
+        "moduleId": "rh-edema",
+        "label": "Rezidüel hacim değişikliği",
+        "positive": "Gün içinde soket temasının değiştiğini ve rezidüel bölgede hacim dalgalanması fark ettiğini söylüyor; nicel seri kayıt yok.",
+        "negative": "Rezidüel hacimde veya soket temasında gün içi değişiklik bildirmiyor.",
+        "rationale": "Rezidüel hacmi ölçüm koşullarıyla birlikte izlemek",
+        "sourceIds": [
+          "rc-lymph",
+          "rc-figure"
+        ]
+      },
+      {
+        "moduleId": "rh-capacity",
+        "label": "Uzun görevde efor kapasitesi",
+        "positive": "Kısa görev güvenli olsa da daha uzun yürüyüşlerde durma ihtiyacı belirgin; test öncesi tıbbi uygunluk teyit edilmiş ve gözetim sağlanmış.",
+        "negative": "Hedef kısa görevlerle sınırlı; uzun yürüyüşte kapasite yakınması veya bugün için dayanıklılık ölçüm hedefi verilmemiş.",
+        "rationale": "Güvenli, standart bir görevle yürüme kapasitesini ölçmek",
+        "sourceIds": [
+          "rc-walk",
+          "rc-pulmonary",
+          "rc-cardiac"
+        ]
+      },
+      {
+        "moduleId": "rh-participation",
+        "label": "Toplum erişimi ve yardım",
+        "positive": "Klinikte görev tamamlanabiliyor ancak gerçek ortamın erişimi ve gerekli yardımın bulunmaması katılımı engelliyor.",
+        "negative": "Belirtilen hedefte yeni erişim veya sosyal destek engeli bildirmiyor; gerekli yardım mevcut.",
+        "rationale": "Cihazla klinik kapasite ile gündelik katılım farkını açıklamak",
+        "sourceIds": [
+          "rc-participation",
+          "rc-icf"
+        ]
+      }
+    ],
+    "edema": [
+      {
+        "moduleId": "rh-rom",
+        "label": "Eklem hareketi ve gerilme",
+        "positive": "Şişlikle birlikte hedef eklemde gerilme ve son sınıra ulaşmada güçlük var; aktif ve pasif sınır nicel kaydedilmemiş.",
+        "negative": "Hedef hareket sırasında son-sınır gerilmesi veya hareket kısıtı bildirmiyor.",
+        "rationale": "Hareket açıklığını standart koşullarda ölçmek",
+        "sourceIds": [
+          "rc-rom"
+        ]
+      },
+      {
+        "moduleId": "rh-strength",
+        "label": "Kas kuvveti ve görev yükü",
+        "positive": "Kişi etkilenen bölgenin görev sırasında çabuk güçsüz kaldığını söylüyor; izin verilen yük içinde kas katkısı henüz ölçülmemiş.",
+        "negative": "Kişi hedef görevde güçsüzlük bildirmiyor; ilk gözlemde yeni ek kuvvet sorusu ortaya çıkmamış.",
+        "rationale": "Klinik uygunluk içinde kuvveti ve görev katkısını ölçmek",
+        "sourceIds": [
+          "rc-strength",
+          "rc-dmd",
+          "rc-aims"
+        ]
+      },
+      {
+        "moduleId": "mk-activity",
+        "label": "Kişiye özgü aktivite takibi",
+        "positive": "Şişlik ölçümü var ancak kişinin seçtiği zor aktivitelerin başlangıç güçlük düzeyi hiç puanlanmamış; izlemde yalnız çevre ölçümüyle yetinilmesi istenmiyor.",
+        "negative": "Kişinin seçtiği aktivitelerin başlangıç güçlük kaydı zaten mevcut ve bu görüşmede yeni bir aktivite eklenmemiş.",
+        "rationale": "Hacim ölçümüne kişiye özgü işlev kaydını eklemek",
+        "sourceIds": [
+          "mc-psfs",
+          "mc-chronic"
+        ]
+      },
+      {
+        "moduleId": "ex-compression",
+        "label": "Kompresyon uyumu ve öz yönetim",
+        "positive": "Uzman ekibin uygun bulduğu kompresyon ürünü kullanılıyor; giyme tekniği ve temas uyumu gözlenmemiş, kişi ürünü doğru kullanıp kullanmadığından emin değil.",
+        "negative": "Kompresyon ürününe ilişkin yeni uyum veya giyme yakınması yok; güncel uzman kontrolü belgeli.",
+        "rationale": "Ürün uyumunu ve kişinin kullanım becerisini mevcut reçete kapsamında gözlemek",
+        "sourceIds": [
+          "rc-lymph",
+          "rc-icf"
+        ]
+      }
+    ],
+    "cardio": [
+      {
+        "moduleId": "rh-strength",
+        "label": "Kas kuvveti ve kalkma",
+        "positive": "Kişi oturduğu yerden kalkarken bacak güçsüzlüğü nedeniyle ek destek arıyor; güncel güvenlik taraması ve izin verilen görev sınırları içinde gözlem planlanıyor.",
+        "negative": "Kalkma ve kısa görevlerde özgül kas güçsüzlüğü yakınması bildirmiyor.",
+        "rationale": "Kas kuvvetinin günlük geçiş görevine katkısını değerlendirmek",
+        "sourceIds": [
+          "rc-strength",
+          "rc-dmd",
+          "rc-aims"
+        ]
+      },
+      {
+        "moduleId": "rh-respiratory",
+        "label": "Öksürük ve sekresyon",
+        "positive": "Stabil durumuna eşlik eden uzun süredir takipli sekresyon çıkarma güçlüğü var; akut solunum bozulması veya enfeksiyon bulgusu yok.",
+        "negative": "Öksürük veya sekresyon temizleme yakınması bildirmiyor; rutin solunum izlemi sürüyor.",
+        "rationale": "Solunum ve öksürük bulgularını mevcut ekip planıyla ilişkilendirmek",
+        "sourceIds": [
+          "rc-cpresp",
+          "rc-spirometry",
+          "rc-dmd"
+        ]
+      },
+      {
+        "moduleId": "rh-rom",
+        "label": "Görevi sınırlayan hareket açıklığı",
+        "positive": "Hedef görevi etkileyen, tıbben değerlendirilmiş eklem hareket sınırı da var; efor kısıtıyla mekanik engelin katkıları ayrılmamış.",
+        "negative": "Hedef görevde belirgin eklem hareket engeli bildirmiyor.",
+        "rationale": "Mekanik hareket engelini efor yanıtından ayırmak",
+        "sourceIds": [
+          "rc-rom"
+        ]
+      },
+      {
+        "moduleId": "mk-balance",
+        "label": "Denge ve güvenli mobilite",
+        "positive": "Kısa yürüyüşte dönme sırasında dengesiz hissettiğini söylüyor; eşlik eden yeni nörolojik bulgu yok ve uygun gözetim planlı.",
+        "negative": "Hedef görevde dengesizlik veya düşmeye yakın olay bildirmiyor.",
+        "rationale": "Denge ve mobilite katkısını kapasite ölçümünden ayrı değerlendirmek",
+        "sourceIds": [
+          "mc-tug",
+          "mc-fourstage"
+        ]
+      }
+    ],
+    "peds-sb": [
+      {
+        "moduleId": "rh-pain",
+        "label": "Çocukta ağrı ve rahatsızlık",
+        "positive": "Çocuk görev sonrasında rahatsızlığını bildiriyor; aile yüz ifadesi ve aktiviteden kaçınma değişikliğini de fark etmiş. Tıbbi değerlendirmede akut yaralanma saptanmamış.",
+        "negative": "Çocuk ve aile ağrı davranışı veya görevle ilişkili rahatsızlık bildirmiyor.",
+        "rationale": "Gelişim ve iletişime uygun ağrı ölçümünü aile gözlemiyle tamamlamak",
+        "sourceIds": [
+          "rc-painself",
+          "rc-painobs"
+        ]
+      },
+      {
+        "moduleId": "rh-seating",
+        "label": "Sınıf oturması ve destek",
+        "positive": "Hareket etkinliği dışında masa başında gövde desteği yetersiz kalıyor; ayaklar destek yüzeyine ulaşmadığı için oyun ve ders katılımı azalıyor.",
+        "negative": "Masa ve oturma desteği çocuğa uyuyor; oturmada ek destek veya donanım yakınması yok.",
+        "rationale": "Oturma yüzeyi, ayak desteği ve görev performansını birlikte gözlemek",
+        "sourceIds": [
+          "rc-posture",
+          "rc-sb"
+        ]
+      },
+      {
+        "moduleId": "rh-respiratory",
+        "label": "Öksürük ve solunum yükü",
+        "positive": "Aile, uzun süredir takip edilen zayıf öksürük ve sekresyon temizleme güçlüğünü bildiriyor; akut solunum bozulması yok, ilgili ekip değerlendirmesi planlı.",
+        "negative": "Solunum yakınması, zayıf öksürük veya sekresyon güçlüğü bildirilmemiş; rutin risk taraması sürüyor.",
+        "rationale": "Öksürük ve solunum yükünü klinik ekiple birlikte değerlendirmek",
+        "sourceIds": [
+          "rc-cpresp",
+          "rc-spirometry",
+          "rc-dmd"
+        ]
+      },
+      {
+        "moduleId": "ex-ped-fatigue",
+        "label": "Çocukta yorgunluk ve tempo",
+        "positive": "Çocuk ve aile gün sonuna doğru belirgin tükenme ve ertesi gün görevden çekilme bildiriyor; test yükünün yaşam etkinliklerine etkisi henüz kaydedilmemiş.",
+        "negative": "Rutin hastalık izlemi dışında bu görüşmede yeni, belirgin bir gün içi yorgunluk değişikliği bildirilmemiş.",
+        "rationale": "Yorgunluğu aile ve çocuk bildirimiyle, zorlamadan ve zaman bağlamında değerlendirmek",
+        "sourceIds": [
+          "rc-dmd",
+          "rc-family"
+        ]
+      }
+    ],
+    "foot": [
+      {
+        "moduleId": "mk-psych",
+        "label": "Hareket korkusu ve inançlar",
+        "positive": "Kişi güvenli olduğu açıklanan günlük hareketin kalıcı hasar vereceğini düşündüğü için görevden kaçınıyor; kendi açıklamasının dinlenmesini istiyor.",
+        "negative": "Hareketten kaçınma veya hasar korkusu bildirmiyor; rutin psikososyal tarama dışında ek bir yakınma verilmemiş.",
+        "rationale": "Hareket korkusunu yargılamadan işlev hedefiyle ilişkilendirmek",
+        "sourceIds": [
+          "mc-pcs",
+          "mc-fabq",
+          "mc-chronic"
+        ]
+      },
+      {
+        "moduleId": "rh-edema",
+        "label": "Göreve eşlik eden şişlik",
+        "positive": "Aynı bölgede gün sonunda artan, takip edilen şişlik var; akut damar sorunu, enfeksiyon veya yeni travma bulguları tıbbi ekipçe dışlanmış. Önceki standart çevre/hacim kaydı yok. Şişlik eski ve stabil; yeni ısı artışı, renk değişimi veya yara yok. Aktif Charcot yönünden ekip değerlendirmesi yapılmış.",
+        "negative": "Hedef bölgede şişlik veya hacim değişikliği bildirmiyor; ilk gözlemde şişlik saptanmamış.",
+        "rationale": "Şişliğin yerini ve gün içi değişimini standart ölçümle izlemek",
+        "sourceIds": [
+          "rc-lymph",
+          "rc-figure",
+          "ex-diabetic-foot"
+        ]
+      },
+      {
+        "moduleId": "rh-participation",
+        "label": "Çevre, yardım ve katılım",
+        "positive": "Muayene odasındaki görevi yapabilmesine rağmen gerçek ortamda erişim engeli ve gerekli yardımın bulunmaması nedeniyle hedef etkinliği sürdüremiyor.",
+        "negative": "Belirtilen hedef için ek bir çevresel erişim veya sosyal yardım engeli bildirilmemiş; kişi mevcut ortamı kullanabiliyor.",
+        "rationale": "Klinik kapasite ile gerçek yaşam performansı arasındaki farkı açıklamak",
+        "sourceIds": [
+          "rc-participation",
+          "rc-icf"
+        ]
+      },
+      {
+        "moduleId": "rh-rom",
+        "label": "Eklem hareketi ve gerilme",
+        "positive": "Şişlikle birlikte hedef eklemde gerilme ve son sınıra ulaşmada güçlük var; aktif ve pasif sınır nicel kaydedilmemiş.",
+        "negative": "Hedef hareket sırasında son-sınır gerilmesi veya hareket kısıtı bildirmiyor.",
+        "rationale": "Hareket açıklığını standart koşullarda ölçmek",
+        "sourceIds": [
+          "rc-rom"
+        ]
+      }
+    ]
+  },
+  "contexts": {
+    "walk": [
+      {
+        "title": "Ev içinde geçiş",
+        "story": "Evde dar koridor ve farklı yükseklikte oturma yüzeyleri var. Kişi en çok odalar arasında gerekli yardımın netleşmesini istiyor; görevler gözetimde ve tolere edilen düzeyde gözlenecek.",
+        "goal": "Ev içindeki kısa geçişlerde gereken yardım ve cihaz koşullarını belirlemek"
+      },
+      {
+        "title": "Dışarıdaki kısa rota",
+        "story": "Kişinin hedefi ev yakınındaki kısa bir dış ortam rotası. Zemin ve yön değiştirme gereksinimi var; klinik kapasite yeterli bulunmadan dış ortam denemesi yapılmayacak.",
+        "goal": "Dış ortam hedefi için güvenli kapasite ve çevre gereksinimlerini ayırmak"
+      },
+      {
+        "title": "Toplu etkinliğe dönüş",
+        "story": "Kişi yakınlarıyla küçük bir toplu etkinliğe yeniden katılmak istiyor. Bekleme, yön değiştirme ve dinlenme olanağı gibi görev talepleri önceden konuşulacak.",
+        "goal": "Toplu etkinliğin gerektirdiği hareketleri ölçülebilir alt görevlere ayırmak"
+      },
+      {
+        "title": "Bakım verenle ortak plan",
+        "story": "Bakım veren bazı hareketlerde gereğinden fazla, bazılarında yetersiz yardım verdiğini düşünüyor. Kişi kendi yapabildiklerini göstermek istiyor; yardım düzeyi açıkça kaydedilecek.",
+        "goal": "Kişinin kapasitesiyle gereken fiziksel yardım ve hazırlık desteğini ayırmak"
+      }
+    ],
+    "arm": [
+      {
+        "title": "Kişisel bakım",
+        "story": "Kişi kişisel bakımındaki bir nesne görevinde neyi kendi yapabildiğinin ölçülmesini istiyor. Nesne boyutu, oturma desteği ve gereken yardım aynı koşullarda kaydedilecek.",
+        "goal": "Kişisel bakım nesnesini kullanırken aktif katkı ve yardım gereksinimini ölçmek"
+      },
+      {
+        "title": "Masa başı görev",
+        "story": "Masa başındaki kısa bir yazma veya nesne düzenleme görevi günlük yaşamda önemli. Uzun görev zorlanmadan kavrama, uzanma ve telafi gözlenecek.",
+        "goal": "Masa başı nesne kullanımında kapasite ve telafi stratejisini ayırmak"
+      },
+      {
+        "title": "Mutfak hazırlığı",
+        "story": "Kişi tehlikeli araçlar içermeyen basit bir hazırlık görevine katılmak istiyor. Görev güvenli nesnelerle simüle edilecek; hızdan önce güvenlik ve yardım kaydedilecek.",
+        "goal": "Güvenli hazırlık görevinde nesne kontrolü ve gerçek yardım düzeyini belirlemek"
+      },
+      {
+        "title": "İki elin iş birliği",
+        "story": "Günlük bir eşyayı iki elle düzenlemek kişinin seçtiği hedef. Etkilenen tarafın katkısı, nesne uyarlaması ve gövde telafisi ayrı kaydedilecek.",
+        "goal": "İki elin katkısını ve nesne uyarlamasının performansa etkisini kaydetmek"
+      }
+    ],
+    "seat": [
+      {
+        "title": "Yatak ve oturma yüzeyi",
+        "story": "Hedef yatak ile alışılmış oturma yüzeyi arasındaki hazırlık ve geçiş sırasını açıklamak. Güvenli kapasite doğrulanmadan desteksiz transfer denenmeyecek.",
+        "goal": "Geçişte hazırlık, destek ve fiziksel yardım gereksinimini belirlemek"
+      },
+      {
+        "title": "Masa erişimi",
+        "story": "Kişi otururken masasındaki eşyaya erişmek istiyor. Destekler korunarak uzanma sınırı ve gereken yardım gözlenecek.",
+        "goal": "Destekli oturmada güvenli erişim ve postür koşullarını kaydetmek"
+      },
+      {
+        "title": "Bakım rutini",
+        "story": "Kişi ve bakım veren bakımın hangi bölümünde aktif katkı sağlanabildiğini anlamak istiyor. Kişinin konforu ve onamı her adımda korunacak.",
+        "goal": "Bakım sırasında aktif katkı ve yardımcı donanım gereksinimini ayırmak"
+      },
+      {
+        "title": "Erişilebilir ortak alan",
+        "story": "Ortak alandaki masa ve yaklaşım boşluğu kişinin mevcut hareket düzeyine uymayabiliyor. Ortam ölçüsü ile kişinin yapabildiği görev ayrı ele alınacak.",
+        "goal": "Oturma ve çevre uyumunu katılım hedefiyle ilişkilendirmek"
+      }
+    ],
+    "child": [
+      {
+        "title": "Sınıf düzeni",
+        "story": "Aile ve çocuk sınıftaki hareket ve masa düzenini birlikte değerlendirmek istiyor. Öğretmenin bilgisi, çocuğun tercihi ve gereken yardım kaydedilecek.",
+        "goal": "Sınıfta seçilen etkinlik için kapasite, destek ve çevreyi birlikte belirlemek"
+      },
+      {
+        "title": "Oyun etkinliği",
+        "story": "Çocuğun seçtiği oyun klinikte güvenli parçalarına ayrılacak. Yalnız görevi tamamlama değil, başlatma ve gerekli yardım da kaydedilecek.",
+        "goal": "Çocuğun seçtiği oyunda aktif katılım ve destek gereksinimini ölçmek"
+      },
+      {
+        "title": "Evde bakım rutini",
+        "story": "Aile evde giyinme ve yer değiştirme sırasında çocuğun katkısını anlamak istiyor. Yaş ve iletişim düzeyine uygun yönergeler kullanılacak.",
+        "goal": "Ev rutininde çocuğun katkısını ve aile yardımını ayrı kaydetmek"
+      },
+      {
+        "title": "Okulda günün sonu",
+        "story": "Aile ile öğretmen günün sonunda görevlerin farklılaştığını belirtiyor; test zamanı ve dinlenme koşulları kaydedilecek. Tek bir klinik performans bütün güne genellenmeyecek.",
+        "goal": "Okul gününün farklı koşullarında yardım ve görev performansını karşılaştırmak"
+      }
+    ],
+    "baby": [
+      {
+        "title": "Yerde oyun",
+        "story": "Aile yerde kısa, uyanık oyun sırasında bebeğin hareketlerini anlamak istiyor. Bebek zorlanmadan serbest hareket ve destekle değişim gözlenecek.",
+        "goal": "Uyanık oyunda spontan hareket ve destek gereksinimini kaydetmek"
+      },
+      {
+        "title": "Giydirme rutini",
+        "story": "Aile giydirirken bebeğin hangi hareketlere katılabildiğini soruyor. Yorgunluk veya huzursuzlukta ara verilecek; bakım hareketleri zorlanmayacak.",
+        "goal": "Bakım rutininde aktif katılımı ve gereken desteği belirlemek"
+      },
+      {
+        "title": "Oyuncağa yönelme",
+        "story": "Bebeğin sevdiği oyuncağa bakma, yönelme ve uzanma davranışı farklı destek koşullarında gözlenecek; gelişim yaşı ve tıbbi öykü birlikte değerlendirilecek.",
+        "goal": "Oyuncağa yönelmede aktif hareket ve çevresel desteği ayırmak"
+      },
+      {
+        "title": "Aile videosu ve muayene",
+        "story": "Aile evde gözlediği hareketlerle muayene odasının farklı olduğunu söylüyor. İzinli video bilgisi, uyanıklık ve muayene ortamı karşılaştırılacak; tek gözlemle tanı konmayacak.",
+        "goal": "Ev gözlemi ile klinik gözlem farkını ve aile önceliklerini açıklamak"
+      }
+    ],
+    "msk-upper": [
+      {
+        "title": "Rafa erişme",
+        "story": "Kişi hafif bir eşyayı rafa yerleştirmeyi hedefliyor. İzin verilen yük ve ağrı toleransı içinde uzanma hareketi gözlenecek.",
+        "goal": "Hafif rafa erişmede hareket, kuvvet ve işlev katkısını belirlemek"
+      },
+      {
+        "title": "Giyinme",
+        "story": "Günlük üst giyim sırasında hangi hareketin zor olduğu netleştirilecek. Hızdan önce hareket stratejisi, ağrı ve gereken yardım kaydedilecek.",
+        "goal": "Giyinme görevindeki özgül işlev kaybını ölçülebilir başlangıca dönüştürmek"
+      },
+      {
+        "title": "Masa başı uğraş",
+        "story": "Kişinin seçtiği kısa masa başı uğraşında nesne boyutu ve çalışma süresi kaydedilecek; görev tıbbi yük kısıtları içinde tutulacak.",
+        "goal": "Masa başı uğraşta semptom ve görev yükü ilişkisini ölçmek"
+      },
+      {
+        "title": "Hafif ev işi",
+        "story": "Kişi hafif bir ev işine güvenle dönmek istiyor. Görev küçük parçalara ayrılarak yük, tekrar ve dinlenme ihtiyacı gözlenecek.",
+        "goal": "Hafif ev işinde kapasite ve semptom yanıtını birlikte değerlendirmek"
+      }
+    ],
+    "msk-lower": [
+      {
+        "title": "Kısa yürüyüş",
+        "story": "Kişinin seçtiği kısa yürüyüş rotası, mevcut izin verilen yük verme düzeyi içinde gözlenecek. Cihaz ve yardım koşulları kaydedilecek.",
+        "goal": "Kısa yürüyüşte yük verme, hareket ve işlev gereksinimini belirlemek"
+      },
+      {
+        "title": "Oturmadan kalkış",
+        "story": "Kişi günlük oturma yüzeyinden kalkışını hedefliyor. Sandalye yüksekliği ve kol desteği sabit kaydedilecek; zorlayıcı tekrar yapılmayacak.",
+        "goal": "Günlük kalkışın ağrı, hareket ve kas katkısını ayırmak"
+      },
+      {
+        "title": "Alçak basamak",
+        "story": "Kişi düşük bir basamakla ilişkili günlük hedef bildiriyor. Görev ancak mevcut yük ve güvenlik kısıtları izin verirse gözetimde gözlenecek.",
+        "goal": "Basamak hedefi için gereken hareket ve destek koşullarını belirlemek"
+      },
+      {
+        "title": "Günlük ayakta görev",
+        "story": "Hafif bir ayakta durma görevi kişinin önceliği. Süre, gerekli destek ve görev sonrasındaki yanıt izin verilen sınırlar içinde kaydedilecek.",
+        "goal": "Ayakta günlük görevin toleransını ve hareket stratejisini ölçmek"
+      }
+    ],
+    "back": [
+      {
+        "title": "Oturma süresi",
+        "story": "Kişi kısa masa başı oturma sonrasında görevine devam etmekte zorlanıyor. Yalnız postür etiketi yerine süre, belirti ve ara verme etkisi kaydedilecek.",
+        "goal": "Oturma görevinin süre, belirti ve işlev ilişkisini ölçmek"
+      },
+      {
+        "title": "Hafif taşıma",
+        "story": "Kişi hafif bir eşyayı günlük ortamında taşıyabilmeyi istiyor. Yük ve görev önceden konuşularak tolere edilen düzeyde gözlenecek.",
+        "goal": "Hafif taşıma görevinin yük ve belirti ilişkisini değerlendirmek"
+      },
+      {
+        "title": "Yer değiştirme",
+        "story": "Yataktan kalkma veya oturma yüzeyleri arasında geçiş kişinin seçtiği sorun. Tek bir hareket biçimi zorunlu doğru sayılmadan rahatlık ve işlev kaydedilecek.",
+        "goal": "Günlük geçişte hareket stratejisi ve semptom yanıtını belirlemek"
+      },
+      {
+        "title": "Günlük yürüyüş",
+        "story": "Kişi kısa yürüyüşe dönmeyi hedefliyor. Görev süresi ve belirti yanıtı kaydedilecek; yalnız görüntüleme bulgusuyla performans tahmini yapılmayacak.",
+        "goal": "Yürüyüş hedefini kişi bildirimi ve görev gözlemiyle ölçmek"
+      }
+    ],
+    "work": [
+      {
+        "title": "Göreve başlangıç",
+        "story": "Kişi vardiya başındaki kısa iş bölümünü tanımlıyor. İşin gerçek yükü, çalışma yüksekliği ve mola koşulları onaylı gözlemle kaydedilecek.",
+        "goal": "Görev talebiyle kişinin mevcut kapasitesini karşılaştırmak"
+      },
+      {
+        "title": "Vardiya sonu",
+        "story": "Kişi aynı işi gün sonunda farklı yaptığını anlatıyor. Tek bir fotoğraf yerine süre, tekrar ve iş akışındaki değişimler görüşülecek.",
+        "goal": "İş günündeki yük ve belirti değişimini belgelemek"
+      },
+      {
+        "title": "İşe kademeli dönüş",
+        "story": "İşe dönüş planındaki hafif görevlerin mevcut tıbbi kısıtlara uyumu açıklığa kavuşturulacak; yalnız bir ergonomi puanıyla çalışma uygunluğu kararı verilmeyecek.",
+        "goal": "İşe dönüş görevinin ölçülebilir taleplerini ve kısıtlarını belirlemek"
+      },
+      {
+        "title": "İstasyon uyarlaması",
+        "story": "Çalışan iş istasyonunda bir uyarlamayı denemek istiyor. Önce ve sonra aynı güvenli görev koşulları kaydedilerek gerçek gereksinim anlaşılacak.",
+        "goal": "İş istasyonu uyarlamasının görev yüküne etkisini karşılaştırmak"
+      }
+    ],
+    "cardio": [
+      {
+        "title": "Ev içi görev",
+        "story": "Kişi evde kısa bir günlük görevin yükünü anlamak istiyor. Güncel semptomlar, ilaçlar ve ekipçe belirlenen sınırlar kontrol edilecek.",
+        "goal": "Ev görevi için efor yanıtı ve gereken dinlenmeyi kaydetmek"
+      },
+      {
+        "title": "Yakın çevreye yürüyüş",
+        "story": "Kişi yakın çevresindeki kısa rotaya dönmeyi hedefliyor. Alan testi yalnız klinik uygunluk, gözetim ve sonlandırma kuralları sağlandığında uygulanacak.",
+        "goal": "Yürüyüş hedefini standart kapasite ve semptom kaydıyla ilişkilendirmek"
+      },
+      {
+        "title": "Sosyal katılım",
+        "story": "Kişi yakınlarıyla kısa bir etkinliğe katılmayı istiyor. Yol, bekleme ve dinlenme olanağı gözden geçirilerek klinik ölçümün günlük karşılığı belirlenecek.",
+        "goal": "Sosyal etkinliğin efor ve çevre gereksinimlerini ayırmak"
+      },
+      {
+        "title": "İzlem karşılaştırması",
+        "story": "Önceki güvenli görev kaydı var, yeni değerlendirmede aynı koşulların korunması isteniyor. İlaç, cihaz, oksijen reçetesi varsa mevcut kullanım ve dinlenme koşulları belgelenecek.",
+        "goal": "İzlemde kapasite değişimini ölçüm koşullarındaki değişiklikten ayırmak"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "ex-stroke",
+      "title": "Stroke rehabilitation in adults — Recommendations (NICE NG236)",
+      "url": "https://www.nice.org.uk/guidance/ng236/chapter/Recommendations",
+      "kind": "Resmî klinik kılavuz",
+      "note": "Tarama: iletişim, yutma, transfer, basınç yarası riski ve pozisyonlama. Kapsamlı değerlendirme: duyu, kas kuvveti, tonus, denge, biliş, görme, aktivite ve katılım. Giriş/çıkışta uygun geçerli araçlarla işlevi izleme; hedefleri kişiyle belirleme. Sürüm/yayın: 2023-10-18. Erişim: 24 Ekim 2026.",
+      "verification": "Primary search result verified; direct open attempted but blocked by 403 or browser challenge",
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "ex-parkinson",
+      "title": "Parkinson’s disease in adults — Recommendations (NICE NG71)",
+      "url": "https://www.nice.org.uk/guidance/ng71/chapter/Recommendations",
+      "kind": "Resmî klinik kılavuz",
+      "note": "Erken evrede fiziksel aktivite, motor işlev ve denge gereksinimlerini değerlendirme. Günlük yaşam, iletişim ve yutma sorunlarını ekip içi yönlendirmeyle birlikte ele alma. Öğretim uygulaması: tekrar testlerinde ilaç zamanı ve yardımcı cihaz koşullarını ayrıca kaydetme; bu kayıt önerisi eğitimsel çıkarımdır. Sürüm/yayın: 2017. Erişim: 24 Ekim 2026.",
+      "verification": "Primary search result verified; direct open attempted but blocked by 403 or browser challenge",
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "ex-ms",
+      "title": "Multiple sclerosis in adults: management — Recommendations (NICE NG220)",
+      "url": "https://www.nice.org.uk/guidance/ng220/chapter/Recommendations",
+      "kind": "Resmî klinik kılavuz",
+      "note": "Yorgunluğu yalnızca MS'ye bağlamama; uyku, enfeksiyon, ilaçlar, ağrı ve duygudurum etkenlerini inceleme. Mobilite hedeflerini belirleme; spastisiteyi artıran basınç yarası, mesane/bağırsak sorunu, enfeksiyon ve pozisyonlamayı değerlendirme. Isı ve stresle dalgalanmayı test koşullarına ekleme. Sürüm/yayın: 2022-06-22; updated 2026-06-03. Erişim: 24 Ekim 2026.",
+      "verification": "Primary search result verified; direct open attempted but blocked by 403 or browser challenge",
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "ex-sci",
+      "title": "ISNCSCI Resources — American Spinal Injury Association",
+      "url": "https://asia-spinalinjury.org/isncsci-resources/",
+      "kind": "Değerlendirme geliştiricisi",
+      "note": "Nörolojik seviye ve şiddet sınıflaması için güncel ISNCSCI formunu ve eğitimini kullanma. Sağ/sol duyu ve motor bulguları, test edilemeyen öğeleri ve SCI dışı kısıtları açıklama. Sınıflama ile kişinin transfer, tekerlekli sandalye ve katılım gereksinimlerini ayrı kaydetme. Sürüm/yayın: 2026 ninth edition; worksheet revision 2026. Erişim: 24 Ekim 2026.",
+      "verification": "Opened primary page or full text successfully",
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "ex-cp",
+      "title": "Cerebral Palsy — CanChild",
+      "url": "https://canchild.ca/diagnoses/cerebral-palsy/",
+      "kind": "Değerlendirme geliştiricisi",
+      "note": "İşlev sınıflaması ile değişimi ölçen sonuç aracını ayırt etme. Çocuğun günlük performansını ve aile önceliklerini motor kapasiteyle birlikte tartışma. Yaş, işlev düzeyi ve aracın kapsamına göre uygun ölçümü seçme. Sürüm/yayın: Undated resource hub. Erişim: 24 Ekim 2026.",
+      "verification": "Primary search result verified; direct open attempted but blocked by 403 or browser challenge",
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "ex-gmfm",
+      "title": "GMFM Scoring — CanChild",
+      "url": "https://canchild.ca/resources/321-gmfm-scoring/",
+      "kind": "Değerlendirme geliştiricisi",
+      "note": "Test edilmeyen öğeyi gerçek sıfır performanstan ayırt etme. Destek, mesafe, süre ve başlangıç pozisyonunu standardize etme. GMFM-66 skorunu basit ham yüzde hesabıyla üretmeme; ilgili değerlendirme ve puanlama kılavuzuna yönlendirme. Sürüm/yayın: Undated webpage; references 2021 manual. Erişim: 24 Ekim 2026.",
+      "verification": "Primary search result verified; direct open attempted but blocked by 403 or browser challenge",
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "ex-dmd",
+      "title": "Clinical Recommendations — Duchenne Care UK / Duchenne UK",
+      "url": "https://www.duchenneuk.org/support/care/guides-for-clinicians",
+      "kind": "Birincil kaynak / geliştirici",
+      "note": "Fizyoterapi değerlendirmesini kardiyak, solunum, kemik ve ortopedik izlemle ilişkilendirme. Öğretim uygulaması: ambulasyon durumuna uygun motor araç, eklem hareket açıklığı, yardımcı cihaz ve bakım veren gereksinimini tartışma; ayrıntılı uygulamayı bağlantılı uzman kılavuzundan doğrulama. Sürüm/yayın: Undated living guideline hub; based on 2018 international considerations. Erişim: 24 Ekim 2026.",
+      "verification": "Opened primary page or full text successfully",
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "ex-lowback",
+      "title": "Low back pain and sciatica in over 16s: assessment and management — Recommendations (NICE NG59)",
+      "url": "https://www.nice.org.uk/guidance/ng59/chapter/Recommendations",
+      "kind": "Resmî klinik kılavuz",
+      "note": "Yeni/değişen belirtilerde travma, malignite, enfeksiyon ve inflamatuvar hastalık gibi alternatif nedenleri değerlendirme. Yeni epizotta uygun risk sınıflamasıyla ortak karar vermeyi destekleme. Görüntülemeyi rutin fizyoterapi önkoşulu olarak sunmama; uzman değerlendirmede yönetimi değiştirip değiştirmeyeceği önemlidir. Sürüm/yayın: 2016 assessment recommendations; 2020 medication update; 2026 treatment withdrawal flagged separately. Erişim: 24 Ekim 2026.",
+      "verification": "Primary search result verified; direct open attempted but blocked by 403 or browser challenge",
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "ex-oa",
+      "title": "Osteoarthritis in over 16s: diagnosis and management — Recommendations (NICE NG226)",
+      "url": "https://www.nice.org.uk/guidance/NG226/chapter/recommendations",
+      "kind": "Resmî klinik kılavuz",
+      "note": "Ağrı, günlük işlev, aktivite hedefleri ve egzersize katılım engellerini birlikte kaydetme. Tipik osteoartritte klinik öykü/muayeneyi esas alma; atipik özelliklerde alternatif tanıları inceleme. Alt ekstremite OA'da yürüme yardımcısının işlevsel etkisini ve bireysel egzersiz gereksinimini değerlendirme. Sürüm/yayın: 2022-10-19. Erişim: 24 Ekim 2026.",
+      "verification": "Primary search result verified; direct open attempted but blocked by 403 or browser challenge",
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "ex-neck",
+      "title": "Neck Pain: Revision 2017 — Clinical Practice Guidelines",
+      "url": "https://www.orthopt.org/uploads/content_files/files/Neck%20Pain%20CPG%20-%20Revision%202017.pdf",
+      "kind": "Birincil kaynak / geliştirici",
+      "note": "Ciddi patoloji ve nörolojik/arteriyel belirtiler için tarama ve gerektiğinde yönlendirme. Hareket kısıtlılığı, travma öyküsü, baş ağrısı ve kola yayılan belirtilerle klinik sunumu sınıflama. Ağrı, işlev, özür ve psikososyal başlangıç durumunu geçerli özbildirim araçlarıyla izleme. Sürüm/yayın: 2017. Erişim: 24 Ekim 2026.",
+      "verification": "Primary search result verified; direct open attempted but blocked by 403 or browser challenge",
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "ex-shoulder",
+      "title": "Rotator Cuff Tendinopathy Diagnosis, Nonsurgical Medical Care, and Rehabilitation: A Clinical Practice Guideline",
+      "url": "https://www.orthopt.org/uploads/content_files/files/Rotator_Cuff_CPG.pdf",
+      "kind": "Birincil kaynak / geliştirici",
+      "note": "Yüklenme öyküsü, iş/spor gereksinimi, servikal ve nörolojik belirtiler, hedefler ve bağlamsal etkenleri sorgulama. Aktif/pasif ROM'u ölçüm aracıyla, izometrik kuvveti el dinamometresiyle değerlendirme. Ağrı/özür için geçerli sonuç aracı ve spora dönüşte görev kapasitesi/yük toleransı kullanma. Sürüm/yayın: 2025. Erişim: 24 Ekim 2026.",
+      "verification": "Primary search result verified; direct open attempted but blocked by 403 or browser challenge",
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "ex-ankle",
+      "title": "Ankle Stability and Movement Coordination Impairments: Lateral Ankle Ligament Sprains Revision",
+      "url": "https://www.orthopt.org/uploads/content_files/files/jospt.2021.0302.pdf",
+      "kind": "Birincil kaynak / geliştirici",
+      "note": "Önceki burkulma, instabilite hissi, yük verme, ağrı ve dorsifleksiyon ROM'unu kaydetme. Güvenle tolere edildiğinde denge, sıçrama/iniş ve dinamik postüral kontrolü inceleme. Kronik instabilitede ayak-ayak bileği yanında diz/kalça hareket sistemi ve kişinin işlev bildirimini değerlendirme. Sürüm/yayın: 2021. Erişim: 24 Ekim 2026.",
+      "verification": "Primary search result verified; direct open attempted but blocked by 403 or browser challenge",
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "ex-vestibular",
+      "title": "Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: An Updated Clinical Practice Guideline From the Academy of Neurologic Physical Therapy of the American Physical Therapy Association",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8920012/",
+      "kind": "Birincil kaynak / geliştirici",
+      "note": "Baş dönmesi, osilopsi, hareket duyarlılığı, bakış stabilitesi, yürüme ve denge alanlarını ayırma. Sonuç ölçümünü belirti yükü ve aktivite kısıtına göre seçme. İlerleme/durdurma kararında hedefler, belirtiler, komorbidite, uyum ve plato durumunu yeniden değerlendirme. Sürüm/yayın: 2022. Erişim: 24 Ekim 2026.",
+      "verification": "Primary search result verified; direct open attempted but blocked by 403 or browser challenge",
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "ex-falls",
+      "title": "Clinical Resources — STEADI, Older Adult Fall Prevention — CDC",
+      "url": "https://www.cdc.gov/steadi/hcp/clinical-resources/index.html",
+      "kind": "Birincil kaynak / geliştirici",
+      "note": "Düşme öyküsüyle mobilite, alt ekstremite kuvveti/dayanıklılığı, denge ve ortostatik belirtileri birleştirme. TUG'da güvenlik gözetimi, alışılmış ayakkabı ve yardımcı cihazı kaydetme. Tek test zamanını tek başına tanı veya düşmeye ilişkin kesin tahmin olarak sunmama. Sürüm/yayın: Undated resource hub; linked TUG instructions 2017. Erişim: 24 Ekim 2026.",
+      "verification": "Opened primary page or full text successfully",
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "ex-amputation",
+      "title": "Rehabilitation of Lower Limb Amputation (2025) — VA/DOD Clinical Practice Guidelines",
+      "url": "https://www.healthquality.va.gov/guidelines/rehab/amp/index.asp",
+      "kind": "Resmî klinik kılavuz",
+      "note": "Amputasyon öncesi/sonrası evreyi ve primer bakım gereksinimlerini ayırma. Rezidüel ekstremite, ağrı, yürüme analizi ve günlük yaşama katılımı disiplinler arası gözden geçirme. Öğretim uygulaması: cilt toleransı, protez uyumu ve fonksiyonel hedefleri birlikte kaydetme; ayrıntılı protokolü resmi araçtan doğrulama. Sürüm/yayın: 2025 release; full guideline dated December 2024. Erişim: 24 Ekim 2026.",
+      "verification": "Opened primary page or full text successfully",
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "ex-orthosis",
+      "title": "Orthotics and Neuroprosthetics CPG — Clinical Highlights for AFO and FES Post Stroke",
+      "url": "https://www.neuropt.org/docs/default-source/cpgs/afo-fes/orthotics-and-neuroprosthetics-cpg.pdf?sfvrsn=a37c5d43_0",
+      "kind": "Birincil kaynak / geliştirici",
+      "note": "AFO/FES denemesinde bireysel hedefleri, yürüme ve denge etkilerini değerlendirme. İyileşme ve gereksinim değiştikçe cihazı yeniden değerlendirme. Cihazın yürüme yararını spastisite azalması varsayımıyla eşitlememe. Sürüm/yayın: 2021. Erişim: 24 Ekim 2026.",
+      "verification": "Opened primary page or full text successfully",
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "ex-lymph",
+      "title": "The Diagnosis and Treatment of Peripheral Lymphedema: 2023 Consensus Document of the International Society of Lymphology",
+      "url": "https://isl.arizona.edu/sites/default/files/2024-11/THE-DIAGNOSIS-AND-TREATMENT-OF-PERIPHERAL-LYMPHEDEMA-2023-CONSENSUS-DOCUMENT-OF-THE-INTERNATIONAL-SOCIETY-OF-LYMPHOLOGY.pdf",
+      "kind": "Birincil kaynak / geliştirici",
+      "note": "Lenfödem değerlendirmesini şişlik var/yok ikiliğinden daha geniş bir klinik öykü ve muayene çerçevesine yerleştirme. Öğretim uygulaması: standart anatomik noktalarda seri çevre/hacim ölçümü, cilt durumu ve işlevi izleme; yöntem ayrıntılarını tam belgeden doğrulama. Hızla gelişen ağrılı/kızarık şişlikte rutin eğitim senaryosu yerine tıbbi değerlendirme gereğini tartışma; bu genel güvenlik çıkarımıdır. Sürüm/yayın: 2023 consensus. Erişim: 24 Ekim 2026.",
+      "verification": "Opened primary page or full text successfully",
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "ex-pulmonary-ats",
+      "title": "Pulmonary Rehabilitation for Adults with Chronic Respiratory Disease: An Official American Thoracic Society Clinical Practice Guideline",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10449064/",
+      "kind": "Birincil kaynak / geliştirici",
+      "note": "Bireysel değerlendirme ve sonuç ölçümünü egzersiz, eğitim ve öz yönetimle bağlama. Egzersiz kapasitesi, dispne ve sağlıkla ilişkili yaşam kalitesini birlikte izleme. KOAH, ILD ve pulmoner hipertansiyon kanıtını ve risk bağlamını birbirine karıştırmama. Sürüm/yayın: 2023-08-15. Erişim: 24 Ekim 2026.",
+      "verification": "Opened primary page or full text successfully",
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "ex-pulmonary-bts",
+      "title": "British Thoracic Society Clinical Statement on pulmonary rehabilitation",
+      "url": "https://doi.org/10.1136/thorax-2023-220439",
+      "kind": "Birincil kaynak / geliştirici",
+      "note": "Egzersiz güvenliği ve reçete için yüz yüze gözetimli geçerli yürüyüş testi veya kardiyopulmoner egzersiz testi kullanma. Program öncesi/sonrası egzersiz kapasitesi, dispne, yaşam kalitesi ve ilgili kas kuvvetini izleme. Basit fonksiyonel testleri valide yürüyüş testlerinin yerine geçiyormuş gibi sunmama. Sürüm/yayın: 2023. Erişim: 24 Ekim 2026.",
+      "verification": "Primary search result verified; direct open attempted but blocked by 403 or browser challenge",
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "ex-cardiac",
+      "title": "Acute coronary syndromes — Recommendations (NICE NG185), cardiac rehabilitation after an MI",
+      "url": "https://www.nice.org.uk/guidance/ng185/chapter/Recommendations",
+      "kind": "Resmî klinik kılavuz",
+      "note": "Egzersizle kötüleşebilen kardiyak veya diğer durumları program öncesi değerlendirme ve gerekli uyarlamayı yapma. Algılanan efor, alışılmış aktivite, komorbidite ve katılım engellerini kaydetme. Kişinin sağlık inançlarını, tercihlerini ve sosyal gereksinimlerini bireysel programla ilişkilendirme. Sürüm/yayın: 2020 NG185; rehabilitation recommendations marked 2007/2013. Erişim: 24 Ekim 2026.",
+      "verification": "Primary search result verified; direct open attempted but blocked by 403 or browser challenge",
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "ex-ra",
+      "title": "Rheumatoid arthritis in adults: management — Recommendations (NICE NG100)",
+      "url": "https://www.nice.org.uk/guidance/ng100/chapter/Recommendations",
+      "kind": "Resmî klinik kılavuz",
+      "note": "İşlevi başlangıçta ve izlemde uygun araçla, örneğin HAQ ile değerlendirme. El/ayak sorunlarını, günlük yaşamı, hastalık aktivitesini ve komorbiditeleri birlikte gözden geçirme. Servikal omurga, akciğer ve göz komplikasyonu düşündüren belirtilerde uygun tıbbi yönlendirmeyi öğretme. Sürüm/yayın: 2018 NG100; individual recommendations updated through 2024. Erişim: 24 Ekim 2026.",
+      "verification": "Primary search result verified; direct open attempted but blocked by 403 or browser challenge",
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "ex-burn",
+      "title": "Clinical Practice Guideline: Early Mobilization and Rehabilitation of Critically Ill Burn Patients",
+      "url": "https://academic.oup.com/jbcr/article/44/1/1/6590256",
+      "kind": "Birincil kaynak / geliştirici",
+      "note": "Mobilizasyon öncesi vital bulgular, mental durum, havayolu/kateterler ve cerrahi kısıtları ekipçe gözden geçirme. Güçsüzlük, hareket, transfer ve ulaşılan mobilite düzeyini izleme. Greft, hemodinamik ve solunum bağlamından bağımsız sabit mobilizasyon takvimi üretmeme. Sürüm/yayın: 2023 journal issue; online 2022. Erişim: 24 Ekim 2026.",
+      "verification": "Opened primary page or full text successfully",
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "ex-case-stroke",
+      "title": "Impact of Proprioceptive Neuromuscular Facilitation Technique for Early Rehabilitation to Restore Motor Impairments in a Classic Case of Left Middle Cerebral Artery Stroke",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9733788/",
+      "kind": "Yayımlanmış olgu raporu",
+      "note": "Motor değerlendirme ile iletişim gereksinimini aynı plan içinde tartışma. Birlikte uygulanan girişimler ve doğal iyileşme nedeniyle tek olgudan PNF'nin üstünlüğünü çıkarmama. Sürüm/yayın: 2022-11-07. Erişim: 24 Ekim 2026.",
+      "verification": "PMC/PubMed indexed primary text verified; direct PMC open attempted but browser challenge returned",
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "ex-case-amputation",
+      "title": "Rehabilitation of a Patient after a Transtibial Amputation: A Case Report",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9705052/",
+      "kind": "Yayımlanmış olgu raporu",
+      "note": "ROM, kuvvet, ağrı, denge, transfer ve protez öncesi hazırlık alanlarını birlikte ele alma. Komorbiditenin hedef ve güvenli ilerleme üzerindeki etkisini sorgulama. Sürüm/yayın: 2022. Erişim: 24 Ekim 2026.",
+      "verification": "PMC/PubMed indexed primary text verified; direct PMC open attempted but browser challenge returned",
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "ex-case-burn",
+      "title": "Physiotherapeutic Rehabilitation of a Patient Following an Electrical Burn: A Case Report",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9616556/",
+      "kind": "Yayımlanmış olgu raporu",
+      "note": "Ağrı, eklem hareketi ve kişi için anlamlı el görevlerini seri değerlendirmeye bağlama. Yara/greft durumuna göre ölçüm ve girişim koşullarını tıbbi ekiple uyumlu seçme. Sürüm/yayın: 2022. Erişim: 24 Ekim 2026.",
+      "verification": "PMC/PubMed indexed primary text verified; direct PMC open attempted but browser challenge returned",
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "ex-case-concussion",
+      "title": "The Utility of Neuromotor Retraining to Augment Manual Therapy and Vestibular Rehabilitation in a Patient with Post-Concussion Syndrome: A Case Report",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7872469/",
+      "kind": "Yayımlanmış olgu raporu",
+      "note": "Servikal ROM, vestibülooküler işlev, postüral stabilite ve aktiviteyle belirti ilişkisini ayırarak değerlendirme. Hipotezleri tekrar muayeneyle güncelleme. Sürüm/yayın: 2021-02-01. Erişim: 24 Ekim 2026.",
+      "verification": "Primary full text opened successfully",
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "ex-case-cardiac",
+      "title": "Case Report: Onset of Takotsubo syndrome during a heart rehabilitation session",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12234314/",
+      "kind": "Yayımlanmış olgu raporu",
+      "note": "Yeni çarpıntı veya ritim değişikliğinde egzersizi durdurma ve tıbbi değerlendirme sürecini tartışma. Önceden yapılmış tolerans testinin her sonraki seansın güvenliğini garanti etmediğini öğretme. Sürüm/yayın: 2025-06-24. Erişim: 24 Ekim 2026.",
+      "verification": "PMC/PubMed indexed primary text verified; direct PMC open attempted but browser challenge returned",
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "ex-hipfracture",
+      "title": "NICE CG124: Hip fracture — mobilisation and multidisciplinary rehabilitation",
+      "url": "https://www.nice.org.uk/guidance/cg124/chapter/recommendations",
+      "kind": "Resmî klinik kılavuz",
+      "note": "Mobilizasyon öncesi tıbbi/cerrahi uygunluk, bireysel hedef ve çok disiplinli rehabilitasyon. Erişim: 24 Ekim 2026."
+    },
+    {
+      "id": "ex-radius",
+      "title": "Mehta ve ark. (2024): Distal Radius Fracture Rehabilitation — APTA/JOSPT",
+      "url": "https://doi.org/10.2519/jospt.2024.0301",
+      "kind": "Klinik uygulama kılavuzu",
+      "note": "Kırık sonrası standart muayene, işlev ve cerrahi/yük kısıtlarıyla uyumlu değerlendirme. Erişim: 24 Ekim 2026."
+    },
+    {
+      "id": "ex-heartfailure",
+      "title": "NICE NG106: Chronic heart failure — cardiac rehabilitation",
+      "url": "https://www.nice.org.uk/guidance/ng106/chapter/Recommendations",
+      "kind": "Resmî klinik kılavuz",
+      "note": "Bireysel egzersiz temelli rehabilitasyondan önce kişinin programa uygunluğunun değerlendirilmesi. Erişim: 24 Ekim 2026."
+    },
+    {
+      "id": "ex-diabetic-foot",
+      "title": "NICE NG19: Diabetic foot problems — risk assessment",
+      "url": "https://www.nice.org.uk/guidance/ng19/chapter/Recommendations",
+      "kind": "Resmî klinik kılavuz",
+      "note": "Nöropati, damar durumu, deri ve aktif ayak sorunu/Charcot şüphesi birlikte değerlendirilir. Erişim: 24 Ekim 2026."
+    }
+  ],
+  "modules": [
+    {
+      "id": "ex-lower-general",
+      "title": "Alt ekstremitede genel işlev",
+      "summary": "Alt ekstremiteye özgü hasta bildirimi, hedef görev ve performans gözlemi birlikte ele alınır. Diz özgü ölçek kalça veya ayak hedefinin yerine otomatik konmaz.",
+      "sourceIds": [
+        "mc-lefs",
+        "mc-psfs"
+      ],
+      "toolQuestion": {
+        "prompt": "Bu kişinin genel alt ekstremite aktivite güçlüğünü kaydetmek için hangileri uygundur?",
+        "type": "multi",
+        "options": [
+          {
+            "id": "a1",
+            "text": "LEFS gibi genel alt ekstremite işlev ölçeğini uygun ve geçerli dil sürümüyle kullanmak",
+            "correct": true,
+            "why": "LEFS alt ekstremite aktivite güçlüğünü kişi bildirimiyle ele alır."
+          },
+          {
+            "id": "a2",
+            "text": "Kişinin seçtiği günlük görevi yardım ve cihaz koşullarıyla gözlemek",
+            "correct": true,
+            "why": "Hasta bildirimi ile doğrudan görev performansı birbirini tamamlar."
+          },
+          {
+            "id": "a3",
+            "text": "Her alt ekstremite tanısında yalnız diz özgü KOOS kullanmak",
+            "correct": false,
+            "why": "Aracın hedef bölgesi ve yapısı kişinin sorununa uymalıdır."
+          },
+          {
+            "id": "a4",
+            "text": "Görüntüleme raporunu günlük işlev puanı olarak kullanmak",
+            "correct": false,
+            "why": "Görüntüleme günlük performansı doğrudan ölçmez."
+          }
+        ],
+        "explanation": "Ölçüm seçimi kişi, klinik uygunluk, görev hedefi ve geçerli uygulama koşullarıyla birlikte değerlendirilir.",
+        "sourceIds": [
+          "mc-lefs",
+          "mc-psfs"
+        ]
+      },
+      "applicationQuestion": {
+        "prompt": "İzlemde alt ekstremite işlev değişimi nasıl kaydedilir?",
+        "type": "multi",
+        "options": [
+          {
+            "id": "a1",
+            "text": "Aynı araç ve yönergeleri koruyup görev, cihaz ve yardım koşullarını belgelemek",
+            "correct": true,
+            "why": "Karşılaştırılabilir koşullar ve değişen destek bilgisi gerekir."
+          },
+          {
+            "id": "a2",
+            "text": "Kişi bildirimiyle gözlenen performansın farklılaşabileceğini açıklamak",
+            "correct": true,
+            "why": "Ölçümler farklı yapıları ve ortamları yansıtabilir."
+          },
+          {
+            "id": "a3",
+            "text": "Farklı ölçeklerin toplamlarını aynı puanmış gibi çıkarmak",
+            "correct": false,
+            "why": "Farklı ölçeklerin yapısı ve aralığı eşdeğer sayılmaz."
+          },
+          {
+            "id": "a4",
+            "text": "Tek iyi performanstan bütün günlük yaşamın bağımsız olduğunu çıkarmak",
+            "correct": false,
+            "why": "Tek görev tüm günlük bağlamları temsil etmez."
+          }
+        ],
+        "explanation": "Ölçüm seçimi kişi, klinik uygunluk, görev hedefi ve geçerli uygulama koşullarıyla birlikte değerlendirilir.",
+        "sourceIds": [
+          "mc-lefs",
+          "mc-psfs"
+        ]
+      }
+    },
+    {
+      "id": "ex-ped-fatigue",
+      "title": "Çocukta görev yükü ve yorgunluk",
+      "summary": "Çocuk ve aile bildirimi; günün zamanı, aktivite ve dinlenme koşullarıyla birlikte ele alınır. Yetişkin ölçeği çocuğa geçerlik varsayılarak aktarılmaz.",
+      "sourceIds": [
+        "rc-dmd",
+        "rc-family"
+      ],
+      "toolQuestion": {
+        "prompt": "Çocuğun görevle ilişkili yorgunluğunu değerlendirmek için hangileri uygundur?",
+        "type": "multi",
+        "options": [
+          {
+            "id": "a1",
+            "text": "Çocukla gelişimine uygun konuşup aileden görev-zaman-dinlenme örüntüsü almak",
+            "correct": true,
+            "why": "Çocuk ve aile bilgisi birlikte değerlendirilir."
+          },
+          {
+            "id": "a2",
+            "text": "Görev sırasında süre, dinlenme ve performans değişimini zorlamadan gözlemek",
+            "correct": true,
+            "why": "Güvenli gözlem yorgunluğu işlevle ilişkilendirir."
+          },
+          {
+            "id": "a3",
+            "text": "Yetişkin FSS toplamını her yaştaki çocuğa doğrudan uygulamak",
+            "correct": false,
+            "why": "Yaş, iletişim ve hedef grupta ölçüm uygunluğu doğrulanmalıdır."
+          },
+          {
+            "id": "a4",
+            "text": "Tükenme ortaya çıkana kadar maksimum tekrar yaptırmak",
+            "correct": false,
+            "why": "Test yükü klinik duruma uygun olmalı; tükenme zorlanmamalıdır."
+          }
+        ],
+        "explanation": "Ölçüm seçimi kişi, klinik uygunluk, görev hedefi ve geçerli uygulama koşullarıyla birlikte değerlendirilir.",
+        "sourceIds": [
+          "rc-dmd",
+          "rc-family"
+        ]
+      },
+      "applicationQuestion": {
+        "prompt": "Çocuk izleminde günler arasında farklı performans varsa ne yapılır?",
+        "type": "multi",
+        "options": [
+          {
+            "id": "a1",
+            "text": "Uyku, ilaç, okul yükü, test zamanı ve dinlenme koşullarını kaydetmek",
+            "correct": true,
+            "why": "Bağlam farklılıkları sonucu etkileyebilir."
+          },
+          {
+            "id": "a2",
+            "text": "Belirgin klinik bozulmada görevi kesip ilgili ekiple görüşmek",
+            "correct": true,
+            "why": "Güvenlik ölçümü sürdürmekten önce gelir."
+          },
+          {
+            "id": "a3",
+            "text": "Her düşük performansı kalıcı kas kaybı saymak",
+            "correct": false,
+            "why": "Performans değişimi tek bir mekanizmayı kanıtlamaz."
+          },
+          {
+            "id": "a4",
+            "text": "Aile gözlemini çocuk muayenede iyi olduğu için dışlamak",
+            "correct": false,
+            "why": "Ev ve klinik farklı koşulları temsil edebilir."
+          }
+        ],
+        "explanation": "Ölçüm seçimi kişi, klinik uygunluk, görev hedefi ve geçerli uygulama koşullarıyla birlikte değerlendirilir.",
+        "sourceIds": [
+          "rc-dmd",
+          "rc-family"
+        ]
+      }
+    },
+    {
+      "id": "ex-compression",
+      "title": "Kompresyon uyumu ve kullanım becerisi",
+      "summary": "Uzman ekibin belirlediği kompresyon ürününün teması, deri yanıtı ve kişinin kullanım becerisi değerlendirilir; basınç reçetesi bağımsız değiştirilmez.",
+      "sourceIds": [
+        "rc-lymph",
+        "rc-icf"
+      ],
+      "toolQuestion": {
+        "prompt": "Mevcut reçeteli kompresyon ürününde hangi değerlendirmeler uygundur?",
+        "type": "multi",
+        "options": [
+          {
+            "id": "a1",
+            "text": "Giyme/çıkarma becerisini, ürün temasını ve deri yanıtını gözlemek",
+            "correct": true,
+            "why": "Cihaz ile kişi etkileşimi kullanım güvenliğini etkiler."
+          },
+          {
+            "id": "a2",
+            "text": "Güncel reçeteyi, damar/güvenlik değerlendirmesini ve kişinin kullanım deneyimini kontrol etmek",
+            "correct": true,
+            "why": "Kompresyonun uygunluğu klinik ekip ve güncel durumla ilişkilidir."
+          },
+          {
+            "id": "a3",
+            "text": "Daha sıkı ürünün her kişide daha iyi olduğunu varsaymak",
+            "correct": false,
+            "why": "Basınç ve ürün uygunluğu kişiye özel değerlendirilir."
+          },
+          {
+            "id": "a4",
+            "text": "Yeni ağrı veya renk değişimini normal kabul ederek devam etmek",
+            "correct": false,
+            "why": "Yeni belirtiler güvenlik değerlendirmesi gerektirir."
+          }
+        ],
+        "explanation": "Ölçüm seçimi kişi, klinik uygunluk, görev hedefi ve geçerli uygulama koşullarıyla birlikte değerlendirilir.",
+        "sourceIds": [
+          "rc-lymph",
+          "rc-icf"
+        ]
+      },
+      "applicationQuestion": {
+        "prompt": "Ürün sonrası yeni rahatsızlık veya deri değişikliği bildirilirse ne yapılır?",
+        "type": "multi",
+        "options": [
+          {
+            "id": "a1",
+            "text": "Zorlamayı durdurup deri, uyum ve güncel klinik durumu ilgili ekiple yeniden değerlendirmek",
+            "correct": true,
+            "why": "Yeni bulguya göre güvenli plan gözden geçirilir."
+          },
+          {
+            "id": "a2",
+            "text": "Ürün, süre, bölge ve belirtilerin zaman ilişkisini belgelemek",
+            "correct": true,
+            "why": "Açık kayıt sorunun yorumunu destekler."
+          },
+          {
+            "id": "a3",
+            "text": "Basıncı kendi başına artırarak yanıtı denemek",
+            "correct": false,
+            "why": "Reçeteli basınç bağımsız değiştirilmez."
+          },
+          {
+            "id": "a4",
+            "text": "Yalnız çevre ölçümü iyi diye yakınmayı önemsiz saymak",
+            "correct": false,
+            "why": "Hacim ölçümü deri ve semptom güvenliğinin yerine geçmez."
+          }
+        ],
+        "explanation": "Ölçüm seçimi kişi, klinik uygunluk, görev hedefi ve geçerli uygulama koşullarıyla birlikte değerlendirilir.",
+        "sourceIds": [
+          "rc-lymph",
+          "rc-icf"
+        ]
+      }
+    }
+  ]
+}

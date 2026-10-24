@@ -1,0 +1,631 @@
+{
+  "checkedAt": "2026-10-24",
+  "purpose": "Turkish physiotherapy education: supplemental primary guidelines and original assessment-developer references.",
+  "editorialRules": [
+    "Sentetik eğitim vakası: Kurgusal verilerle oluşturulmuştur; gerçek hasta kaydı değildir. Her generated case should carry this explicit label.",
+    "Yayımlanmış olgu: Açık erişimli bilimsel bir yayına bağlantıdır; siteye ait gerçek hasta kaydı değildir. Published cases must be separated from synthetic teaching cases.",
+    "Do not reproduce patient images, dates, occupations, institutions, individual measurements or narratives. Extract only general assessment-learning questions in original words.",
+    "Case reports illustrate clinical reasoning and reporting; they cannot establish efficacy, universal exercise dose or prognosis.",
+    "No universal cutoffs or error-free clinical claims. Retain population, language/version, equipment, assistance, assessor training and repeat-test conditions. Link copyrighted assessment manuals rather than reproducing items."
+  ],
+  "sources": [
+    {
+      "id": "ex-stroke",
+      "title": "Stroke rehabilitation in adults — Recommendations (NICE NG236)",
+      "url": "https://www.nice.org.uk/guidance/ng236/chapter/Recommendations",
+      "kind": "official-guideline",
+      "topics": [
+        "inme",
+        "nörolojik rehabilitasyon"
+      ],
+      "note": "2023 guideline; recommendation text verified through official search result.",
+      "assessmentImplications": [
+        "Tarama: iletişim, yutma, transfer, basınç yarası riski ve pozisyonlama.",
+        "Kapsamlı değerlendirme: duyu, kas kuvveti, tonus, denge, biliş, görme, aktivite ve katılım.",
+        "Giriş/çıkışta uygun geçerli araçlarla işlevi izleme; hedefleri kişiyle belirleme."
+      ],
+      "accessedAt": "2026-10-24",
+      "publicationOrVersion": "2023-10-18",
+      "verification": "Primary search result verified; direct open attempted but blocked by 403 or browser challenge"
+    },
+    {
+      "id": "ex-parkinson",
+      "title": "Parkinson’s disease in adults — Recommendations (NICE NG71)",
+      "url": "https://www.nice.org.uk/guidance/ng71/chapter/Recommendations",
+      "kind": "official-guideline",
+      "topics": [
+        "Parkinson",
+        "yürüme",
+        "denge"
+      ],
+      "note": "Official recommendations support early physiotherapy assessment and Parkinson-specific therapy for motor or balance problems.",
+      "assessmentImplications": [
+        "Erken evrede fiziksel aktivite, motor işlev ve denge gereksinimlerini değerlendirme.",
+        "Günlük yaşam, iletişim ve yutma sorunlarını ekip içi yönlendirmeyle birlikte ele alma.",
+        "Öğretim uygulaması: tekrar testlerinde ilaç zamanı ve yardımcı cihaz koşullarını ayrıca kaydetme; bu kayıt önerisi eğitimsel çıkarımdır."
+      ],
+      "accessedAt": "2026-10-24",
+      "publicationOrVersion": "2017",
+      "verification": "Primary search result verified; direct open attempted but blocked by 403 or browser challenge"
+    },
+    {
+      "id": "ex-ms",
+      "title": "Multiple sclerosis in adults: management — Recommendations (NICE NG220)",
+      "url": "https://www.nice.org.uk/guidance/ng220/chapter/Recommendations",
+      "kind": "official-guideline",
+      "topics": [
+        "multipl skleroz",
+        "yorgunluk",
+        "spastisite"
+      ],
+      "note": "Official page shows last update 3 June 2026. Avoid using outdated diagnostic-criteria summaries.",
+      "assessmentImplications": [
+        "Yorgunluğu yalnızca MS'ye bağlamama; uyku, enfeksiyon, ilaçlar, ağrı ve duygudurum etkenlerini inceleme.",
+        "Mobilite hedeflerini belirleme; spastisiteyi artıran basınç yarası, mesane/bağırsak sorunu, enfeksiyon ve pozisyonlamayı değerlendirme.",
+        "Isı ve stresle dalgalanmayı test koşullarına ekleme."
+      ],
+      "accessedAt": "2026-10-24",
+      "publicationOrVersion": "2022-06-22; updated 2026-06-03",
+      "verification": "Primary search result verified; direct open attempted but blocked by 403 or browser challenge"
+    },
+    {
+      "id": "ex-sci",
+      "title": "ISNCSCI Resources — American Spinal Injury Association",
+      "url": "https://asia-spinalinjury.org/isncsci-resources/",
+      "kind": "official-assessment-developer",
+      "topics": [
+        "omurilik yaralanması",
+        "ASIA",
+        "ISNCSCI"
+      ],
+      "note": "Official resource page opened and lists 2026 ninth-edition worksheet/booklet. Linked current 2026 worksheet PDF also opened successfully (2 pages). Do not label 2019 as latest.",
+      "assessmentImplications": [
+        "Nörolojik seviye ve şiddet sınıflaması için güncel ISNCSCI formunu ve eğitimini kullanma.",
+        "Sağ/sol duyu ve motor bulguları, test edilemeyen öğeleri ve SCI dışı kısıtları açıklama.",
+        "Sınıflama ile kişinin transfer, tekerlekli sandalye ve katılım gereksinimlerini ayrı kaydetme."
+      ],
+      "accessedAt": "2026-10-24",
+      "publicationOrVersion": "2026 ninth edition; worksheet revision 2026",
+      "verification": "Opened primary page or full text successfully",
+      "currentWorksheetUrl": "https://asia-spinalinjury.org/wp-content/uploads/2026/07/ASIA-ISCOS-Worksheet-Both-Sides_4_2026.pdf"
+    },
+    {
+      "id": "ex-cp",
+      "title": "Cerebral Palsy — CanChild",
+      "url": "https://canchild.ca/diagnoses/cerebral-palsy/",
+      "kind": "official-assessment-developer",
+      "topics": [
+        "serebral palsi",
+        "GMFCS",
+        "GMFM"
+      ],
+      "note": "Developer research centre identifies GMFCS E&R, GMFM-88/66, Quality FM and motor growth curves as distinct resources.",
+      "assessmentImplications": [
+        "İşlev sınıflaması ile değişimi ölçen sonuç aracını ayırt etme.",
+        "Çocuğun günlük performansını ve aile önceliklerini motor kapasiteyle birlikte tartışma.",
+        "Yaş, işlev düzeyi ve aracın kapsamına göre uygun ölçümü seçme."
+      ],
+      "accessedAt": "2026-10-24",
+      "publicationOrVersion": "Undated resource hub",
+      "verification": "Primary search result verified; direct open attempted but blocked by 403 or browser challenge"
+    },
+    {
+      "id": "ex-gmfm",
+      "title": "GMFM Scoring — CanChild",
+      "url": "https://canchild.ca/resources/321-gmfm-scoring/",
+      "kind": "official-assessment-developer",
+      "topics": [
+        "serebral palsi",
+        "GMFM",
+        "pediatrik değerlendirme"
+      ],
+      "note": "Official scoring page requires the detailed manual and standardized starting positions; refuses or unadministered items are not tested.",
+      "assessmentImplications": [
+        "Test edilmeyen öğeyi gerçek sıfır performanstan ayırt etme.",
+        "Destek, mesafe, süre ve başlangıç pozisyonunu standardize etme.",
+        "GMFM-66 skorunu basit ham yüzde hesabıyla üretmeme; ilgili değerlendirme ve puanlama kılavuzuna yönlendirme."
+      ],
+      "accessedAt": "2026-10-24",
+      "publicationOrVersion": "Undated webpage; references 2021 manual",
+      "verification": "Primary search result verified; direct open attempted but blocked by 403 or browser challenge"
+    },
+    {
+      "id": "ex-dmd",
+      "title": "Clinical Recommendations — Duchenne Care UK / Duchenne UK",
+      "url": "https://www.duchenneuk.org/support/care/guides-for-clinicians",
+      "kind": "official-consensus-guideline-hub",
+      "topics": [
+        "Duchenne",
+        "nöromüsküler pediatri",
+        "kontraktür",
+        "solunum"
+      ],
+      "note": "Official page links physiotherapy/occupational therapy guidance developed by North Star specialists and endorsed networks, plus cardiac, respiratory and orthopaedic guidance. Detailed downloadable PT document could not be fetched; do not attribute specific intervals or cutoffs to it.",
+      "assessmentImplications": [
+        "Fizyoterapi değerlendirmesini kardiyak, solunum, kemik ve ortopedik izlemle ilişkilendirme.",
+        "Öğretim uygulaması: ambulasyon durumuna uygun motor araç, eklem hareket açıklığı, yardımcı cihaz ve bakım veren gereksinimini tartışma; ayrıntılı uygulamayı bağlantılı uzman kılavuzundan doğrulama."
+      ],
+      "accessedAt": "2026-10-24",
+      "publicationOrVersion": "Undated living guideline hub; based on 2018 international considerations",
+      "verification": "Opened primary page or full text successfully"
+    },
+    {
+      "id": "ex-lowback",
+      "title": "Low back pain and sciatica in over 16s: assessment and management — Recommendations (NICE NG59)",
+      "url": "https://www.nice.org.uk/guidance/ng59/chapter/Recommendations",
+      "kind": "official-guideline",
+      "topics": [
+        "bel ağrısı",
+        "siyatik",
+        "kırmızı bayraklar"
+      ],
+      "note": "Official search cache retrieved stable assessment recommendations; direct fetch returned 403. July 2026 withdrawal of psychological/combined-programme statements makes older cached treatment passages unreliable; no such treatment claims included here.",
+      "assessmentImplications": [
+        "Yeni/değişen belirtilerde travma, malignite, enfeksiyon ve inflamatuvar hastalık gibi alternatif nedenleri değerlendirme.",
+        "Yeni epizotta uygun risk sınıflamasıyla ortak karar vermeyi destekleme.",
+        "Görüntülemeyi rutin fizyoterapi önkoşulu olarak sunmama; uzman değerlendirmede yönetimi değiştirip değiştirmeyeceği önemlidir."
+      ],
+      "accessedAt": "2026-10-24",
+      "publicationOrVersion": "2016 assessment recommendations; 2020 medication update; 2026 treatment withdrawal flagged separately",
+      "verification": "Primary search result verified; direct open attempted but blocked by 403 or browser challenge"
+    },
+    {
+      "id": "ex-oa",
+      "title": "Osteoarthritis in over 16s: diagnosis and management — Recommendations (NICE NG226)",
+      "url": "https://www.nice.org.uk/guidance/NG226/chapter/recommendations",
+      "kind": "official-guideline",
+      "topics": [
+        "osteoartrit",
+        "kalça",
+        "diz"
+      ],
+      "note": "Official recommendations and visual summary verified through search; symptoms and function guide management.",
+      "assessmentImplications": [
+        "Ağrı, günlük işlev, aktivite hedefleri ve egzersize katılım engellerini birlikte kaydetme.",
+        "Tipik osteoartritte klinik öykü/muayeneyi esas alma; atipik özelliklerde alternatif tanıları inceleme.",
+        "Alt ekstremite OA'da yürüme yardımcısının işlevsel etkisini ve bireysel egzersiz gereksinimini değerlendirme."
+      ],
+      "accessedAt": "2026-10-24",
+      "publicationOrVersion": "2022-10-19",
+      "verification": "Primary search result verified; direct open attempted but blocked by 403 or browser challenge"
+    },
+    {
+      "id": "ex-neck",
+      "title": "Neck Pain: Revision 2017 — Clinical Practice Guidelines",
+      "url": "https://www.orthopt.org/uploads/content_files/files/Neck%20Pain%20CPG%20-%20Revision%202017.pdf",
+      "kind": "official-professional-guideline",
+      "topics": [
+        "boyun ağrısı",
+        "servikal radiküler belirtiler",
+        "baş ağrısı"
+      ],
+      "note": "Academy of Orthopaedic Physical Therapy-hosted guideline; date explicit, not described as a new 2026 guideline.",
+      "assessmentImplications": [
+        "Ciddi patoloji ve nörolojik/arteriyel belirtiler için tarama ve gerektiğinde yönlendirme.",
+        "Hareket kısıtlılığı, travma öyküsü, baş ağrısı ve kola yayılan belirtilerle klinik sunumu sınıflama.",
+        "Ağrı, işlev, özür ve psikososyal başlangıç durumunu geçerli özbildirim araçlarıyla izleme."
+      ],
+      "accessedAt": "2026-10-24",
+      "publicationOrVersion": "2017",
+      "verification": "Primary search result verified; direct open attempted but blocked by 403 or browser challenge"
+    },
+    {
+      "id": "ex-shoulder",
+      "title": "Rotator Cuff Tendinopathy Diagnosis, Nonsurgical Medical Care, and Rehabilitation: A Clinical Practice Guideline",
+      "url": "https://www.orthopt.org/uploads/content_files/files/Rotator_Cuff_CPG.pdf",
+      "kind": "official-professional-guideline",
+      "topics": [
+        "omuz",
+        "rotator manşet tendinopatisi",
+        "spora dönüş"
+      ],
+      "note": "2025 guideline; includes partial-thickness tears, excludes full-thickness tears.",
+      "assessmentImplications": [
+        "Yüklenme öyküsü, iş/spor gereksinimi, servikal ve nörolojik belirtiler, hedefler ve bağlamsal etkenleri sorgulama.",
+        "Aktif/pasif ROM'u ölçüm aracıyla, izometrik kuvveti el dinamometresiyle değerlendirme.",
+        "Ağrı/özür için geçerli sonuç aracı ve spora dönüşte görev kapasitesi/yük toleransı kullanma."
+      ],
+      "accessedAt": "2026-10-24",
+      "publicationOrVersion": "2025",
+      "verification": "Primary search result verified; direct open attempted but blocked by 403 or browser challenge"
+    },
+    {
+      "id": "ex-ankle",
+      "title": "Ankle Stability and Movement Coordination Impairments: Lateral Ankle Ligament Sprains Revision",
+      "url": "https://www.orthopt.org/uploads/content_files/files/jospt.2021.0302.pdf",
+      "kind": "official-professional-guideline",
+      "topics": [
+        "ayak bileği burkulması",
+        "kronik ayak bileği instabilitesi",
+        "spor"
+      ],
+      "note": "2021 Academy of Orthopaedic Physical Therapy guideline; acute sprain and chronic instability are distinct presentations.",
+      "assessmentImplications": [
+        "Önceki burkulma, instabilite hissi, yük verme, ağrı ve dorsifleksiyon ROM'unu kaydetme.",
+        "Güvenle tolere edildiğinde denge, sıçrama/iniş ve dinamik postüral kontrolü inceleme.",
+        "Kronik instabilitede ayak-ayak bileği yanında diz/kalça hareket sistemi ve kişinin işlev bildirimini değerlendirme."
+      ],
+      "accessedAt": "2026-10-24",
+      "publicationOrVersion": "2021",
+      "verification": "Primary search result verified; direct open attempted but blocked by 403 or browser challenge"
+    },
+    {
+      "id": "ex-vestibular",
+      "title": "Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: An Updated Clinical Practice Guideline From the Academy of Neurologic Physical Therapy of the American Physical Therapy Association",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8920012/",
+      "kind": "official-professional-guideline-open-fulltext",
+      "topics": [
+        "vestibüler hipofonksiyon",
+        "baş dönmesi",
+        "denge"
+      ],
+      "note": "2022 primary ANPT guideline. Scope is peripheral hypofunction; do not generalize its exercise recommendations to every dizziness diagnosis.",
+      "assessmentImplications": [
+        "Baş dönmesi, osilopsi, hareket duyarlılığı, bakış stabilitesi, yürüme ve denge alanlarını ayırma.",
+        "Sonuç ölçümünü belirti yükü ve aktivite kısıtına göre seçme.",
+        "İlerleme/durdurma kararında hedefler, belirtiler, komorbidite, uyum ve plato durumunu yeniden değerlendirme."
+      ],
+      "accessedAt": "2026-10-24",
+      "publicationOrVersion": "2022",
+      "verification": "Primary search result verified; direct open attempted but blocked by 403 or browser challenge"
+    },
+    {
+      "id": "ex-falls",
+      "title": "Clinical Resources — STEADI, Older Adult Fall Prevention — CDC",
+      "url": "https://www.cdc.gov/steadi/hcp/clinical-resources/index.html",
+      "kind": "official-assessment-implementation",
+      "topics": [
+        "geriatri",
+        "düşme",
+        "TUG",
+        "ortostatik kan basıncı"
+      ],
+      "note": "Official CDC instructions for TUG, chair stand, staged balance and orthostatic BP. No population-independent threshold is supplied in this research pack.",
+      "assessmentImplications": [
+        "Düşme öyküsüyle mobilite, alt ekstremite kuvveti/dayanıklılığı, denge ve ortostatik belirtileri birleştirme.",
+        "TUG'da güvenlik gözetimi, alışılmış ayakkabı ve yardımcı cihazı kaydetme.",
+        "Tek test zamanını tek başına tanı veya düşmeye ilişkin kesin tahmin olarak sunmama."
+      ],
+      "accessedAt": "2026-10-24",
+      "publicationOrVersion": "Undated resource hub; linked TUG instructions 2017",
+      "verification": "Opened primary page or full text successfully"
+    },
+    {
+      "id": "ex-amputation",
+      "title": "Rehabilitation of Lower Limb Amputation (2025) — VA/DOD Clinical Practice Guidelines",
+      "url": "https://www.healthquality.va.gov/guidelines/rehab/amp/index.asp",
+      "kind": "official-guideline",
+      "topics": [
+        "amputasyon",
+        "protez",
+        "rezidüel ekstremite",
+        "yürüme analizi"
+      ],
+      "note": "Official 2025 resource hub includes routine care, residual limb management, gait analysis and pain tools. Adults; not a pediatric guideline.",
+      "assessmentImplications": [
+        "Amputasyon öncesi/sonrası evreyi ve primer bakım gereksinimlerini ayırma.",
+        "Rezidüel ekstremite, ağrı, yürüme analizi ve günlük yaşama katılımı disiplinler arası gözden geçirme.",
+        "Öğretim uygulaması: cilt toleransı, protez uyumu ve fonksiyonel hedefleri birlikte kaydetme; ayrıntılı protokolü resmi araçtan doğrulama."
+      ],
+      "accessedAt": "2026-10-24",
+      "publicationOrVersion": "2025 release; full guideline dated December 2024",
+      "verification": "Opened primary page or full text successfully"
+    },
+    {
+      "id": "ex-orthosis",
+      "title": "Orthotics and Neuroprosthetics CPG — Clinical Highlights for AFO and FES Post Stroke",
+      "url": "https://www.neuropt.org/docs/default-source/cpgs/afo-fes/orthotics-and-neuroprosthetics-cpg.pdf?sfvrsn=a37c5d43_0",
+      "kind": "official-guideline-implementation",
+      "topics": [
+        "ortez",
+        "AFO",
+        "FES",
+        "inme",
+        "ayak düşmesi"
+      ],
+      "note": "ANPT 2021 CPG clinical highlights. Resource stresses individualized device choice and repeated reassessment.",
+      "assessmentImplications": [
+        "AFO/FES denemesinde bireysel hedefleri, yürüme ve denge etkilerini değerlendirme.",
+        "İyileşme ve gereksinim değiştikçe cihazı yeniden değerlendirme.",
+        "Cihazın yürüme yararını spastisite azalması varsayımıyla eşitlememe."
+      ],
+      "accessedAt": "2026-10-24",
+      "publicationOrVersion": "2021",
+      "verification": "Opened primary page or full text successfully"
+    },
+    {
+      "id": "ex-lymph",
+      "title": "The Diagnosis and Treatment of Peripheral Lymphedema: 2023 Consensus Document of the International Society of Lymphology",
+      "url": "https://isl.arizona.edu/sites/default/files/2024-11/THE-DIAGNOSIS-AND-TREATMENT-OF-PERIPHERAL-LYMPHEDEMA-2023-CONSENSUS-DOCUMENT-OF-THE-INTERNATIONAL-SOCIETY-OF-LYMPHOLOGY.pdf",
+      "kind": "official-consensus-guideline",
+      "topics": [
+        "lenfödem",
+        "ödem",
+        "onkolojik rehabilitasyon"
+      ],
+      "note": "ISL-hosted consensus and PubMed PMID 39207406 verified. Consensus explicitly acknowledges evidence limitations and individual clinical circumstances.",
+      "assessmentImplications": [
+        "Lenfödem değerlendirmesini şişlik var/yok ikiliğinden daha geniş bir klinik öykü ve muayene çerçevesine yerleştirme.",
+        "Öğretim uygulaması: standart anatomik noktalarda seri çevre/hacim ölçümü, cilt durumu ve işlevi izleme; yöntem ayrıntılarını tam belgeden doğrulama.",
+        "Hızla gelişen ağrılı/kızarık şişlikte rutin eğitim senaryosu yerine tıbbi değerlendirme gereğini tartışma; bu genel güvenlik çıkarımıdır."
+      ],
+      "accessedAt": "2026-10-24",
+      "publicationOrVersion": "2023 consensus",
+      "verification": "Opened primary page or full text successfully"
+    },
+    {
+      "id": "ex-pulmonary-ats",
+      "title": "Pulmonary Rehabilitation for Adults with Chronic Respiratory Disease: An Official American Thoracic Society Clinical Practice Guideline",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10449064/",
+      "kind": "official-guideline-open-fulltext",
+      "topics": [
+        "pulmoner rehabilitasyon",
+        "KOAH",
+        "interstisyel akciğer hastalığı",
+        "pulmoner hipertansiyon"
+      ],
+      "note": "2023 primary ATS guideline; recommendation strength differs by population and delivery question.",
+      "assessmentImplications": [
+        "Bireysel değerlendirme ve sonuç ölçümünü egzersiz, eğitim ve öz yönetimle bağlama.",
+        "Egzersiz kapasitesi, dispne ve sağlıkla ilişkili yaşam kalitesini birlikte izleme.",
+        "KOAH, ILD ve pulmoner hipertansiyon kanıtını ve risk bağlamını birbirine karıştırmama."
+      ],
+      "accessedAt": "2026-10-24",
+      "publicationOrVersion": "2023-08-15",
+      "verification": "Opened primary page or full text successfully"
+    },
+    {
+      "id": "ex-pulmonary-bts",
+      "title": "British Thoracic Society Clinical Statement on pulmonary rehabilitation",
+      "url": "https://doi.org/10.1136/thorax-2023-220439",
+      "kind": "official-professional-clinical-statement",
+      "topics": [
+        "pulmoner rehabilitasyon",
+        "6DYT",
+        "ISWT",
+        "egzersiz testi"
+      ],
+      "note": "2023 primary BTS statement provides practical assessment and outcome requirements.",
+      "assessmentImplications": [
+        "Egzersiz güvenliği ve reçete için yüz yüze gözetimli geçerli yürüyüş testi veya kardiyopulmoner egzersiz testi kullanma.",
+        "Program öncesi/sonrası egzersiz kapasitesi, dispne, yaşam kalitesi ve ilgili kas kuvvetini izleme.",
+        "Basit fonksiyonel testleri valide yürüyüş testlerinin yerine geçiyormuş gibi sunmama."
+      ],
+      "accessedAt": "2026-10-24",
+      "publicationOrVersion": "2023",
+      "verification": "Primary search result verified; direct open attempted but blocked by 403 or browser challenge"
+    },
+    {
+      "id": "ex-cardiac",
+      "title": "Acute coronary syndromes — Recommendations (NICE NG185), cardiac rehabilitation after an MI",
+      "url": "https://www.nice.org.uk/guidance/ng185/chapter/Recommendations",
+      "kind": "official-guideline",
+      "topics": [
+        "kardiyak rehabilitasyon",
+        "miyokart enfarktüsü",
+        "egzersiz toleransı"
+      ],
+      "note": "Official cardiac rehabilitation section 1.8 verified; acute coronary treatment details are outside physiotherapy teaching scope.",
+      "assessmentImplications": [
+        "Egzersizle kötüleşebilen kardiyak veya diğer durumları program öncesi değerlendirme ve gerekli uyarlamayı yapma.",
+        "Algılanan efor, alışılmış aktivite, komorbidite ve katılım engellerini kaydetme.",
+        "Kişinin sağlık inançlarını, tercihlerini ve sosyal gereksinimlerini bireysel programla ilişkilendirme."
+      ],
+      "accessedAt": "2026-10-24",
+      "publicationOrVersion": "2020 NG185; rehabilitation recommendations marked 2007/2013",
+      "verification": "Primary search result verified; direct open attempted but blocked by 403 or browser challenge"
+    },
+    {
+      "id": "ex-ra",
+      "title": "Rheumatoid arthritis in adults: management — Recommendations (NICE NG100)",
+      "url": "https://www.nice.org.uk/guidance/ng100/chapter/Recommendations",
+      "kind": "official-guideline",
+      "topics": [
+        "romatoid artrit",
+        "inflamatuvar artrit",
+        "el işlevi",
+        "HAQ"
+      ],
+      "note": "Official recommendation text verified; educational content must distinguish inflammatory disease activity from mechanical pain.",
+      "assessmentImplications": [
+        "İşlevi başlangıçta ve izlemde uygun araçla, örneğin HAQ ile değerlendirme.",
+        "El/ayak sorunlarını, günlük yaşamı, hastalık aktivitesini ve komorbiditeleri birlikte gözden geçirme.",
+        "Servikal omurga, akciğer ve göz komplikasyonu düşündüren belirtilerde uygun tıbbi yönlendirmeyi öğretme."
+      ],
+      "accessedAt": "2026-10-24",
+      "publicationOrVersion": "2018 NG100; individual recommendations updated through 2024",
+      "verification": "Primary search result verified; direct open attempted but blocked by 403 or browser challenge"
+    },
+    {
+      "id": "ex-burn",
+      "title": "Clinical Practice Guideline: Early Mobilization and Rehabilitation of Critically Ill Burn Patients",
+      "url": "https://academic.oup.com/jbcr/article/44/1/1/6590256",
+      "kind": "official-professional-guideline",
+      "topics": [
+        "yanık",
+        "yoğun bakım",
+        "erken mobilizasyon",
+        "greft"
+      ],
+      "note": "American Burn Association primary guideline, 2023 journal issue. Conditional recommendations and insufficient-evidence areas must remain explicit.",
+      "assessmentImplications": [
+        "Mobilizasyon öncesi vital bulgular, mental durum, havayolu/kateterler ve cerrahi kısıtları ekipçe gözden geçirme.",
+        "Güçsüzlük, hareket, transfer ve ulaşılan mobilite düzeyini izleme.",
+        "Greft, hemodinamik ve solunum bağlamından bağımsız sabit mobilizasyon takvimi üretmeme."
+      ],
+      "accessedAt": "2026-10-24",
+      "publicationOrVersion": "2023 journal issue; online 2022",
+      "verification": "Opened primary page or full text successfully"
+    }
+  ],
+  "publishedCases": [
+    {
+      "id": "ex-case-stroke",
+      "title": "Impact of Proprioceptive Neuromuscular Facilitation Technique for Early Rehabilitation to Restore Motor Impairments in a Classic Case of Left Middle Cerebral Artery Stroke",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9733788/",
+      "kind": "published-case-report-open-fulltext",
+      "topics": [
+        "inme",
+        "motor bozukluk",
+        "iletişim"
+      ],
+      "note": "PubMed PMID 36514562 verifies title, case-report type and PMC link. Real published report; not a synthetic case or a record held by this site.",
+      "assessmentImplications": [
+        "Motor değerlendirme ile iletişim gereksinimini aynı plan içinde tartışma.",
+        "Birlikte uygulanan girişimler ve doğal iyileşme nedeniyle tek olgudan PNF'nin üstünlüğünü çıkarmama."
+      ],
+      "accessedAt": "2026-10-24",
+      "publicationOrVersion": "2022-11-07",
+      "verification": "PMC/PubMed indexed primary text verified; direct PMC open attempted but browser challenge returned"
+    },
+    {
+      "id": "ex-case-amputation",
+      "title": "Rehabilitation of a Patient after a Transtibial Amputation: A Case Report",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9705052/",
+      "kind": "published-case-report-open-fulltext",
+      "topics": [
+        "amputasyon",
+        "protez öncesi",
+        "komorbidite"
+      ],
+      "note": "Primary PMC indexed text verified; direct open browser challenge recorded. Use only general reasoning questions; no patient-specific values or timeline copied.",
+      "assessmentImplications": [
+        "ROM, kuvvet, ağrı, denge, transfer ve protez öncesi hazırlık alanlarını birlikte ele alma.",
+        "Komorbiditenin hedef ve güvenli ilerleme üzerindeki etkisini sorgulama."
+      ],
+      "accessedAt": "2026-10-24",
+      "publicationOrVersion": "2022",
+      "verification": "PMC/PubMed indexed primary text verified; direct PMC open attempted but browser challenge returned"
+    },
+    {
+      "id": "ex-case-burn",
+      "title": "Physiotherapeutic Rehabilitation of a Patient Following an Electrical Burn: A Case Report",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9616556/",
+      "kind": "published-case-report-open-fulltext",
+      "topics": [
+        "yanık",
+        "el",
+        "günlük yaşam"
+      ],
+      "note": "Primary PMC indexed text verified; direct open browser challenge recorded. Published exercise doses and recovery values are not general prescriptions.",
+      "assessmentImplications": [
+        "Ağrı, eklem hareketi ve kişi için anlamlı el görevlerini seri değerlendirmeye bağlama.",
+        "Yara/greft durumuna göre ölçüm ve girişim koşullarını tıbbi ekiple uyumlu seçme."
+      ],
+      "accessedAt": "2026-10-24",
+      "publicationOrVersion": "2022",
+      "verification": "PMC/PubMed indexed primary text verified; direct PMC open attempted but browser challenge returned"
+    },
+    {
+      "id": "ex-case-concussion",
+      "title": "The Utility of Neuromotor Retraining to Augment Manual Therapy and Vestibular Rehabilitation in a Patient with Post-Concussion Syndrome: A Case Report",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7872469/",
+      "kind": "published-case-report-open-fulltext",
+      "topics": [
+        "konküzyon",
+        "vestibüler",
+        "servikal",
+        "denge"
+      ],
+      "note": "PMC title and assessment description verified. Case illustrates multisystem reasoning; not proof of a superior intervention package.",
+      "assessmentImplications": [
+        "Servikal ROM, vestibülooküler işlev, postüral stabilite ve aktiviteyle belirti ilişkisini ayırarak değerlendirme.",
+        "Hipotezleri tekrar muayeneyle güncelleme."
+      ],
+      "accessedAt": "2026-10-24",
+      "publicationOrVersion": "2021-02-01",
+      "verification": "Primary full text opened successfully"
+    },
+    {
+      "id": "ex-case-cardiac",
+      "title": "Case Report: Onset of Takotsubo syndrome during a heart rehabilitation session",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12234314/",
+      "kind": "published-case-report-open-fulltext",
+      "topics": [
+        "kardiyak rehabilitasyon",
+        "beklenmeyen belirti",
+        "yönlendirme"
+      ],
+      "note": "2025 primary PMC indexed report verified; direct open browser challenge recorded. Source contains apparent reversed BP wording; do not copy numerical thresholds, medication doses or patient-specific vitals.",
+      "assessmentImplications": [
+        "Yeni çarpıntı veya ritim değişikliğinde egzersizi durdurma ve tıbbi değerlendirme sürecini tartışma.",
+        "Önceden yapılmış tolerans testinin her sonraki seansın güvenliğini garanti etmediğini öğretme."
+      ],
+      "accessedAt": "2026-10-24",
+      "publicationOrVersion": "2025-06-24",
+      "verification": "PMC/PubMed indexed primary text verified; direct PMC open attempted but browser challenge returned"
+    }
+  ],
+  "verificationLimitations": [
+    "Verified means title and URL were present in primary official search results or opened primary pages; not every linked full document was line-by-line appraised.",
+    "NICE direct fetches sometimes returned 403; official search results were used, with a specific stale-cache caveat for NG59.",
+    "Local Turkish measurement validation, translation permission, professional scope and institutional protocols require their own checks before implementing scored clinical calculators."
+  ],
+  "topicSourceMap": {
+    "amputee-prosthetic": [
+      "ex-amputation"
+    ],
+    "pulmonary": [
+      "ex-pulmonary-ats",
+      "ex-pulmonary-bts"
+    ],
+    "cp": [
+      "ex-cp",
+      "ex-gmfm"
+    ],
+    "burns": [
+      "ex-burn"
+    ],
+    "sci": [
+      "ex-sci"
+    ],
+    "vestibular": [
+      "ex-vestibular"
+    ],
+    "cardiac": [
+      "ex-cardiac"
+    ],
+    "shoulder": [
+      "ex-shoulder"
+    ],
+    "stroke": [
+      "ex-stroke",
+      "ex-orthosis"
+    ],
+    "ankle": [
+      "ex-ankle"
+    ],
+    "lymphoedema": [
+      "ex-lymph"
+    ],
+    "oa": [
+      "ex-oa"
+    ],
+    "geriatric-falls": [
+      "ex-falls"
+    ],
+    "low-back": [
+      "ex-lowback"
+    ],
+    "ms": [
+      "ex-ms",
+      "ex-vestibular"
+    ],
+    "neck": [
+      "ex-neck"
+    ],
+    "orthotic": [
+      "ex-orthosis"
+    ],
+    "neuromuscular-pediatrics": [
+      "ex-dmd"
+    ],
+    "inflammatory-arthritis": [
+      "ex-ra"
+    ],
+    "parkinson": [
+      "ex-parkinson",
+      "ex-falls"
+    ]
+  }
+}

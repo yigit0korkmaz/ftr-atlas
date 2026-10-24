@@ -1,0 +1,206 @@
+[
+  {
+    "id": "nc-berg",
+    "expected": "Berg ve ark. (1992): Measuring balance in the elderly",
+    "actual": "Measuring balance in the elderly: validation of an instrument.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/1468055/"
+  },
+  {
+    "id": "nc-fga",
+    "expected": "Wrisley ve ark. (2004): Functional Gait Assessment",
+    "actual": "Reliability, internal consistency, and validity of data obtained with the functional gait assessment.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/15449976/"
+  },
+  {
+    "id": "nc-tis",
+    "expected": "Verheyden ve ark. (2004): Trunk Impairment Scale",
+    "actual": "The Trunk Impairment Scale: a new tool to measure motor impairment of the trunk after stroke.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/15137564/"
+  },
+  {
+    "id": "nc-pdq",
+    "expected": "Peto ve ark. (1995): PDQ-39 geliştirme ve geçerlik",
+    "actual": "The development and validation of a short measure of functioning and well being for individuals with Parkinson's disease.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/7613534/"
+  },
+  {
+    "id": "nc-pass",
+    "expected": "Benaim ve ark. (1999): Validation of the Postural Assessment Scale for Stroke Patients",
+    "actual": "Validation of a standardized assessment of postural control in stroke patients: the Postural Assessment Scale for Stroke Patients (PASS).",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/10471437/"
+  },
+  {
+    "id": "nc-fss",
+    "expected": "Krupp ve ark. (1989): Fatigue Severity Scale, MS ve SLE uygulaması",
+    "actual": "The fatigue severity scale. Application to patients with multiple sclerosis and systemic lupus erythematosus.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/2803071/"
+  },
+  {
+    "id": "nc-nfog",
+    "expected": "Nieuwboer ve ark. (2009): Reliability of the New Freezing of Gait Questionnaire",
+    "actual": "Reliability of the new freezing of gait questionnaire: agreement between patients with Parkinson's disease and their carers.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19660949/"
+  },
+  {
+    "id": "nc-nfoglimit",
+    "expected": "Hulzinga ve ark. (2020): NFOG-Q tekrar test ve değişime duyarlılık sınırlılıkları",
+    "actual": "The New Freezing of Gait Questionnaire: Unsuitable as an Outcome in Clinical Trials?",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32071940/"
+  },
+  {
+    "id": "nc-gonio",
+    "expected": "Hancock ve ark. (2018): Accuracy and reliability of knee goniometry methods",
+    "actual": "Accuracy and reliability of knee goniometry methods.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30341552/"
+  },
+  {
+    "id": "mc-nrs",
+    "expected": "Farrar JT et al. Clinical importance of changes in chronic pain intensity measured on an 11-point numerical pain rating scale. Pain. 2001;94:149–158.",
+    "actual": "Clinical importance of changes in chronic pain intensity measured on an 11-point numerical pain rating scale.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/11690728/"
+  },
+  {
+    "id": "mc-fabq",
+    "expected": "Waddell G et al. A Fear-Avoidance Beliefs Questionnaire (FABQ). Pain. 1993;52:157–168.",
+    "actual": "A Fear-Avoidance Beliefs Questionnaire (FABQ) and the role of fear-avoidance beliefs in chronic low back pain and disability.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/8455963/"
+  },
+  {
+    "id": "mc-spadi",
+    "expected": "Roach KE et al. Development of a shoulder pain and disability index. Arthritis Care Res. 1991;4:143–149.",
+    "actual": "Development of a shoulder pain and disability index.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/11188601/"
+  },
+  {
+    "id": "mc-lefs",
+    "expected": "Binkley JM et al. The Lower Extremity Functional Scale: scale development, measurement properties, and clinical application. Phys Ther. 1999;79:371–383.",
+    "actual": "The Lower Extremity Functional Scale (LEFS): scale development, measurement properties, and clinical application. North American Orthopaedic Rehabilitation Research Network.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/10201543/"
+  },
+  {
+    "id": "mc-odi",
+    "expected": "Fairbank JC et al. The Oswestry low back pain disability questionnaire. Physiotherapy. 1980;66:271–273.",
+    "actual": "The Oswestry low back pain disability questionnaire.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/6450426/"
+  },
+  {
+    "id": "mc-rmdq",
+    "expected": "Roland M, Morris R. A study of the natural history of back pain. Part I: development of a reliable and sensitive measure of disability in low-back pain. Spine. 1983;8:141–144.",
+    "actual": "A study of the natural history of back pain. Part I: development of a reliable and sensitive measure of disability in low-back pain.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/6222486/"
+  },
+  {
+    "id": "mc-rula",
+    "expected": "McAtamney L, Corlett EN. RULA: a survey method for the investigation of work-related upper limb disorders. Appl Ergon. 1993;24:91–99.",
+    "actual": "RULA: a survey method for the investigation of work-related upper limb disorders.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/15676903/"
+  },
+  {
+    "id": "mc-reba",
+    "expected": "Hignett S, McAtamney L. Rapid entire body assessment (REBA). Appl Ergon. 2000;31:201–205.",
+    "actual": "Rapid entire body assessment (REBA).",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/10711982/"
+  },
+  {
+    "id": "mc-nordic",
+    "expected": "Kuorinka I et al. Standardised Nordic questionnaires for the analysis of musculoskeletal symptoms. Appl Ergon. 1987;18:233–237.",
+    "actual": "Standardised Nordic questionnaires for the analysis of musculoskeletal symptoms.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/15676628/"
+  },
+  {
+    "id": "mc-gonio",
+    "expected": "Hancock GE et al. Accuracy and reliability of knee goniometry methods. J Exp Orthop. 2018;5:46.",
+    "actual": "Accuracy and reliability of knee goniometry methods.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30341552/"
+  },
+  {
+    "id": "mc-gonioreliability",
+    "expected": "Mayerson NH, Milano RA. Goniometric measurement reliability in physical medicine. Arch Phys Med Rehabil. 1984;65:92–94.",
+    "actual": "Goniometric measurement reliability in physical medicine.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/6696609/"
+  },
+  {
+    "id": "mc-radic",
+    "expected": "Wainner RS et al. Reliability and diagnostic accuracy of the clinical examination and patient self-report measures for cervical radiculopathy. Spine. 2003;28:52–62.",
+    "actual": "Reliability and diagnostic accuracy of the clinical examination and patient self-report measures for cervical radiculopathy.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12544957/"
+  },
+  {
+    "id": "mc-acl",
+    "expected": "Kotsifaki ve ark. (2023). Aspetar clinical practice guideline on rehabilitation after ACL reconstruction.",
+    "actual": "Aspetar clinical practice guideline on rehabilitation after anterior cruciate ligament reconstruction.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36731908/"
+  },
+  {
+    "id": "mc-vest",
+    "expected": "Hall ve ark. (2022). Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: Updated CPG.",
+    "actual": "Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: An Updated Clinical Practice Guideline From the Academy of Neurologic Physical Therapy of the American Physical Therapy Association.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34864777/"
+  },
+  {
+    "id": "mc-dhi",
+    "expected": "Jacobson ve Newman (1990). Development of the Dizziness Handicap Inventory.",
+    "actual": "The development of the Dizziness Handicap Inventory.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/2317323/"
+  },
+  {
+    "id": "mc-fga",
+    "expected": "Wrisley ve ark. (2004). Reliability, internal consistency, and validity of Functional Gait Assessment.",
+    "actual": "Reliability, internal consistency, and validity of data obtained with the functional gait assessment.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/15449976/"
+  },
+  {
+    "id": "rc-aims",
+    "expected": "Piper ve ark. (1992) — Alberta Infant Motor Scale geliştirme ve doğrulama",
+    "actual": "Construction and validation of the Alberta Infant Motor Scale (AIMS).",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/1468050/"
+  },
+  {
+    "id": "rc-gmfm",
+    "expected": "Russell ve ark. (1989) — Kaba motor değişimin GMFM ile ölçülmesi",
+    "actual": "The gross motor function measure: a means to evaluate the effects of physical therapy.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/2753238/"
+  },
+  {
+    "id": "rc-nsaa",
+    "expected": "Scott ve ark. (2012) — Ambulatuvar DMD için NSAA geliştirme",
+    "actual": "Development of a functional assessment scale for ambulatory boys with Duchenne muscular dystrophy.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21954141/"
+  },
+  {
+    "id": "rc-pbs",
+    "expected": "Franjoine ve ark. (2003) — Pediatrik Denge Ölçeği",
+    "actual": "Pediatric balance scale: a modified version of the berg balance scale for the school-age child with mild to moderate motor impairment.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17057441/"
+  },
+  {
+    "id": "rc-rom",
+    "expected": "Herrero ve ark. (2011) — SP çocuklarında eklem hareket ölçümlerinin güvenirliği",
+    "actual": "Reliability of goniometric measurements in children with cerebral palsy: a comparative analysis of universal goniometer and electronic inclinometer. A pilot study.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21740600/"
+  },
+  {
+    "id": "rc-strength",
+    "expected": "Berry ve ark. (2004) — SP çocuklarında el dinamometrisi",
+    "actual": "Intrasession and intersession reliability of handheld dynamometry in children with cerebral palsy.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17057548/"
+  },
+  {
+    "id": "rc-tone",
+    "expected": "Gracies ve ark. (2010) — SP çocuklarında Tardieu güvenirliği",
+    "actual": "Reliability of the Tardieu Scale for assessing spasticity in children with cerebral palsy.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20298834/"
+  },
+  {
+    "id": "rc-figure",
+    "expected": "Petersen ve ark. (1999) — Şişlikte su volumetrisi ve sekiz şekilli ölçüm",
+    "actual": "Reliability of water volumetry and the figure of eight method on subjects with ankle joint swelling.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/10560070/"
+  },
+  {
+    "id": "rc-participation",
+    "expected": "Coster ve ark. (2012) — Çocuk ve gençlerde katılım ve çevre ölçümü kavramsal temeli",
+    "actual": "Development of the participation and environment measure for children and youth: conceptual basis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21981404/"
+  }
+]

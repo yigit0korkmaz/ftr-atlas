@@ -3,7 +3,7 @@ export interface Option { id:string; text:string; correct:boolean; why:string }
 export interface Question { prompt:string; type:'single'|'multi'; options:Option[]; explanation:string; sourceIds:string[] }
 export interface EvaluationModule { id:string; title:string; summary:string; sourceIds:string[]; toolQuestion:Question; applicationQuestion:Question }
 export interface Domain { id:string; label:string; moduleId:string; required:boolean; rationale:string; cue:string; sourceIds:string[] }
-export interface ClinicalCase { id:string; disease:string; title:string; profile:Record<string,string|number>; story:string; goals:string[]; domains:Domain[]; sourceIds:string[] }
+export interface ClinicalCase { id:string; disease:string; title:string; profile:Record<string,string|number>; story:string; goals:string[]; domains:Domain[]; sourceIds:string[]; provenance?:{kind:'synthetic';blueprintId:string;contextId:string;focusId:string;focusLabel:string;reviewStatus:string} }
 export interface Bank { version:string; reviewDate:string; sources:Source[]; modules:EvaluationModule[]; cases:ClinicalCase[] }
 export type Part='tool'|'application';
 export type Stage='brief'|'domains'|'planFeedback'|'branch';
