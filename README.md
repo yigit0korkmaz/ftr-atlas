@@ -1,29 +1,59 @@
-# FTR Atlas · Klinik Rota 2
+# FTR Atlas · Klinik öğrenme alanın
 
-**Oyna:** https://yigit0korkmaz.github.io/ftr-atlas/
+**Herkese açık oyun:** https://yigit0korkmaz.github.io/ftr-atlas/
 
-36 ayrıntılı vaka · 12 klinik alan · 50 değerlendirme modülü · 100 araç/uygulama kararı · 103 kaynak kaydı.
+Telefon öncelikli, koyu/açık temalı vaka temelli FTR öğrenme platformu. 36 vaka, 12 klinik alan, 50 değerlendirme modülü. Vaka → alan önceliği → araç seçimi → uygulama kararı.
 
-## Oyun akışı
+## Geliştirme
 
-1. Hastalık/klinik alan seçilir. Aynı alanda farklı yaş, evre, işlev ve hedeflere sahip vaka dosyaları bulunur.
-2. Öykü ve görüşme hedefleri okunur; öncelikli değerlendirme alanları, uygun olmayan seçeneklerden ayrılır.
-3. Her alan için gerekçe, vakadaki dayanak ve kaynak gösterilir.
-4. Önce seçilen alanların araç ve uygulama dallarına ilerlenir. Öncelik dışı seçilen alanlar yalnız yöntem öğrenimi için açılır. Atlanan gerekli alanlar sonradan açıkça işaretlenmiş telafi durağına eklenir.
-5. İlk önceliklendirme, gerekli alanlardaki araç seçimi ve gerekli alanlardaki uygulama kararı ayrı raporlanır. Telafi ilk alan seçimini değiştirmez. Ek öğrenme dalları puanı yükseltmez.
+Node.js 24 ve pnpm ile:
 
-Alan puanı doğru seçme ve doğru eleme kararlarının tüm alanlara oranıdır. Araç/uygulama kararlarında tüm doğru seçenekler seçilmeli, yanlış seçenekler boş bırakılmalıdır. Seçenekler ve alanların sırası yeni rotada karışır. Aynı değerlendirme gözlemi birden fazla alanı bilgilendirebilir; bütün uygun alternatif araçları aynı hastada uygulama zorunluluğu yoktur.
+```sh
+pnpm install --frozen-lockfile
+pnpm dev
+pnpm build
+```
 
-## Kapsam
+`pnpm build` TypeScript denetimi ve üretim derlemesini çalıştırır. `dist/` herkese açık statik site çıktısıdır. Vite taban yolu `/ftr-atlas/`; gezinme HashRouter ile GitHub Pages yenilemelerini destekler.
 
-İnme, Parkinson, omurilik yaralanması, MS, pediatri, kas-iskelet, ağrı, iş/ergonomi, vestibüler/geriatri, protez-ortez, ödem ve kardiyopulmoner vakalar. Pediatride serebral palsi, motor gecikme, spina bifida ve DMD örnekleri bulunur.
+## Mimari
 
-Vaka öncelikleri yalnız açıklanan görüşme/hedefler için eğitimsel anahtardır; hastanın eksiksiz klinik değerlendirmesi veya tüm FTR müfredatı değildir. Vakalar kurgusaldır. İçerik bağımsız öğretim üyesi onayı almış değildir; sıfır hata garantisi yoktur. Kaynak kontrol tarihi 24 Ekim 2026. Tam ölçek formları çoğaltılmaz. Türkçe eğitim metni ölçeklerin doğrulanmış Türkçe sürümü veya uygulama yetkisi yerine geçmez.
+```text
+src/
+  app/                 Uygulama kabuğu, gezinme, global arama ve ayarlar
+  components/          Ortak kontroller ve vaka bileşenleri
+  data/                Yapılandırılmış klinik içerik ve görünüm eşlemeleri
+  domain/              Tipler ve bağımsız rota/puanlama fonksiyonları
+  state/               Kalıcı ilerleme, tercihler, v2 taşıma ve yedek doğrulama
+  features/
+    dashboard/         Çalışma alanı
+    catalog/           Vakalar, değerlendirmeler ve kaynaklar
+    session/           Klinik karar rotası
+    progress/          Sonuçlar, ilerleme ve yedekleme
+  styles/              Tasarım değişkenleri, bileşenler ve duyarlı düzenler
+docs/
+  DESIGN-RESEARCH.md    Araştırma kaynakları ve tasarım kararları
+```
 
-## İlerleme ve dosyalar
+React, TypeScript, Vite, Zustand, Lucide, Radix Dialog, Motion ve Sonner kullanılır. Fontlar yerel sunulur. Bağımlılıklar kilit dosyasıyla sabitlenir; ekranlar ayrı parçalar halinde yüklenir.
 
-Üyelik gerekmez; ilerleme tarayıcıda saklanır. Klinik v2 kaydı eski v1 bilgi sorusu kaydından ayrı tutulur ve onu silmez. Yedek dışa/içe aktarma tamamlanan vaka puanlarını, kaydedilen vakaları ve uyumlu yarım rotayı taşır; tur geçmişini ve son özet ekranını taşımaz.
+## Kullanıcı özellikleri
 
-Ana uygulama: `clinical-app.js`, içerik: `clinical-bank.js`, rota/puanlama: `clinical-engine.js`, ek stil: `clinical.css`. Eski v1 dosyaları ana oyun akışına yüklenmez. Derleme, API anahtarı veya paket kurulumu gerekmez. GitHub Pages main dalının kök dizininden yayınlanır.
+- Varsayılan koyu tema, açık/sistem teması; 18/20/22 px okuma tercihi.
+- Büyük seçim alanları, telefonda sabit karar düğmesi, dört aşamalı rota ve odak modu.
+- Arama, konu/durum filtreleri, kayıtlı vakalar, paylaşılabilir vaka bağlantısı.
+- Otomatik kayıt, kişisel vaka notları, önceki kararları inceleme ve tekrar alanı.
+- Klinik v2 ilerlemesini taşıma; v2/v3 yedek içe aktarma ve yeni yedek dışa aktarma.
+- Sistem hareket azaltma tercihi ve animasyon anahtarı.
 
-İçerik önerileri GitHub Issues üzerinden vaka/alan kimliği ve kaynakla iletilebilir. Gerçek hasta bilgisi paylaşılmamalıdır. Son sürümün ayrıntılı kullanıcı denemeleri kullanıcıya bırakılmıştır.
+## İçerik ve veri
+
+Klinik içerik eğitim içindir; kurgusal vakalar ve kaynak bağlantıları içerir. Tüm FTR müfredatını veya eksiksiz hasta değerlendirmesini kapsama, klinik yeterlik ölçme ya da sıfır hata güvencesi yoktur. Bağımsız öğretim üyesi onayı alınmış değildir. Ölçeklerin tam formu veya doğrulanmış Türkçe sürümü yerine geçmez. [İçerik politikası](CONTENT-POLICY.md).
+
+İlerleme ve notlar yalnız kullanıcının tarayıcısında saklanır; hesap ve otomatik cihaz eşitlemesi yoktur. Kaynak koduna kullanıcı ilerlemesi veya notlar eklenmez. Yeni sürüm eski `ftr-atlas-clinical-v2` kaydını okuyabilir; eski kaydı silmez. Kalıcı yeni alan `ftr-atlas-premium-v3` anahtarını kullanır.
+
+## Yayınlama
+
+Kaynak `main` dalında bulunur. GitHub Pages yayın kaynağı GitHub Actions’tır. `.github/workflows/deploy.yml` kilitli bağımlılıkları kurar, TypeScript denetimi ve derlemeyi çalıştırır, `dist` çıktısını Pages’e yayınlar. Ortak URL değişmeden kalır. Kimlik bilgileri dosyalara yazılmaz; iş akışı GitHub’ın geçici kimliğini kullanır.
+
+Tasarım araştırması ve geliştirme yönü: [Araştırma notları](docs/DESIGN-RESEARCH.md).
