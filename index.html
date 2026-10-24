@@ -4,13 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#10151f">
-  <meta name="description" content="FTR Atlas: kaynaklı vaka soruları, çoklu seçim ve kişisel tekrar ile fizyoterapi bitirme sınavına hazırlan.">
+  <meta name="description" content="FTR Atlas: hastalık vakasından değerlendirme planına. Öncelikleri seç, araçlarını belirle ve uygulama kararlarını ver.">
   <title>FTR Atlas · Klinik bilgini harekete geçir</title>
   <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css">
-  <script src="bank.js" defer></script>
-  <script src="engine.js" defer></script>
-  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="clinical.css?v=2">
+  <script src="clinical-bank.js?v=2" defer></script>
+  <script src="clinical-engine.js?v=2" defer></script>
+  <script src="clinical-app.js?v=2" defer></script>
 </head>
 <body>
   <a href="#main" class="skip">İçeriğe geç</a>
@@ -18,13 +19,13 @@
     <a class="brand" href="#home" aria-label="FTR Atlas ana sayfa"><span class="brand-mark">✳</span><span>FTR<span class="brand-light">atlas</span><small>KLİNİK ÖĞRENME ALANI</small></span></a>
     <div class="nav-label">ÇALIŞMA ALANIN</div>
     <nav aria-label="Ana menü" id="nav"></nav>
-    <div class="sidebar-note"><span class="status-dot"></span> Küçük tekrarlar. Kalıcı bilgi.<p>Her vakada bir adım daha ileri.</p></div>
+    <div class="sidebar-note"><span class="status-dot"></span> Önce hastayı anla.<p>Her seçimin, rotanı değiştirsin.</p></div>
     <div class="sidebar-footer"><span class="avatar">F</span><div>Geleceğin fizyoterapisti<small>4. sınıf · Bitirme hazırlığı</small></div></div>
   </aside>
   <div class="shell">
-    <header class="topbar"><span id="breadcrumb">Çalışma alanı <span>/</span> Genel bakış</span><span class="top-status"><i></i> Kendi hızında öğren <span class="keycap">FTR / 01</span></span></header>
+    <header class="topbar"><span id="breadcrumb">Klinik çalışma alanı <span>/</span> Genel bakış</span><span class="top-status"><i></i> Kendi hızında öğren <span class="keycap">KLİNİK / 02</span></span></header>
     <main id="main" tabindex="-1"><div class="loading"><span class="brand-mark">✳</span><h1>FTR Atlas hazırlanıyor…</h1><p>Kaynaklı vaka bankası yükleniyor.</p></div></main>
-    <footer class="page-footer"><span>FTR Atlas <span class="muted">/ Öğren. İlişkilendir. Tekrar et.</span></span><button class="text-btn" data-action="about">İçerik ve kullanım notu ↗</button></footer>
+    <footer class="page-footer"><span>FTR Atlas <span class="muted">/ Vakayı anla. Planını kur. Yöntemini seç.</span></span><button class="text-btn" data-action="about">İçerik ve kullanım notu ↗</button></footer>
   </div>
   <dialog id="dialog"><div id="dialog-content"></div><form method="dialog"><button class="btn secondary">Kapat</button></form></dialog>
   <div id="toast" role="status" aria-live="polite"></div>

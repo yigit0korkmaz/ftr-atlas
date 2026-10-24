@@ -11,3 +11,7 @@ FTR Atlas sınav çalışması için geliştirilmiştir. Gerçekçi vakalar kurg
 7. MRC ilgili kaynak atfı: “Used with the permission of the Medical Research Council”. MRC materyali Open Government Licence 3.0 kapsamındadır. Sorular Türkçe özgün eğitim uyarlamasıdır; MRC’nin oyunu onayladığı anlamına gelmez. https://www.ukri.org/councils/mrc/facilities-and-resources/find-an-mrc-facility-or-resource/mrc-muscle-scale/
 
 İlerleme yalnızca tarayıcıda saklanır. Oyunda gerçek hasta verisi istenmez; hata bildirimlerinde de paylaşılmamalıdır.
+
+## Klinik rota v2
+
+Alanların öncelik anahtarı vaka öyküsündeki görüşme hedefleriyle sınırlıdır. Öncelik dışı alan klinikte hiçbir zaman gerekli olmayacağı anlamına gelmez. Ek öğrenme dalı, hastaya uygulanması gerektiği anlamına gelmez. İlk önceliklendirme puanı, atlanan alanın telafisinden sonra değiştirilmez. Genel güvenlik taraması ve multidisipliner değerlendirme sürer.
