@@ -1,10 +1,6 @@
-import raw from './clinical-bank.json';
-import expansion from './expansion.json';
-import {expandBank} from './expand';
-import type {Expansion} from './expand';
+import release from './published-release.json';
 import type { Bank } from '../domain/types';
-export const bank=expandBank(raw as Bank,expansion as Expansion);
-export const blueprintCount=expansion.blueprints.length;
+export const bank=release.bank as Bank;
 export const cases=bank.cases;
 export const modules=bank.modules;
 export const caseMap=Object.fromEntries(cases.map(c=>[c.id,c]));

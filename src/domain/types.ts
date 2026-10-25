@@ -1,4 +1,4 @@
-export interface Source { id:string; title:string; url:string; kind:string; note?:string }
+export interface Source { id:string; title:string; url:string; kind:string; note?:string; verification?:string; accessedAt?:string }
 export interface Option { id:string; text:string; correct:boolean; why:string }
 export interface Question { prompt:string; type:'single'|'multi'; options:Option[]; explanation:string; sourceIds:string[] }
 export interface EvaluationModule { id:string; title:string; summary:string; sourceIds:string[]; toolQuestion:Question; applicationQuestion:Question }

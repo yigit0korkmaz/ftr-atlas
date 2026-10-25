@@ -1,12 +1,30 @@
-# FTR Atlas · Klinik öğrenme alanın
+# FTR Atlas · İnceleme ve onay akışı
 
-**Herkese açık oyun:** https://yigit0korkmaz.github.io/ftr-atlas/
+**Oyun:** https://yigit0korkmaz.github.io/ftr-atlas/  
+**İnceleme atölyesi:** https://yigit0korkmaz.github.io/ftr-atlas/#/review
 
-Telefon öncelikli, koyu/açık temalı vaka temelli FTR öğrenme platformu. 1.060 eğitim senaryosu, 12 klinik alan, 53 değerlendirme modülü ve 134 kaynak kaydı. 36 temel vakaya, 64 yeni ana öykünün dört bulgu odağı ve dört yaşam hedefiyle oluşturulan 1.024 senaryosu eklenir. Gerçek hasta kayıtları değildir. Vaka → alan önceliği → araç seçimi → uygulama kararı.
+v5: 1.060 aday vaka, ayrı içerik inceleme ekranı ve yerel IndexedDB veritabanı. Aday vakalar oyuna otomatik alınmaz. İlk v5 yayınında kullanıcı onayı bulunmadığı için yayımlanmış vaka sayısı **0**'dır. Sonraki sayıyı `src/data/published-release.json` belirler.
+
+## Kullanım
+
+- Her vakayı tek tek aç; öykü, profil, hedef, değerlendirme alanı, araç/uygulama sorusu, seçenek ve kaynakları incele/düzenle.
+- Girdinin yanına not bırak. Engelleyici düzeltme notu kapanmadan vaka onaylanamaz.
+- Taslağı kaydet; değişen içerik önceki onayı kaldırır. Onay yalnız açıkça seçilen içerik sürümüne aittir.
+- Geçmiş taslakları ve işlem kayıtlarını gör; eski içerik yeni taslağa getirilebilir.
+- `Yedek ve yayın` ile özel inceleme yedeği veya yalnız onaylı içerik paketi indir.
+- Onaylı paketi site sahibi doğrulayıp GitHub'a aktardığında herkese açık oyun güncellenir. Tarayıcıdan kendiliğinden GitHub'a yazılmaz.
+
+[Adım adım inceleme kılavuzu](docs/EDITORIAL-GUIDE.md) · [Mimari ve yayın kuralları](docs/EDITORIAL-ARCHITECTURE.md)
+
+## Veritabanı ve kapsam
+
+Dexie üzerinden IndexedDB: taslaklar, küçük liste özetleri, notlar, geçmiş ve sürümler. Veriler cihaz/tarayıcı/site adresine bağlıdır; sunucuya gönderilmez. Otomatik cihaz eşitlemesi, üyelik ve korumalı admin hesabı yoktur. Düzenli dosya yedeği gerekir. İnceleme ekranı ve adayların gizliliği vaat edilmez; kaynak depo public'tir. Başkaları kendi yerel kayıtlarını değiştirebilir, ancak depo erişimi olmadan bu siteyi yayımlayamaz.
+
+İnceleme yedeği özel not içerir; **public depoya veya statik dosyalara konmaz**. Sadece `ftr-approved-release.json` yayın kaynağına alınır. Oyun ilerlemesi/notları ayrı tarayıcı kaydındadır; yayımdan ayrılmış vaka kimliklerinin eski kayıtları korunur.
 
 ## Geliştirme
 
-Node.js 24 ve pnpm ile:
+Node.js 24 ve pnpm 11:
 
 ```sh
 pnpm install --frozen-lockfile
@@ -15,59 +33,36 @@ pnpm quality
 pnpm build
 ```
 
-`pnpm quality` bütün senaryolarda kaynak/modül bütünlüğünü, belirli tanı-araç kurallarını, puanlamayı ve filtre/sayfalamayı denetler. `docs/quality-results.json` makine çıktısıdır. Otomatik denetim bağımsız klinik onay değildir.
+`pnpm quality`: 1.060 adayda içerik/puanlama kontrolleri ve editoryal işlem testleri. Testler ayrı geçici veritabanları kullanır; gerçek sahibin onaylarını değiştirmez. `pnpm build`: önce zorunlu yayın doğrulaması, sonra TypeScript ve Vite. `dist/` statik GitHub Pages çıktısıdır; taban yolu `/ftr-atlas/`.
 
-`pnpm build` TypeScript denetimi ve üretim derlemesini çalıştırır. `dist/` herkese açık statik site çıktısıdır. Vite taban yolu `/ftr-atlas/`; gezinme HashRouter ile GitHub Pages yenilemelerini destekler.
+## Yayın paketi
 
-## Mimari
-
-```text
-src/
-  app/                 Uygulama kabuğu, gezinme, global arama ve ayarlar
-  components/          Ortak kontroller ve vaka bileşenleri
-  data/                Yapılandırılmış klinik içerik ve görünüm eşlemeleri
-  domain/              Tipler ve bağımsız rota/puanlama fonksiyonları
-  state/               Kalıcı ilerleme, tercihler, v2 taşıma ve yedek doğrulama
-  features/
-    dashboard/         Çalışma alanı
-    catalog/           Vakalar, değerlendirmeler ve kaynaklar
-    session/           Klinik karar rotası
-    progress/          Sonuçlar, ilerleme ve yedekleme
-  styles/              Tasarım değişkenleri, bileşenler ve duyarlı düzenler
-docs/
-  DESIGN-RESEARCH.md    Araştırma kaynakları ve tasarım kararları
+```sh
+pnpm publication:import /path/to/ftr-approved-release.json
+pnpm quality
+pnpm build
 ```
 
-React, TypeScript, Vite, Zustand, Lucide, Radix Dialog, Motion ve Sonner kullanılır. Fontlar yerel sunulur. Bağımlılıklar kilit dosyasıyla sabitlenir; ekranlar ayrı parçalar halinde yüklenir.
+Dosyadaki vaka, soru, kaynak grafiği ve her vaka için içerikle eşleşen onay kaydı denetlenir. Özel/tanımsız alan, eksik onay veya değişmiş içerikle derleme durur. Geçerli boş paket desteklenir. GitHub'a gönderim ayrıca yapılır; onaylı paketin indirilmesi siteyi değiştirmez.
 
-## Kullanıcı özellikleri
+## Katmanlar
 
-- Varsayılan koyu tema, açık/sistem teması; 18/20/22 px okuma tercihi.
-- Büyük seçim alanları, telefonda sabit karar düğmesi, dört aşamalı rota ve odak modu.
-- Arama, konu/durum filtreleri, kayıtlı vakalar, paylaşılabilir vaka bağlantısı.
-- Otomatik kayıt, kişisel vaka notları, önceki kararları inceleme ve tekrar alanı.
-- Klinik v2 ilerlemesini taşıma; v2/v3 yedek içe aktarma ve yeni yedek dışa aktarma.
-- Sistem hareket azaltma tercihi ve animasyon anahtarı.
+```text
+src/data/candidate-bank.ts       Yalnız inceleme ekranında açılan adaylar
+src/data/published-release.json  Oyunun tek yayın kaynağı
+src/editorial/schema.ts          Şemalar, kurallar, içerik özeti
+src/editorial/repository.ts      Veri deposu portu ve IndexedDB adapteri
+src/editorial/release.ts         Onaylı yayın grafiği ve doğrulama
+src/features/review/             Liste, form, not, geçmiş, dosya aktarımı
+scripts/editorial.test.mjs       Ayrı veritabanında işlem testleri
+scripts/validate-release.mjs     Derleme yayın kapısı
+scripts/import-release.mjs       Sahip tarafından sağlanan paketi alma
+```
 
-## İçerik ve veri
+UI, veri deposunu `EditorialRepository` üzerinden kullanır. Sunuculu sürümde HTTP adapteri, kimlik/rol kontrolü ve ilişkisel veritabanı eklenebilir. React/TypeScript, Vite, Zustand, Lucide, Radix, Motion, Dexie ve Zod kullanılır. İnceleme bağımlılıkları/aday veri ayrı, gerektiğinde yüklenen paketlerdedir. HashRouter tabanlı veri yönlendiricisi kaydedilmemiş değişiklikte geçişi durdurur.
 
-Klinik içerik eğitim içindir; kurgusal vakalar ve kaynak bağlantıları içerir. Tüm FTR müfredatını veya eksiksiz hasta değerlendirmesini kapsama, klinik yeterlik ölçme ya da sıfır hata güvencesi yoktur. Bağımsız öğretim üyesi onayı alınmış değildir. Ölçeklerin tam formu veya doğrulanmış Türkçe sürümü yerine geçmez. [İçerik politikası](CONTENT-POLICY.md).
+## Klinik içerik
 
-İlerleme ve notlar yalnız kullanıcının tarayıcısında saklanır; hesap ve otomatik cihaz eşitlemesi yoktur. Kaynak koduna kullanıcı ilerlemesi veya notlar eklenmez. Yeni sürüm eski `ftr-atlas-clinical-v2` kaydını okuyabilir; eski kaydı silmez. Kalıcı yeni alan `ftr-atlas-premium-v3` anahtarını kullanır.
+36 temel vaka + 64 ana klinik öykünün dört bulgu ve dört yaşam hedefi birleşimiyle 1.024 ek senaryo. 1.060 bağımsız gerçek hasta raporu değildir. 53 ortak modül ve 134 kaynak kaydı vardır. Eğitim amaçlı kurgudur; tam FTR müfredatı, klinik yetkinlik veya sıfır hata garantisi yoktur. Kullanıcı yayın onayı, bağımsız klinik uzman onayı değildir. Ölçeklerin dil, uygulama ve kullanım koşulları geliştiriciden kontrol edilmelidir.
 
-## Yayınlama
-
-Kaynak `main` dalında bulunur. GitHub Pages yayın kaynağı GitHub Actions’tır. `.github/workflows/deploy.yml` kilitli bağımlılıkları kurar, TypeScript denetimi ve derlemeyi çalıştırır, `dist` çıktısını Pages’e yayınlar. Ortak URL değişmeden kalır. Kimlik bilgileri dosyalara yazılmaz; iş akışı GitHub’ın geçici kimliğini kullanır.
-
-Tasarım araştırması ve geliştirme yönü: [Araştırma notları](docs/DESIGN-RESEARCH.md).
-
-## İçerik genişletme ve ticari ürün planı
-
-- `src/data/clinical-bank.json`: önceki 36 vaka ve temel değerlendirme modülleri.
-- `src/data/expansion.json`: düzenlenebilir 64 ana öykü, bulgu odakları, yaşam bağlamları ve ek kaynak/modüller.
-- `src/data/expand.ts`: deterministik senaryo derleyicisi. Klinik cümle üretmek için AI veya rastgele ağ isteği çalıştırmaz.
-- Her ana öykünün dört bulgu odağı dört farklı öncelik örüntüsü oluşturur. Dört yaşam hedefi aynı örüntüyü farklı gerçek yaşam göreviyle ilişkilendirir; her senaryo tamamen yeni bir test seti değildir.
-- Yalnız yaş değiştirme veya yeni kimlik verme benzersiz vaka sayılmaz. Sayı, kaynak ve uygunluk denetimini `pnpm quality` ile yeniden çalıştır. Yeni klinik içerikte uzman incelemesi gerekir.
-- Banka sürümü değiştiğinde uyumsuz yarım oturum kapanabilir; tamamlanmış vaka kayıtları, notlar ve yer imleri değişmeyen kimliklerle korunur.
-
-[Ticari ürün yol haritası](docs/COMMERCIAL-ROADMAP.md) · [Kalite analizi](docs/QUALITY-REPORT.md) · [Kaynak araştırması kayıtları](docs/SOURCE-RESEARCH.json)
+[Ticari ürün yol haritası](docs/COMMERCIAL-ROADMAP.md) gelecek üyelik/abonelik/admin aşamalarını anlatır. [v4 kalite raporu](docs/QUALITY-REPORT.md) önceki sürümün tarihli incelemesidir; v5 yayın sayısı olarak okunmamalıdır. [İçerik politikası](CONTENT-POLICY.md), [tasarım araştırması](docs/DESIGN-RESEARCH.md), [kaynak araştırması](docs/SOURCE-RESEARCH.json).

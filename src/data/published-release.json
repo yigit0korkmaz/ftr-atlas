@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "kind": "ftr-approved-release",
+  "exportedAt": "2026-10-24T21:00:00.000Z",
+  "bank": {
+    "version": "5.0.0-c52b69e1c17b8a2f",
+    "reviewDate": "25 Ekim 2026",
+    "cases": [],
+    "modules": [],
+    "sources": []
+  },
+  "approvals": []
+}

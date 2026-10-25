@@ -1,5 +1,7 @@
 {
-  "checkedAt": "2026-10-24T17:37:23.604Z",
+  "scope": "candidate-bank",
+  "publishedCases": 0,
+  "checkedAt": "2026-10-25T00:05:54.674Z",
   "version": "4.0.0",
   "passed": 7,
   "checks": [
@@ -22,7 +24,7 @@
     "sources": 134,
     "domains": 9996
   },
-  "compileAndAuditMs": 148,
+  "compileAndAuditMs": 152,
   "limitations": [
     "Otomatik testler klinik doğruluğu kanıtlamaz.",
     "Her bir senaryo bağımsız klinisyen tarafından onaylanmış değildir.",
