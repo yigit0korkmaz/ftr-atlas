@@ -10,3 +10,5 @@
 :root[data-motion=off] *, :root[data-motion=off] *:before, :root[data-motion=off] *:after{transition:none!important;animation:none!important;scroll-behavior:auto!important}
 
 @media(max-width:650px){.session-heading h1{font-size:22px;line-height:1.6;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:10px 0 13px}.session-section-title>.badge{display:none}.session-section-title h2{font-size:28px;margin:0 0 12px}.session-section-title>p{font-size:18px}.stage-bar{padding:12px 10px;margin-bottom:25px}.session-heading>.badge{font-size:11px}.session-context-actions{margin-bottom:22px}.decision-dock .dock-secondary>div{display:block;position:absolute;right:20px;top:-16px;border:1px solid var(--line);border-radius:7px;padding:3px 8px;background:var(--surface)}.decision-dock .dock-secondary strong{font-size:12px;font-weight:600}.decision-dock .dock-secondary div>span{display:none}}
+
+@media(max-width:650px){.mobile-nav{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));padding-inline:4px}.mobile-nav a{min-width:0;width:100%;font-size:9px;padding-inline:2px}.mobile-nav a svg{width:21px;height:21px}}

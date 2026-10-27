@@ -48,6 +48,12 @@ const ReviewCaseRoute = lazy(() =>
     default: m.ReviewCaseRoute,
   })),
 );
+const Games = lazy(() =>
+  import("../features/games/Games").then((m) => ({ default: m.Games })),
+);
+const FizyoTabu = lazy(() =>
+  import("../features/games/Games").then((m) => ({ default: m.FizyoTabu })),
+);
 class ErrorBoundary extends Component<
   { children: ReactNode },
   { error: boolean }
@@ -93,6 +99,8 @@ const router = createHashRouter([
       { path: "results", element: <Results /> },
       { path: "progress", element: <Progress /> },
       { path: "sources", element: <SourcePage /> },
+      { path: "games", element: <Games /> },
+      { path: "games/fizyotabu", element: <FizyoTabu /> },
       { path: "*", element: <Dashboard /> },
     ],
   },
