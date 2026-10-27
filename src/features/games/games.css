@@ -423,6 +423,7 @@
   margin: 16px 0 24px;
 }
 .pt-library-grid article {
+  color: #24474d;
   min-width: 0;
   padding: 18px;
   border: 1px solid #cde3df;
