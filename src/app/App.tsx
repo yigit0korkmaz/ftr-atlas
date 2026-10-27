@@ -54,6 +54,9 @@ const Games = lazy(() =>
 const FizyoTabu = lazy(() =>
   import("../features/games/Games").then((m) => ({ default: m.FizyoTabu })),
 );
+const Detective = lazy(() =>
+  import("../features/games/Detective").then((m) => ({ default: m.Detective })),
+);
 class ErrorBoundary extends Component<
   { children: ReactNode },
   { error: boolean }
@@ -101,6 +104,7 @@ const router = createHashRouter([
       { path: "sources", element: <SourcePage /> },
       { path: "games", element: <Games /> },
       { path: "games/fizyotabu", element: <FizyoTabu /> },
+      { path: "games/ben-kimim", element: <Detective /> },
       { path: "*", element: <Dashboard /> },
     ],
   },

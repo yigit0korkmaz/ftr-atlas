@@ -7,7 +7,7 @@
     "dev": "vite --host 127.0.0.1",
     "build": "node scripts/validate-release.mjs && tsc -b && vite build",
     "preview": "vite preview --host 127.0.0.1",
-    "quality": "node scripts/quality-audit.mjs && node --test scripts/editorial.test.mjs && node --test scripts/taboo.test.mjs",
+    "quality": "node scripts/quality-audit.mjs && node --test scripts/editorial.test.mjs && node --test scripts/taboo.test.mjs && node --test scripts/detective.test.mjs",
     "check:release": "node scripts/validate-release.mjs",
     "publication:import": "node scripts/import-release.mjs"
   },

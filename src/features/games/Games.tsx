@@ -38,6 +38,8 @@ import {
   type Settings,
 } from "./engine";
 import "./games.css";
+import "./detective.css";
+import { EquipmentArt } from "./EquipmentArt";
 
 const logo = `${import.meta.env.BASE_URL}games/physiotech-logo.png`;
 const defaults: Settings = {
@@ -88,6 +90,37 @@ export function Games() {
         <h1>Bilgiyi oyuna dönüştür.</h1>
         <p>Arkadaşlarını topla. Teknoloji ve sağlığı birlikte keşfet.</p>
       </div>
+      <section className="fd-hub-feature">
+        <div>
+          <span className="fd-eyebrow">YENİ OYUN · PHYSIOTECH</span>
+          <h2>
+            Ben Kimim?<em>Fizyo Dedektif</em>
+          </h2>
+          <p>
+            16 fizyoterapi ekipmanı, 24 soru ve tek bir gizli kart. İpuçlarını
+            birleştir, seçenekleri ele, gizemi çöz.
+          </p>
+          <Link className="pt-button pt-primary" to="/games/ben-kimim">
+            Dedektif dosyasını aç <ArrowRight size={19} />
+          </Link>
+          <small>
+            Tek kişilik keşif veya iki takım · Aynı cihazda · Süre baskısı yok
+          </small>
+        </div>
+        <div className="fd-hub-grid" aria-hidden="true">
+          {[
+            ["goniometer", "Gonyometre"],
+            ["ball", "Egzersiz topu"],
+            ["walker", "Yürüteç"],
+            ["oximeter", "Oksimetre"],
+          ].map(([id, name]) => (
+            <div key={id}>
+              <EquipmentArt id={id} decorative />
+              <strong>{name}</strong>
+            </div>
+          ))}
+        </div>
+      </section>
       <section className="pt-feature">
         <div className="pt-feature-copy">
           <Brand />
@@ -142,7 +175,8 @@ export function Games() {
           <ShieldCheck />
           <h3>Kurallar açık</h3>
           <p>
-            Doğru +1, yasak −1. Pas 0 puan. İki takım da eşit sayıda tur oynar.
+            Her oyunun puanlama, sıra ve kazanma kuralları kendi ekranında
+            açıklanır.
           </p>
         </div>
         <div>
@@ -329,7 +363,9 @@ export function FizyoTabu() {
   useEffect(() => {
     heading.current?.focus({ preventScroll: true });
     if (game?.stage === "playing" || game?.stage === "paused") {
-      root.current?.querySelector(".pt-play-area")?.scrollIntoView({ block: "start", behavior: "instant" });
+      root.current
+        ?.querySelector(".pt-play-area")
+        ?.scrollIntoView({ block: "start", behavior: "instant" });
     }
   }, [game?.stage]);
   useEffect(() => {
