@@ -48,7 +48,7 @@ const defaults: Settings = {
   rounds: 3,
   passes: 3,
   difficulty: "Tümü",
-  category: "Tümü",
+  category: "Fizyoterapi",
   sound: false,
 };
 const names = { correct: "Doğru", taboo: "Yasak", pass: "Pas" };
@@ -135,7 +135,7 @@ export function Games() {
           <div className="pt-facts">
             <span>
               <Layers size={18} />
-              45 kart
+              {tabooCards.length} kart
             </span>
             <span>
               <Users size={18} />2 takım
@@ -156,13 +156,13 @@ export function Games() {
           <div className="pt-mini-card pt-mini-card--back" />
           <div className="pt-mini-card">
             <span>ANLAT BAKALIM</span>
-            <strong>Bluetooth</strong>
+            <strong>Gonyometre</strong>
             <hr />
-            <b>Kablosuz</b>
-            <b>Kısa mesafe</b>
-            <b>Eşleştirme</b>
-            <b>Kulaklık</b>
-            <b>Hoparlör</b>
+            <b>Açı</b>
+            <b>Eklem</b>
+            <b>Ölçmek</b>
+            <b>Derece</b>
+            <b>Cetvel</b>
             <small>PHYSIOTECH · FİZYOTABU</small>
           </div>
           <span className="pt-art-tag">
@@ -269,6 +269,8 @@ export function FizyoTabu() {
     [full, setFull] = useState(false),
     [notice, setNotice] = useState("");
   const [resuming, setResuming] = useState(false);
+  const [library, setLibrary] = useState(false);
+  const [search, setSearch] = useState("");
   const root = useRef<HTMLDivElement>(null),
     heading = useRef<HTMLHeadingElement>(null),
     gameRef = useRef(game);
@@ -285,6 +287,13 @@ export function FizyoTabu() {
     (c) =>
       (settings.category === "Tümü" || c.category === settings.category) &&
       (settings.difficulty === "Tümü" || c.difficulty === settings.difficulty),
+  );
+  const libraryCards = pool.filter((c) =>
+    [c.word, ...c.accepted].some((word) =>
+      word
+        .toLocaleLowerCase("tr-TR")
+        .includes(search.trim().toLocaleLowerCase("tr-TR")),
+    ),
   );
   function beep(end = false) {
     if (!gameRef.current?.settings.sound) return;
@@ -511,7 +520,7 @@ export function FizyoTabu() {
         <h1>
           Fizyo<span>Tabu</span>
         </h1>
-        <p>Teknoloji, sağlık ve biraz da takım ruhu.</p>
+        <p>Anatomiden egzersize, FTR bilgini takımınla oyuna taşı.</p>
       </header>
       {notice && (
         <p className="pt-notice" role="status">
@@ -526,6 +535,23 @@ export function FizyoTabu() {
             <p>
               İki takım, tek cihaz. Kartları yalnız anlatıcı ve hakem görsün.
             </p>
+            <div className="pt-deck-intro">
+              <span>
+                <strong>{tabooCards.length}</strong> toplam kart
+              </span>
+              <span>
+                <strong>
+                  {
+                    tabooCards.filter((c) => c.category === "Fizyoterapi")
+                      .length
+                  }
+                </strong>{" "}
+                FTR kartı
+              </span>
+              <span>
+                <strong>3</strong> zorluk seviyesi
+              </span>
+            </div>
             {saved && (
               <div className="pt-saved">
                 <strong>Önceki oyunun burada.</strong>
@@ -551,6 +577,27 @@ export function FizyoTabu() {
                 </div>
               </div>
             )}
+            <div
+              className="pt-deck-presets"
+              role="group"
+              aria-label="Hızlı deste seçimi"
+            >
+              {[
+                ["Fizyoterapi", "FTR destesi"],
+                ["Tümü", "Tüm kartlar"],
+              ].map(([category, label]) => (
+                <button
+                  key={category}
+                  className="pt-button pt-secondary"
+                  aria-pressed={settings.category === category}
+                  onClick={() =>
+                    setSettings((s) => ({ ...s, category, difficulty: "Tümü" }))
+                  }
+                >
+                  <Layers size={16} /> {label}
+                </button>
+              ))}
+            </div>
             <div className="pt-fields">
               <label>
                 1. takım adı
@@ -640,7 +687,7 @@ export function FizyoTabu() {
                     setSettings((s) => ({ ...s, category: e.target.value }))
                   }
                 >
-                  {["Tümü", "Teknoloji", "Sağlık"].map((n) => (
+                  {["Tümü", "Fizyoterapi", "Teknoloji", "Sağlık"].map((n) => (
                     <option key={n}>{n}</option>
                   ))}
                 </select>
@@ -677,6 +724,15 @@ export function FizyoTabu() {
               </span>
               <span>Doğru +1 · Yasak −1 · Pas 0</span>
             </div>
+            <button
+              className="pt-tool pt-browse"
+              onClick={() => {
+                setSearch("");
+                setLibrary(true);
+              }}
+            >
+              <BookOpen size={17} /> Seçili desteyi incele ({pool.length} kart)
+            </button>
             <button
               className="pt-button pt-primary pt-start"
               onClick={begin}
@@ -1043,6 +1099,56 @@ export function FizyoTabu() {
           </div>
         </>
       )}
+      <Modal
+        open={library && !game}
+        onClose={() => setLibrary(false)}
+        title="Kart kütüphanesi"
+        description={`${settings.category} · ${settings.difficulty} · ${pool.length} kart. Maç öncesinde birlikte göz atabilirsiniz.`}
+        wide
+      >
+        <div className="pt-library">
+          <label htmlFor="pt-card-search">
+            Kelime veya kabul edilen karşılık ara
+          </label>
+          <input
+            id="pt-card-search"
+            type="search"
+            value={search}
+            maxLength={80}
+            placeholder="Örneğin: gonyometre, diz kapağı…"
+            onChange={(e) => setSearch(e.target.value)}
+          />
+          <p role="status">{libraryCards.length} kart gösteriliyor.</p>
+          <div className="pt-library-grid">
+            {libraryCards.map((c) => (
+              <article key={c.id}>
+                <span>
+                  {c.category} · {c.difficulty}
+                </span>
+                <h3>{c.word}</h3>
+                <p>Yasaklı ifadeler</p>
+                <ul>
+                  {c.forbidden.map((w) => (
+                    <li key={w}>{w}</li>
+                  ))}
+                </ul>
+                {!!c.accepted.length && (
+                  <small>Kabul edilen: {c.accepted.join(" · ")}</small>
+                )}
+              </article>
+            ))}
+          </div>
+          {!libraryCards.length && (
+            <p>Bu destede eşleşen kelime yok. Aramanı kısaltmayı dene.</p>
+          )}
+          <button
+            className="pt-button pt-primary"
+            onClick={() => setLibrary(false)}
+          >
+            Oyunu kurmaya dön
+          </button>
+        </div>
+      </Modal>
       <Modal
         open={rules}
         onClose={() => setRules(false)}

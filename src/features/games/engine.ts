@@ -173,7 +173,9 @@ export function restoreGame(
       return null;
     if (
       !["Tümü", "Kolay", "Orta", "Zor"].includes(g.settings.difficulty) ||
-      !["Tümü", "Teknoloji", "Sağlık"].includes(g.settings.category)
+      !["Tümü", "Fizyoterapi", "Teknoloji", "Sağlık"].includes(
+        g.settings.category,
+      )
     )
       return null;
     if (

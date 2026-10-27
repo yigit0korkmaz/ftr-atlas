@@ -20,7 +20,7 @@ const settings = {
 };
 const pool = tabooCards.map((c) => c.id);
 const start = () =>
-  transition(createGame(settings, pool), { type: "start", now: 1000 });
+  transition(createGame(structuredClone(settings), pool), { type: "start", now: 1000 });
 const mark = (g, outcome, now = 2000) =>
   transition(g, {
     type: "mark",
@@ -30,10 +30,10 @@ const mark = (g, outcome, now = 2000) =>
     cycle: g.cycle,
     outcome,
   });
-test("45 unique cards, five nonempty prohibitions each, correct Turkish terms", () => {
-  assert.equal(tabooCards.length, 45);
-  assert.equal(new Set(pool).size, 45);
-  assert.equal(new Set(tabooCards.map((c) => c.word)).size, 45);
+test("100 unique cards, five nonempty prohibitions each, correct Turkish terms", () => {
+  assert.equal(tabooCards.length, 100);
+  assert.equal(new Set(pool).size, 100);
+  assert.equal(new Set(tabooCards.map((c) => c.word)).size, 100);
   for (const c of tabooCards) {
     assert.equal(c.forbidden.length, 5);
     assert.ok(c.forbidden.every((w) => w.trim()));
@@ -56,13 +56,13 @@ test("shuffle preserves input, IDs and no repeats before exhaustion", () => {
   );
   let g = start();
   const seen = [];
-  for (let i = 0; i < 45; i++) {
+  for (let i = 0; i < pool.length; i++) {
     seen.push(g.deck[g.cursor]);
     g = mark(g, "correct");
   }
-  assert.equal(new Set(seen).size, 45);
-  assert.equal(g.deck.length, 90);
-  assert.equal(g.plays.length, 45);
+  assert.equal(new Set(seen).size, 100);
+  assert.equal(g.deck.length, pool.length * 2);
+  assert.equal(g.plays.length, 100);
 });
 test("scoring, pass limit and undo preserve elapsed time", () => {
   let g = start();
@@ -141,17 +141,58 @@ test("storage restores a running game paused and rejects corrupted saves", () =>
 });
 test("undo works across a deck reshuffle boundary", () => {
   let g = start();
-  for (let i = 0; i < 45; i++) g = mark(g, "correct");
-  const previous = g.deck[44];
+  for (let i = 0; i < pool.length; i++) g = mark(g, "correct");
+  const previous = g.deck[pool.length - 1];
   g = transition(g, { type: "undo", now: 3000 });
   assert.equal(g.deck[g.cursor], previous);
-  assert.equal(g.plays.length, 44);
+  assert.equal(g.plays.length, pool.length - 1);
 });
 
-test('a timed-out visible card never carries into the next team turn',()=>{
-  let g=start();const expiredCard=g.deck[g.cursor];
-  g=transition(g,{type:'tick',now:61000});
-  g=transition(g,{type:'next'});
-  assert.notEqual(g.deck[g.cursor],expiredCard);
-  assert.equal(g.plays.length,0);
+test("a timed-out visible card never carries into the next team turn", () => {
+  let g = start();
+  const expiredCard = g.deck[g.cursor];
+  g = transition(g, { type: "tick", now: 61000 });
+  g = transition(g, { type: "next" });
+  assert.notEqual(g.deck[g.cursor], expiredCard);
+  assert.equal(g.plays.length, 0);
+});
+
+test("FTR deck has 55 distinct cards and a playable pool at every difficulty", () => {
+  const ftr = tabooCards.filter((c) => c.category === "Fizyoterapi");
+  assert.equal(ftr.length, 55);
+  assert.equal(ftr[0].id, 46);
+  assert.equal(ftr.at(-1).id, 100);
+  for (const difficulty of ["Kolay", "Orta", "Zor"]) {
+    const ids = ftr.filter((c) => c.difficulty === difficulty).map((c) => c.id);
+    assert.ok(ids.length >= 5);
+    const g = createGame(
+      { ...settings, category: "Fizyoterapi", difficulty },
+      ids,
+    );
+    assert.deepEqual(new Set(g.deck), new Set(ids));
+    assert.equal(
+      restoreGame(JSON.stringify(g), pool)?.settings.category,
+      "Fizyoterapi",
+    );
+  }
+  for (const word of [
+    "Gonyometre",
+    "Propriyosepsiyon",
+    "Kuadriseps",
+    "İzometrik egzersiz",
+  ])
+    assert.ok(ftr.some((c) => c.word === word));
+  assert.deepEqual(ftr.find((c) => c.word === "Patella").accepted, [
+    "Diz kapağı",
+  ]);
+});
+
+test("old 45-card saves keep their IDs and pool after the expansion", () => {
+  const legacyPool = pool.slice(0, 45);
+  const legacy = createGame(settings, legacyPool);
+  const restored = restoreGame(JSON.stringify(legacy), pool);
+  assert.ok(restored);
+  assert.deepEqual(restored.pool, legacyPool);
+  assert.equal(tabooCards[44].word, "Kuantum bilgisayar");
+  assert.equal(tabooCards[0].word, "Giyilebilir teknoloji");
 });
